@@ -1,0 +1,20 @@
+sc_node_not_relation -> monocratic;;
+monocratic => nrel_main_idtf:
+	[монократическая форма государства]
+	(* <- lang_ru;; *);
+	[monocratic]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> segmental;;
+segmental => nrel_main_idtf:
+	[сегментарная форма государства]
+	(* <- lang_ru;; *);
+	[segmental]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> polycratic;;
+polycratic => nrel_main_idtf:
+	[поликратическая форма государства]
+	(* <- lang_ru;; *);
+	[polycratic]
+	(* <- lang_en;;	*);;

@@ -1,0 +1,11 @@
+sc_node_not_relation -> psychological_theory ;;
+
+psychological_theory => nrel_main_idtf : [psychological theory] (* <- lang_en ;; *);
+                                      [психологическая теория] (* <- lang_ru ;; *) ;;
+
+psychological_theory => nrel_main_results : ...
+                                 (* -> ...
+                                          (* <= nrel_sc_text_translation : ...
+								     (* -> [Право есть результат человеческих переживаний. Законы государства зависят от психологии людей.] (* <- lang_ru ;; *) ;; *) ;;
+                                           *) ;;
+                                 *);;

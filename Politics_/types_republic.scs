@@ -1,0 +1,22 @@
+sc_node_not_relation -> theocratic_republic;;
+theocratic_republic => nrel_main_idtf:
+	[теократическая республика]
+	(* <- lang_ru;; *);
+	[theocratic republic]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> democratic_republic;;
+democratic_republic => nrel_main_idtf:
+	[демократическая республика]
+	(* <- lang_ru;; *);
+	[democratic republic]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> islamic_republic;;
+islamic_republic => nrel_main_idtf:
+	[исламская республика]
+	(* <- lang_ru;; *);
+	[islamic republic]
+	(* <- lang_en;;	*);;
+
+

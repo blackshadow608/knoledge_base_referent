@@ -1,0 +1,19 @@
+sc_node_not_relation -> rule_of_law ;;
+
+rule_of_law => nrel_main_idtf : [rule of law] (* <- lang_en ;; *);
+                                      [норма права] (* <- lang_ru ;; *) ;;
+
+rule_of_law <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Но́рма пра́ва — это всеобщее, узаконенное государством и выраженное в письменной форме правило, исполнение которого обеспечивается институтом принуждения и воспитания граждан соответствующего государства.](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;
+rule_of_law => nrel_main_results : ...
+                                 (* -> ...
+                                          (* <= nrel_sc_text_translation : ...
+								     (* -> [Норма права обладает признаком целостности и не может противоречить сама себе.] (* <- lang_ru ;; *) ;; *) ;;
+                                           *) ;;
+                                 *);;

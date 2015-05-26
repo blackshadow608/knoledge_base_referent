@@ -1,0 +1,49 @@
+//синонимы
+sc_node_not_relation -> concept_messenger;;
+concept_messenger => nrel_main_idtf :[мессенеджер] (* <- lang_ru;; *);;
+concept_messenger => nrel_main_idtf :[messenger](* <- lang_en;; *);;
+
+//определение 
+
+concept_messenger <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(мессенеджер)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Messenger - это программы для мгновенного обмена сообщениями между пользователями. Именно в скорости состоит их 				главное преимущество перед обычной электронной почтой.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+
+//утверждения
+
+concept_messenger <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(мессенеджер;компьютерная сеть)] (* <- lang_ru;; *);; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Говоря о том, что такое мессенджер, следует уточнить важную особенность - он является клиентской программой. Это значит, что самостоятельно программа работать не может, для ее использования необходимо подключение к серверу (центральному компьютеру сети).]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(мессенеджер;Viber)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[В последнее время стали популярными и такие универсальные приложения, как WhatsApp Messenger, Viber и некоторые другие.](* <- lang_ru;; *);;
+*);;
+*);;

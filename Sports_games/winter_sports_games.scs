@@ -1,0 +1,40 @@
+sc_node_no_relation->winter_sports_games;;
+
+winter_sports_games => nrel_main_idtf:
+	
+	[зимние виды спорта]
+	(* <- lang_ru;; *);
+	
+	[winter_sports_games]
+	(* <- lang_en;;	*);;
+
+
+winter_sports_games
+	
+	<- rrel_key_sc_element:
+	...
+	
+		(*
+	
+			=> nrel_main_idtf: [Опр.(зимние виды спорта)]  (* <- lang_ru;; *);;
+	
+		<-sc_definition;;
+
+		<=nrel_sc_text_translation:
+	
+		...
+
+		
+			(*
+->rrel_example:
+[Зимние виды спорта - это виды спорта, игры в которые проводятся на льду или в холодное время года, при наличии снега.]
+			(*
+<- lang_ru;;
+*);;
+*);;
+	*);;
+
+
+winter_sports_games => nrel_inclusion:  biathlon; bobsled; curling; ski_race; tobbogan; snowboard ;;
+
+

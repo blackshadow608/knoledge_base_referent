@@ -1,0 +1,42 @@
+sc_node_no_relation->football;;
+
+
+football => nrel_main_idtf:
+
+	[футбол]
+	(* <- lang_ru;; *);
+
+	[football]
+	(* <- lang_en;;	*);;
+
+
+football
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(футбол)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanaition;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Футбол - это спортивная игра двух команд (по одиннадцати игроков в каждой), состоящая в том, что игроки стараются ударами ноги загнать мяч в ворота противника. ]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;
+
+football=>nrel_rules:foot_rule_1; foot_rule_2; foot_rule_3; foot_rule_4; foot_rule_5; foot_rule_6; foot_rule_7; foot_rule_8; foot_rule_9; foot_rule_10; foot_rule_11; foot_rule_12; foot_rule_13; foot_rule_14; foot_rule_15; foot_rule_16; foot_rule_17;;

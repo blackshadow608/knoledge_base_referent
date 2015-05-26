@@ -1,0 +1,56 @@
+//
+sc_node_not_relation -> concept_anonymizer;;
+concept_anonymizer => nrel_main_idtf :[анонимайзер] (* <- lang_ru;; *);;
+concept_anonymizer => nrel_main_idtf :[anonymizer](* <- lang_en;; *);;
+
+//определение 
+
+concept_anonymizer <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(анонимайзер)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Анонимайзер — изначально средство для скрытия информации о компьютере или пользователе в сети от удалённого сервера.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+//иерархия
+
+concept_computer_program -> concept_anonymizer;;
+
+//утверждения
+_anonymizer => nrel_main_idtf :[_анонимайзер] (* <- lang_ru;; *);;
+_data => nrel_main_idtf :[_данные о объекте] (* <- lang_ru;; *);;
+
+concept_anonymizer <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(анонимайзер; данные)] (* <- lang_ru;; *);;
+-> rrel_main_key_sc_element: stat_anonymizer_data;; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Анонимайзер скрывает данные о различных объектах.]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(пользователь; анонимайзер)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Необходимо отметить, что использование анонимайзера не только не обеспечивает конфиденциальности передаваемых данных между пользователем и целевым веб-сервером, но и является дополнительным звеном возможности утечки персональной информации.](* <- lang_ru;; *);;
+*);;
+*);;
+

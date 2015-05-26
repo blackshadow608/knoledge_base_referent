@@ -1,0 +1,36 @@
+sc_node_not_relation -> overpass;;
+
+overpass => nrel_main_idtf:
+	[эстакада]
+	(*
+		<- lang_ru;;
+	*);
+	[overpass]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	overpass 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(эстакада)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [эстакада -  протяженное инженерно-техническое сооружение, состоящее из ряда опор и пролётов, предназначенное для размещения дороги выше уровня земли.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	overpass 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(дорога, эстакада)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Эстакада является частью дорги.](*<- lang_ru;;*);;
+				*);;
+		*);;

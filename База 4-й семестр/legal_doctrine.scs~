@@ -1,0 +1,24 @@
+sc_node_not_relation -> legal_doctrine ;;
+
+legal_doctrine => nrel_main_idtf : [legal doctrine] (* <- lang_en ;; *);
+                                      [правовая доктрина] (* <- lang_ru ;; *) ;;
+
+legal_doctrine <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Правовая доктрина — научные работы на правовую тематику.](*<-lang_ru;;*);;
+	                                                              *) ;;
+
+legal_doctrine => nrel_main_results : ...
+                                 (* -> ...
+                                          (* <= nrel_sc_text_translation : ...
+								     (* -> [Правовая доктрина может становиться источником права, если санкционируется государством.] (* <- lang_ru ;; *) ;; *) ;;
+                                           *) ;;
+                                    -> ...
+                                          (* <= nrel_sc_text_translation : ...
+                                                                     (* -> [Некоторое время правовая доктрина имела большое значение в качестве источника права в системе римского права.] (* <- lang_ru ;; *) ;; *) ;;
+                                           *) ;;
+                                 *);;
+

@@ -1,0 +1,4 @@
+sc_node_not_relation -> inca_law ;;
+
+inca_law => nrel_main_idtf : [Inca law] (* <- lang_en ;; *);
+                                      [Инкское право] (* <- lang_ru ;; *) ;;

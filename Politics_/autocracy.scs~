@@ -1,0 +1,38 @@
+sc_node_not_relation -> autocracy;;
+
+autocracy=> nrel_main_idtf:
+	[автократия]
+	(* <- lang_ru;; *);
+	[autocracy]
+	(* <- lang_en;;	*);;
+
+autocracy
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(автократия)]  (* <- lang_ru;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Автократия — одна из форм правления, основанная на неограниченном и бесконтрольном полновластии одного лица в государстве. ]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+autocracy <=nrel_subdividing:
+	...
+	(*      => nrel_main_idtf: [По объёму функций управления общественной жизнью]  (* <- lang_ru;; *);;
+		-> totalitarianism;
+		 authoritarianism;;
+	*);;
+
+autocracy <= nrel_attribute:
+	...
+	(*  
+		<=nrel_sc_text_translation:
+		...
+	(* -> rrel_example: [Отрицание естественных человеческих ценностей (свобода, равенство, справедливость и т.п.), принципов организации и функционирования социума (политический плюрализм, демократия, единство и различие человеческих интересов и их правовой закреплённости и т.д.).](*<- lang_ru;;*);;*);;	
+	*);;

@@ -1,0 +1,29 @@
+sc_node_no_relation->computer_sports_games;;
+
+computer_sports_games => nrel_main_idtf:
+	[компьютерные спортивные игры]
+	(* <- lang_ru;; *);
+	[computer sports games]
+	(* <- lang_en;;	*);;
+
+computer_sports_games
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(Компьютерные спортивные игры)]  (* <- lang_ru;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+
+		(*
+		->rrel_example:
+			[Комьютерные спортивные игры - это игровые соревнования с использованием компьютерных технологий, где компьютер моделирует виртуальное пространство, внутри которого происходит состязание.]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+
+computer_sports_games => nrel_inclusion:counter_strike; quake; fifa;;
+
+

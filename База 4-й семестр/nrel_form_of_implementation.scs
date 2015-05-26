@@ -1,0 +1,4 @@
+sc_node_norole_relation -> nrel_form_of_implementation ;;
+
+nrel_form_of_implementation => nrel_main_idtf : [form of implementation*] (* <- lang_en ;; *);
+                                      [форма реализации*] (* <- lang_ru ;; *) ;;

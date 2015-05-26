@@ -1,0 +1,39 @@
+sc_node_norole_relation -> nrel_government;;
+
+nrel_government => nrel_main_idtf:
+	[форма государственного правления*]
+	(* <- lang_ru;; *);
+	[government*]
+	(* <- lang_en;;	*);;
+nrel_government <- sc_relation;;
+
+nrel_government <- binary_relation;;
+
+nrel_government <- oriented_relation;;
+
+nrel_government => nrel_definitional_domain:
+	... 
+	(*
+	<= nrel_combination: 
+		{
+		 state;	
+		 monarchy;
+		 republic;
+		 autocracy;
+		 bureaucracy;
+		 aristocracy;
+		 dictatorship;;
+		};;
+	*);;
+	
+
+nrel_government => nrel_first_domain: 
+		 state;;
+
+nrel_government => nrel_second_domain: 
+		 monarchy;
+		 republic;
+		 autocracy;
+		 bureaucracy;
+		 aristocracy;
+		 dictatorship;;

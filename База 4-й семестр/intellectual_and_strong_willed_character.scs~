@@ -1,0 +1,23 @@
+sc_node_not_relation -> intellectual_and_strong_willed_character  ;;
+
+intellectual_and_strong_willed_character => nrel_main_idtf : [intellectual and strong-willed character] (* <- lang_en ;; *);
+                                      [интеллектуально-волевой характер] (* <- lang_ru ;; *) ;;
+
+intellectual_and_strong_willed_character <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Интеллектуально-волевой характер - выражение правом воли и сознания людей.](*<-lang_ru;;*);;
+	                                                              *) ;;
+
+intellectual_and_strong_willed_character => nrel_main_results : ...
+                                 (* -> ...
+                                          (* <= nrel_sc_text_translation : ...
+								     (* -> [Формирование и функционирование права как выражения свободы, справедливости и разума возможны только в обществе, в котором все индивиды имеют экономическую, политическую и духовную свободу.] (* <- lang_ru ;; *) ;; *) ;;
+                                           *) ;;
+                                    -> ...
+                                          (* <= nrel_sc_text_translation : ...
+                                                                     (* -> [Интеллектуальная сторона права состоит в том, что оно есть форма отражения социальных закономерностей и общественных отношений – предмета правового регулирования.] (* <- lang_ru ;; *) ;; *) ;;
+                                           *) ;;
+                                 *);;

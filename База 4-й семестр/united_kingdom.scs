@@ -1,0 +1,4 @@
+sc_node_not_relation -> united_kingdom ;;
+
+united_kingdom => nrel_main_idtf : [United Kingdom] (* <- lang_en ;; *);
+                                      [Великобритания] (* <- lang_ru ;; *) ;;

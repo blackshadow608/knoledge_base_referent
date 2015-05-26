@@ -1,0 +1,54 @@
+//синонимы
+sc_node_not_relation -> concept_file;;
+concept_file => nrel_main_idtf :[файл] (* <- lang_ru;; *);;
+concept_file => nrel_main_idtf :[file](* <- lang_en;; *);;
+
+//определение 
+
+
+concept_file <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(файл)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Файл (англ. file) — именованная область данных на носителе информации.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+
+
+//утверждения
+_file => nrel_main_idtf :[_файл](* <- lang_ru;; *);;
+
+concept_file <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(данные;файл)] (* <- lang_ru;; *);;
+-> rrel_main_key_sc_element: stat_file_data;; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Файлы используются для хранения различных данных.]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(файл;API)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[С точки зрения API файл — объект, по отношению к которому могут быть применены функции этого API. На уровне API уже не существенно, существует ли файл как объект файловой системы или является, например, устройством ввода-вывода.](* <- lang_ru;; *);;
+*);;
+*);;
+

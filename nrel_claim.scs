@@ -1,0 +1,54 @@
+//синонимы
+sc_node_norole_relation -> nrel_claim;;
+nrel_claim => nrel_main_idtf :[запрос*] (* <- lang_ru;; *);;
+nrel_claim => nrel_main_idtf :[claim*](* <- lang_en;; *);;
+
+//определение 
+
+nrel_claim <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(запрос*)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Запрос - это объект , который служит для извлечения данных.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+
+//утверждения
+
+nrel_claim <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(запрос;SQL)] (* <- lang_ru;; *);; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Главной особенностью этого запроса является то, что он должен использовать синтаксис языка SQL сервера базы данных (для Microsoft SQL Server это — Transact-SQL).]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(запрос;приложение)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Запросы к серверу применяются в приложениях, имеющих архитектуру "клиент-сервер".](* <- lang_ru;; *);;
+*);;
+*);;
+
+//домены
+
+nrel_claim <= nrel_first_domain: concept_user;;
+nrel_claim <= nrel_second_domain: concept_system_search;;

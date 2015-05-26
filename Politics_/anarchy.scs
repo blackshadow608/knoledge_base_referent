@@ -1,0 +1,44 @@
+sc_node_not_relation -> anarchy;;
+
+anarchy => nrel_main_idtf:
+	[анархия]
+	(* <- lang_ru;; *);
+	[anarchy]
+	(* <- lang_en;;	*);;
+
+
+anarchy
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(анархия)]  (* <- lang_ru;; *);;
+	<-sc_explanation;;
+	<=nrel_sc_text_translation:
+		...
+
+		(*
+		->rrel_example:
+			[Анархия представляет собой идею отсутствия власти в отношении общества, группы лиц или отдельно взятого человека. ]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+		
+	*);;
+
+political_system<= nrel_attribute:
+	...
+	(*  
+		<=nrel_sc_text_translation:
+		...
+	(* -> rrel_example: [Отсутствие власти.](*<- lang_ru;;*);;*);
+		...
+	(* -> rrel_example: [Свобода от принуждения.](*<- lang_ru;;*);;*);
+		...
+	(* -> rrel_example: [Свобода ассоциаций.](*<- lang_ru;;*);;*);
+		...
+	(* -> rrel_example: [Взаимопомощь.](*<- lang_ru;;*);;*);	
+		...
+	(* -> rrel_example: [Равенство.](*<- lang_ru;;*);;*);;		
+	*);;
+

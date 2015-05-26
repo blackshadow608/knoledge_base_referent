@@ -1,0 +1,64 @@
+//
+sc_node_not_relation -> concept_browser;;
+concept_browser => nrel_main_idtf :[браузер] (* <- lang_ru;; *);;
+concept_browser => nrel_main_idtf :[browser](* <- lang_en;; *);;
+
+//определение 
+
+concept_browser <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(браузер)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Веб-обозрева́тель, бра́узер — прикладное программное обеспечение для просмотра веб-страниц; содержания веб-документов, 				компьютерных файлов и их каталогов; управления веб-приложениями; а также для решения других задач. ]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+
+// иерархия связи с другими понтиями 
+concept_computer_program -> concept_browser;;
+
+
+concept_browser -> 
+	concept_google_chrome;
+	concept_mozila_firefox;
+	concept_internet_explorer;;
+
+
+
+//утверждения
+_browser => nrel_main_idtf :[_браузер] (* <- lang_ru;; *);;
+_web_page => nrel_main_idtf :[_веб-страница] (* <- lang_ru;; *);;
+
+concept_browser <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(браузер; веб-страница)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Браузер используется для просмотра веб-страниц.]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(ПО;история;веб-браузер)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Первый веб-браузер был создан в 1990 году сэром Тимом Бернерс-Ли. Он назывался WorldWideWeb и позже был переименован в Nexus.](* <- lang_ru;; *);;
+*);;
+*);;
+
+

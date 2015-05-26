@@ -1,0 +1,13 @@
+sc_node_not_relation -> theory ;;
+
+theory => nrel_main_idtf : [theory] (* <- lang_en ;; *);
+                                      [теория] (* <- lang_ru ;; *) ;;
+
+theory <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Теория (греч. θεωρία — рассмотрение, исследование) — учение, система идей или принципов.](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;

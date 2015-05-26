@@ -1,0 +1,36 @@
+sc_node_not_relation -> wagon;;
+
+wagon => nrel_main_idtf:
+	[вагон]
+	(*
+		<- lang_ru;;
+	*);
+	[wagon]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	wagon 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(вагон)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [Вагон - несамоходное (как правило) транспортное средство, предназначенное для движения по рельсам или иным путям (монорельсу, маглев-колее и т. д.) и (как правило) эксплуатируемое с локомотивом. ](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	wagon 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(вагон, поезд)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Вагон является единицей поезда.](*<- lang_ru;;*);;
+				*);;
+		*);;

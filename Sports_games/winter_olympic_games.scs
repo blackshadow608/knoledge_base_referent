@@ -1,0 +1,33 @@
+sc_node_no_relation->winter_olympic_games;;
+winter_olympic_games => nrel_main_idtf:
+	
+	[зимние Олимпийские виды спорта]
+	(* <- lang_ru;; *);
+	
+	[winter Olympic games]
+	(* <- lang_en;;	*);;
+
+
+winter_olympic_games
+	
+	<- rrel_key_sc_element:
+	...
+		(*
+	
+		=> nrel_main_idtf: [Опр.(зимние Олимпийские виды спорта)]  (* <- lang_ru;; *);;
+	
+		<-sc_definition;;
+
+		<=nrel_sc_text_translation:
+		...
+		(*
+	->rrel_example:
+	[зимние Олимпийские виды спорта - это те зимние виды спорта, которые входят в современную программу Олимпийских игр.]
+				(*<- lang_ru;;*);;
+	*);;
+*);;
+
+
+winter_olympic_games => nrel_inclusion: biathlon; bobsled; curling; toboggan;;
+
+

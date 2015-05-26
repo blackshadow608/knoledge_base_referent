@@ -1,0 +1,11 @@
+sc_node_not_relation -> conciliation_theory ;;
+
+conciliation_theory => nrel_main_idtf : [conciliation theory] (* <- lang_en ;; *);
+                                      [примирительная теория] (* <- lang_ru ;; *) ;;
+
+conciliation_theory => nrel_main_results : ...
+                                 (* -> ...
+                                          (* <= nrel_sc_text_translation : ...
+								     (* -> [Право является результатом компромисса различных противоборствующих сторон в обществе (зародилось не внутри одного рода, а между различными родами, которые всегда конфликтовали между собой). Данная теория очень популярна в доктрине западных стран.] (* <- lang_ru ;; *) ;; *) ;;
+                                           *) ;;
+                                 *);;

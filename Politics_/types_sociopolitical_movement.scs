@@ -1,0 +1,57 @@
+sc_node_not_relation -> conservative ;;
+conservative  => nrel_main_idtf:
+	[консервативное]
+	(* <- lang_ru;; *);
+	[conservative ]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> reform;;
+reform=> nrel_main_idtf:
+	[реформаторское]
+	(* <- lang_ru;; *);
+	[reform]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> revolutionary;;
+revolutionary => nrel_main_idtf:
+	[революционное]
+	(* <- lang_ru;; *);
+	[revolutionary]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> liberaldemocratic;;
+liberaldemocratic => nrel_main_idtf:
+	[либерально-демократическое]
+	(* <- lang_ru;; *);
+	[liberal - democratic]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> conservative ;;
+conservative  => nrel_main_idtf:
+	[консервативное]
+	(* <- lang_ru;; *);
+	[conservative ]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> socialist;;
+socialist => nrel_main_idtf:
+	[социалистическое]
+	(* <- lang_ru;; *);
+	[socialist]
+	(* <- lang_en;;	*);;
+
+
+sc_node_not_relation -> for_the_selfdetermination_of_nations;;
+for_the_selfdetermination_of_nations => nrel_main_idtf:
+	[за самоопределение нации]
+	(* <- lang_ru;; *);
+	[for the self-determination of nations]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> nationalliberation;;
+nationalliberation => nrel_main_idtf:
+	[национально-освободитель­ное]
+	(* <- lang_ru;; *);
+	[nationalliberation]
+	(* <- lang_en;;	*);;
+

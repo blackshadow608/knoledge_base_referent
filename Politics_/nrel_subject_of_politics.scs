@@ -1,0 +1,40 @@
+sc_node_norole_relation -> nrel_subject_of_politics;;
+
+nrel_subject_of_politics => nrel_main_idtf:
+	[субъект политики*]
+	(* <- lang_ru;; *);
+	[subject of politics*]
+	(* <- lang_en;; *);;
+
+nrel_subject_of_politics => nrel_idtf:
+	[actor*]
+	(* <- lang_en;; *);;
+nrel_subject_of_politics <- sc_relation;;
+
+nrel_subject_of_politics <- binary_relation;;
+
+nrel_subject_of_politics <- oriented_relation;;
+
+nrel_subject_of_politics => nrel_definitional_domain:
+	... 
+	(*
+	<= nrel_combination: 
+		{	
+		politics; 
+		social_level_subjects;
+		institutional_political_subject;
+		functional_entities_policy
+		};;
+	*);;
+	
+
+nrel_subject_of_politics => nrel_first_domain: 
+	politics;;
+
+nrel_subject_of_politics => nrel_second_domain: 
+	 
+		social_level_subjects;
+		institutional_political_subject;
+		functional_entities_policy;;
+	
+

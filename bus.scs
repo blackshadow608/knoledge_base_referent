@@ -1,0 +1,36 @@
+sc_node_not_relation -> bus;;
+bus => nrel_main_idtf:
+	[автобус]
+	(*
+		<- lang_ru;;
+	*);
+	[bus]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	bus 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(Автобус)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [Автобус - моторное безрельсовое дорожное транспортное средство, предназначенное для перевозки людей, оборудованное местами для сидения.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	bus 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(транспортное средство, автобус)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Автобус является одним из самых массовых общественных транспортных средств. ](*<- lang_ru;;*);;
+				*);;
+		*);;
+		bus <= nrel_transportation:passenger;;

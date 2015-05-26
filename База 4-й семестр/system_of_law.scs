@@ -1,0 +1,13 @@
+sc_node_not_relation -> system_of_law ;;
+
+system_of_law => nrel_main_idtf : [system of law] (* <- lang_en ;; *);
+                                      [система права] (* <- lang_ru ;; *) ;;
+
+system_of_law <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Система права — совокупность норм, институтов и отраслей права в их взаимосвязи.](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;

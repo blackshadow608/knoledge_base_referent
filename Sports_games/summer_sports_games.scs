@@ -1,0 +1,40 @@
+sc_node_no_relation->summer_sports_games;;
+
+summer_sports_games => nrel_main_idtf:
+	
+	[летние виды спорта]
+	(* <- lang_ru;; *);
+	
+	[summer sports games]
+	(* <- lang_en;;	*);;
+
+
+summer_sports_games
+	
+	<- rrel_key_sc_element:
+	...
+	
+		(*
+	
+			=> nrel_main_idtf: [Опр.(летние виды спорта)]  (* <- lang_ru;; *);;
+	
+		<-sc_definition;;
+
+		<=nrel_sc_text_translation:
+	
+		...
+
+		
+			(*
+->rrel_example:
+[Летние виды спорта - это виды спорта, игры в которых проводятся на открытом пространстве преимущественно в теплое время года.]
+			(*
+<- lang_ru;;
+*);;
+*);;
+	*);;
+
+
+summer_sports_games => nrel_inclusion: badminton; basketball; boxing; fight; volleyball; handball; judo; table_tennis; tennis; football ;;
+
+

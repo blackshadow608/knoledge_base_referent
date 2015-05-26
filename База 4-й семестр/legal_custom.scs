@@ -1,0 +1,21 @@
+sc_node_not_relation -> legal_custom ;;
+
+legal_custom => nrel_main_idtf : [legal custom] (* <- lang_en ;; *);
+                                      [правовой обычай] (* <- lang_ru ;; *) ;;
+
+legal_custom <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Правовой обычай — исторически сложившееся правило поведения, включённое государством в систему правовых норм и признаваемое источником права.](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;
+
+legal_custom => nrel_main_results : ...
+                                 (* -> ...
+                                          (* <= nrel_sc_text_translation : ...
+								     (* -> [Вместе правовые обычаи образуют обычное право.] (* <- lang_ru ;; *) ;; *) ;;
+                                           *) ;;
+                                 *);;
+

@@ -1,0 +1,30 @@
+sc_node_no_relation->sports_games;;
+
+sports_games => nrel_main_idtf:
+	[Спортивные игры]
+	(* <- lang_ru;; *);
+	[Sports games]
+	(* <- lang_en;;	*);;
+
+sports_games
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(Спортивные игры)]  (* <- lang_ru;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+
+		(*
+		->rrel_example:
+			[Спортивные игры — самостоятельные виды спорта, связанные с игровым противоборством команд или отдельных спортсменов, и проводящиеся по определённым правилам. ]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+
+/*sports_games <= nrel_subdividing: intelligence_sports_games; computer_sports_games; summer_sports_games; winter_sports_games; self_sports_games; gaming_kinds_of_sport; olympics_kinds_of_sport;;*/
+
+
+

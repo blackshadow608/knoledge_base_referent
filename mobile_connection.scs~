@@ -1,0 +1,36 @@
+//
+sc_node_not_relation -> concept_mobile_connection;;
+concept_mobile_connection => nrel_main_idtf :[мобильное соединение] (* <- lang_ru;; *);;
+concept_mobile_connection => nrel_main_idtf :[mobile connection](* <- lang_en;; *);;
+
+//определение 
+
+concept_mobile_connection <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(мобильное соединение)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Мобильное соединение — подключения через мобильный телефон либо беспроводной модем.  ]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+//утверждения
+
+concept_mobile_connection <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(Интернет;мобильный телефон;интернет-модема;компьютер)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Сейчас почти любой мобильный телефон имеет выход в Интернет и при этом может выполнять роль интернет-модема для компьютера при соответствующей настройке. ]
+(* <- lang_ru;; *);;
+*);;
+*);;

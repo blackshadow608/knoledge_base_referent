@@ -1,0 +1,36 @@
+sc_node_not_relation -> groundtransport;;
+
+groundtransport => nrel_main_idtf:
+	[наземный транспорт]
+	(*
+		<- lang_ru;;
+	*);
+	[ground transport]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	groundtransport 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(наземный транспорт)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [наземный транспорт - вид транспорта, в котром используются транспортые средства, перемещающиеся по поверхности суши.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	groundtransport 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(наземный транспорт, автомобильный транспорт, железнодорожный транспорт, гужевой транспорт.)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[К наземному транспорту относятся: автомобильный, железнодорожный, гужевой.](*<- lang_ru;;*);;
+				*);;
+		*);;

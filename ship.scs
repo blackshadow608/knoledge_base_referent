@@ -1,0 +1,50 @@
+sc_node_not_relation -> ship;;
+
+ship => nrel_main_idtf:
+	[судно]
+	(*
+		<- lang_ru;;
+	*);
+	[ship]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	ship 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(судно)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [ Судно - плавучее сооружение, предназначенное для транспортировки пассажиров или грузов. ](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	ship 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(судно)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[К судам односят яхты, корабли, контейнеровозы, доски для сёрфинга.](*<- lang_ru;;*);;
+				*);;
+			
+		*);;
+		ship 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(судно, устойчивость)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Современные суди обладают хорошей устойчивостью](*<- lang_ru;;*);;
+				*);;
+			
+		*);;
+		

@@ -1,0 +1,38 @@
+sc_node_not_relation -> form_of_state;;
+
+form_of_state => nrel_main_idtf:
+	[форма государства]
+	(* <- lang_ru;; *);
+	[form of state]
+	(* <- lang_en;;	*);;
+
+form_of_state
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(форма государства)]  (* <- lang_ru;; *);;
+	<-sc_explanation;;
+	<=nrel_sc_text_translation:
+		...
+
+		(*
+		->rrel_example:
+			[Форма государства — это структура, определенная модель внутреннего устройства государства, включающая его территориальную организацию, принципы, способы образования и взаимодействия органов государственной власти, а также методы осуществления власти, обеспечивающие проведение определенной государственной политики.]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+
+form_of_state -> political_regime;
+		government;
+		form_of_government;;
+
+form_of_state <= nrel_subdividing:
+	...
+	(* 	
+		->monocratic;
+		segmental;
+		polycratic;;
+	*);;
+

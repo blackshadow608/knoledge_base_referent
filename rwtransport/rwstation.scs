@@ -1,0 +1,36 @@
+sc_node_not_relation -> rwstation;;
+
+rwstation => nrel_main_idtf:
+	[вокзал]
+	(*
+		<- lang_ru;;
+	*);
+	[rwstation]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	rwstation 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(вокзал)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [вокзал - комплекс сооружений для посадки/высадки пассажиров и/или разгрузки/погрузки грузов, первозимых железнодорожным транспортом, а также для стоянки железнодорожного транспорта.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	rwstation 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(вокзал)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Вокзал часто содержит билетные кассы.](*<- lang_ru;;*);;
+				*);;
+		*);;

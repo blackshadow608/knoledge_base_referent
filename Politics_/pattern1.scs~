@@ -1,0 +1,25 @@
+pattern1law -> [* theory _-> _variable ;; *];;
+pattern2law -> [* law _=> nrel_attribute :: _variable ;; *] ;;
+pattern3law -> [* law _=> nrel_theory_of_the_origin :: _variable
+                                                    (* _<- theory ;;
+                                                     *) ;;
+             *] ;;
+pattern4law -> [* law _=> nrel_source :: _variable ;; *] ;;
+pattern5law -> [* system_of_law _=> nrel_inclusion :: _variable ;; *] ;;
+pattern6law -> [* the_legal_system _-> _variable ;; *];;
+pattern7law -> [* state _-> _variable ;; *];;
+pattern8law -> [* the_legal_system _-> _variable
+                                    (* _<= nrel_location :: _variable2
+                                                            (* _<- state ;;
+                                                             *) ;;
+                                     *) ;;
+             *] ;;
+pattern9law -> [* the_legal_system _=> nrel_inclusion :: _variable ;; *] ;;
+pattern10law -> [* law _=> nrel_inclusion :: _variable
+                                          (* _=> nrel_inclusion :: _variable1
+                                                                   (* _=> nrel_form_of_implementation :: _variable2 ;;
+                                                                    *) ;;
+                                           *) ;; 
+              *] ;;
+section_requests -> pattern1law; pattern2law;pattern3law;pattern4law;pattern5law;pattern6law;pattern7law;pattern8law;pattern9law;pattern10law;;
+

@@ -1,0 +1,26 @@
+sc_node_not_relation -> decentralized_unitary_state;;
+
+decentralized_unitary_state => nrel_main_idtf:
+	[децентрализованное унитарное государство]
+	(* <- lang_ru;; *);
+	[decentralized unitary state]
+	(* <- lang_en;;	*);;
+
+decentralized_unitary_state
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(децентрализованное унитарное государство)]  (* <- lang_ru;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Децентрализованное унитарное государство — органы местного самоуправления самостоятельно формируются и управляются населением, органам центральной власти они прямо не подчинены, но подотчётны.]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+
+

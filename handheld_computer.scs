@@ -1,0 +1,20 @@
+//синонимы
+sc_node_not_relation -> concept_handheld_computer;;
+concept_handheld_computer => nrel_main_idtf :[карманный компьютер] (* <- lang_ru;; *);;
+concept_handheld_computer => nrel_main_idtf :[handheld computer](* <- lang_en;; *);;
+
+//определение 
+
+concept_handheld_computer <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(карманный компьютер)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Карманный персональный компьютер — портативное вычислительное устройство, обладающее широкими функциональными возможностями.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;

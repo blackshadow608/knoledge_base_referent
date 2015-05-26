@@ -1,0 +1,20 @@
+//синонимы
+sc_node_not_relation -> concept_console_computer;;
+concept_console_computer => nrel_main_idtf :[консольный компьютер] (* <- lang_ru;; *);;
+concept_console_computer => nrel_main_idtf :[workstation](* <- lang_en;; *);;
+
+//определение 
+
+concept_console_computer <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(консольный компьютер)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Консо́льный компью́тер — компьютер, выполняющий подготовительные действия, необходимые для запуска основной компьютерной системы. Такие функции могут выноситься на отдельную машину при создании «больших» компьютерных систем, например, суперкомпьютеров.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;

@@ -1,0 +1,24 @@
+sc_node_not_relation -> parliamentary_republic;;
+
+parliamentary_republic => nrel_main_idtf:
+	[парламентская республика]
+	(* <- lang_ru;; *);
+	[parliamentary republic]
+	(* <- lang_en;;	*);;
+
+parliamentary_republic
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(парламентская республика)]  (* <- lang_ru;; *);;
+	<-sc_explanation;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Парламентская республика — разновидность республики с перевесом полномочий в пользу парламента. В парламентской республике правительство отвечает только перед парламентом, а не перед президентом.]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;

@@ -1,0 +1,36 @@
+sc_node_not_relation -> publictransport;;
+
+publictransport => nrel_main_idtf:
+	[общественный транспорт]
+	(*
+		<- lang_ru;;
+	*);
+	[pipeline transport]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	publictransport 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(общественный транспорт)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [общественный транспорт -  пассажирский транспорт, доступный и востребованный к использованию широкими слоями населения.)](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	publictransport 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(общественный транспорт)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Общественный транспорт может быть наземным и подземным. ](*<- lang_ru;;*);;
+				*);;
+		*);;

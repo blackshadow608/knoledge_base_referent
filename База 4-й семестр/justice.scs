@@ -1,0 +1,13 @@
+sc_node_not_relation -> justice ;;
+
+justice => nrel_main_idtf : [justice] (* <- lang_en ;; *);
+                                      [правосудие] (* <- lang_ru ;; *) ;;
+
+justice <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Правосудие — вид правоохранительной деятельности по рассмотрению и разрешению различных категорий дел.](*<-lang_ru;;*);;
+	                                                              *) ;;
+*) ;;

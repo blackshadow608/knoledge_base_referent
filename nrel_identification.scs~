@@ -1,0 +1,21 @@
+//синонимы
+sc_node_norole_relation -> nrel_identification;;
+nrel_identification => nrel_main_idtf :[идентификация*] (* <- lang_ru;; *);;
+nrel_identification => nrel_main_idtf :[identification*](* <- lang_en;; *);;
+
+//определение 
+
+nrel_identification <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(идентификация*)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Идентифика́ция в информационных системах — процедура, в результате выполнения которой для субъекта идентификации 				выявляется его идентификатор, однозначно идентифицирующий этого субъекта в информационной системе.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+

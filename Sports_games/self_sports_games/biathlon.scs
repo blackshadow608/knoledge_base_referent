@@ -1,0 +1,38 @@
+sc_node_no_relation->biathlon;;
+biathlon => nrel_main_idtf:
+
+	[биатлон]
+	(* <- lang_ru;; *);
+
+	[biathlon]
+	(* <- lang_en;;	*);;
+
+
+biathlon
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(биатлон)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Биатлон - это зимнее спортивное двоеборье: лыжная гонка и стрельба из винтовки.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

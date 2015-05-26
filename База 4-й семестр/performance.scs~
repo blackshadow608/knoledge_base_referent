@@ -1,0 +1,13 @@
+sc_node_not_relation -> performance ;;
+
+performance => nrel_main_idtf : [performance*] (* <- lang_en ;; *);
+                                      [исполнение*] (* <- lang_ru ;; *) ;;
+
+performance <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Исполнение — это воплощение в жизнь обязывающих норм, когда субъект совершает какое-либо действие, которое ему вменялось законом в обязанность.](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;

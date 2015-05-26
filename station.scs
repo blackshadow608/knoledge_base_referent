@@ -1,0 +1,36 @@
+sc_node_not_relation -> station;;
+
+station => nrel_main_idtf:
+	[станция]
+	(*
+		<- lang_ru;;
+	*);
+	[station]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	station 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(станция)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [станция - место остановки транспорта для погрузки/выгрузки пассажиров и/или грузов.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	station 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(станция, метро)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[К станциям относятся железнодорожные станции, станции метро.](*<- lang_ru;;*);;
+				*);;
+		*);;

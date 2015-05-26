@@ -1,0 +1,40 @@
+sc_node_no_relation->lacross;;
+
+
+lacross => nrel_main_idtf:
+
+	[лакросс]
+	(* <- lang_ru;; *);
+
+	[lacross]
+	(* <- lang_en;;	*);;
+
+
+lacross
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(лакросс)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Лакросс - это командная игра, в которой две команды стремятся поразить ворота соперника резиновым мячом, пользуясь ногами и снарядом, представляющим собой нечто среднее между клюшкой и сачком.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

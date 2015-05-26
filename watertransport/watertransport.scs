@@ -1,0 +1,36 @@
+sc_node_not_relation -> watertransport;;
+
+watertransport => nrel_main_idtf:
+	[водный транспорт]
+	(*
+		<- lang_ru;;
+	*);
+	[water transport]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	watertransport 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(водный транспорт)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [водный транспорт - вид транспортa, перевозящего грузы и/или пассажиров по водным путям сообщения, как естественным (океаны, моря, реки, озера), так и искусственным (каналы, водохранилища). ](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	watertransport 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(водный транспорт, судно, транспортное средство)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[ Основным транспортным средством является судно.](*<- lang_ru;;*);;
+				*);;
+		*);;

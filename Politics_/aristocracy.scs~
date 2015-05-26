@@ -1,0 +1,25 @@
+sc_node_not_relation -> aristocracy;;
+
+aristocracy => nrel_main_idtf:
+	[аристократия]
+	(* <- lang_ru;; *);
+	[aristocracy]
+	(* <- lang_en;;	*);;
+
+aristocracy
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(аристократия)]  (* <- lang_ru;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Аристократия — форма государственного правления, при которой власть принадлежит знати (в отличие от единоличного наследственного правления монарха, единоличного выборного правления тирана или демократии). ]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+

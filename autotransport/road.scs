@@ -1,0 +1,36 @@
+sc_node_not_relation -> road;;
+
+road => nrel_main_idtf:
+	[дорога]
+	(*
+		<- lang_ru;;
+	*);
+	[road]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	road 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(дорога)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [дорога -  путь сообщения для передвижения людей и транспорта, составная часть транспортной (дорожной) инфраструктуры](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	road 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(дорога, автомагистраль)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[К доргам относять автомагистрали и железные дороги.](*<- lang_ru;;*);;
+				*);;
+		*);;

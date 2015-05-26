@@ -1,0 +1,9 @@
+sc_node_not_relation -> totalitarianism_regime;;
+
+totalitarianism_regime => nrel_main_idtf:
+	[тоталитарный режим]
+	(* <- lang_ru;; *);
+	[totalitarianism regime]
+	(* <- lang_en;;	*);;
+
+totalitarianism_regime <=> nrel_equal: totalitarianism;;

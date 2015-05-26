@@ -1,0 +1,13 @@
+sc_node_norole_relation -> nrel_source ;;
+
+nrel_source => nrel_main_idtf : [source*] (* <- lang_en ;; *);
+                                      [источник*] (* <- lang_ru ;; *) ;;
+
+nrel_source <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Источник — место, где что-либо рождается, появляется, начинает своё распространение.](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;

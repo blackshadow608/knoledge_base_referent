@@ -1,0 +1,41 @@
+sc_node_no_relation->darts;;
+
+darts => nrel_main_idtf:
+
+	[дартс]
+	(* <- lang_ru;; *);
+
+	[darts]
+	(* <- lang_en;;	*);;
+
+
+darts
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(дартс)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Дартс - это ряд связанных игр, в которых игроки метают дротики в круглую мишень, повешенную на стену.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;
+
+darts=>nrel_rules:darts_rule;;

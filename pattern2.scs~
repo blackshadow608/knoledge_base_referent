@@ -1,0 +1,76 @@
+pattern2 -> [* autotransport _<= nrel_decomposition_infra:: _var (* _-> _auto(*_<-_a(*_=> nrel_subdividing:: _a2(*_<-_add(*_=> nrel_subdividing::vehile;;*);;*);;*);;*);;*);;*];;
+pattern2 => nrel_main_idtf:
+	[Какие транспортные средства входят в автомобильный транспорт?]
+	(*
+		<- lang_ru;;
+	*);;
+
+pattern3 -> [* oil_station _<-_var(*_<=nrel_sc_text_translation:_a(*_->_asd;;*);;*);; *];;
+pattern3 => nrel_main_idtf:
+	[Что такое АЗС?]
+	(*
+		<- lang_ru;;
+	*);;
+
+pattern4 -> [* plane _-> _var (*_=> nrel_bases:: _var1 (* _<- airport;; _=> nrel_location:: Minsk;; *);;*);; 	
+			*];;
+pattern4 => nrel_main_idtf:
+	[Какие самолёты базируются в Минске?]
+	(*
+		<- lang_ru;;
+	*);;
+
+
+pattern5 -> [* road _-> _var (*_<= nrel_location:: _var1 
+														(* _<- fuelstation;;*);;
+														 
+							  *);; 	
+			*];;
+pattern5 => nrel_main_idtf:
+	[На каких дорогах есть заправки??]
+	(*
+		<- lang_ru;;
+	*);;
+
+pattern7 -> [* road _-> _var (*_<= nrel_location:: Shell ;;
+														 
+							  *);; 	
+			*];;
+pattern7 => nrel_main_idtf:
+	[На каких дорогах есть заправки Shell?]
+	(*
+		<- lang_ru;;
+	*);;
+
+pattern8 -> [* road _-> P56 (*_<= nrel_location:: _var1 
+														(* _<- fuelstation;;*) ;;
+														 
+							  *);; 	
+			*];;
+pattern8 => nrel_main_idtf:
+	[Какие заправки есть на дороге P56?]
+	(*
+		<- lang_ru;;
+	*);;
+
+
+pattern9 -> [* fuelstation _-> _var (*_=> nrel_location:: P56; M1
+														 (* _<- road;;*) ;;
+														 
+							  *);; 	
+			*];;
+pattern9 => nrel_main_idtf:
+	[Какие заправки есть на дороге P56 и M1?]
+	(*
+		<- lang_ru;;
+	*);;
+
+pattern10 -> [* airport _-> _var (*_=> nrel_location:: Minsk;;
+														 
+							  *);; 	
+			*];;
+pattern10 => nrel_main_idtf:
+	[Какие аэропорты есть в Минске?]
+	(*
+		<- lang_ru;;
+	*);;

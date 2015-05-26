@@ -1,0 +1,21 @@
+sc_node_not_relation -> institutional_political_subject;;
+
+institutional_political_subject => nrel_main_idtf:
+	[институциональный субъект политики]
+	(* <- lang_ru;; *);
+	[institutional political subject]
+	(* <- lang_en;;	*);;
+
+institutional_political_subject <= nrel_example:
+	...
+	(*  
+		<=nrel_sc_text_translation:
+		...
+	(* -> rrel_example: [Институциональные субъекты политики: государство, партия, профсоюз, парламент, президент, университет.](*<- lang_ru;;*);;
+	*);;
+*);;
+institutional_political_subject 	
+		->state;
+		sociopolitical_movement;
+		political_parties;;
+

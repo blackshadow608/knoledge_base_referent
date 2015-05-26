@@ -1,0 +1,4 @@
+sc_node_not_relation -> the_legal_system_of_the_united_kingdom ;;
+
+the_legal_system_of_the_united_kingdom => nrel_main_idtf : [the legal system of the United Kingdom] (* <- lang_en ;; *);
+                                      [правовая система Великобритании] (* <- lang_ru ;; *) ;;

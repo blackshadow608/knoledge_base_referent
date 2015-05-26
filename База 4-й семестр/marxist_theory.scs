@@ -1,0 +1,11 @@
+sc_node_not_relation -> marxist_theory ;;
+
+marxist_theory => nrel_main_idtf : [marxist theory] (* <- lang_en ;; *);
+                                      [марксистская теория] (* <- lang_ru ;; *) ;;
+
+marxist_theory => nrel_main_results : ...
+                                 (* -> ...
+                                          (* <= nrel_sc_text_translation : ...
+								     (* -> [Право связано с государством и зависит от социально-экономических факторов общества.] (* <- lang_ru ;; *) ;; *) ;;
+                                           *) ;;
+                                 *);;

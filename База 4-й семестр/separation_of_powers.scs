@@ -1,0 +1,13 @@
+sc_node_not_relation -> separation_of_powers ;;
+
+separation_of_powers => nrel_main_idtf : [separation of powers] (* <- lang_en ;; *);
+                                      [разделение властей] (* <- lang_ru ;; *) ;;
+
+separation_of_powers <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Разделение властей (законодательной, исполнительной и судебной) - один из важнейших принципов организации государственной власти и функционирования правового государства.](*<-lang_ru;;*);;
+	                                                              *) ;;
+*) ;;

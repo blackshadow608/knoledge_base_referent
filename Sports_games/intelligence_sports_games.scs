@@ -1,0 +1,40 @@
+sc_node_no_relation->intelligence_sports_games;;
+
+intelligence_sports_games => nrel_main_idtf:
+	
+	[интеллектуальные спортивные игры]
+	(* <- lang_ru;; *);
+	
+	[intelligence sports games]
+	(* <- lang_en;;	*);;
+
+
+intelligence_sports_games
+	
+	<- rrel_key_sc_element:
+	...
+	
+		(*
+	
+			=> nrel_main_idtf: [Опр.(интеллектуальные спортивные игры)]  (* <- lang_ru;; *);;
+	
+		<-sc_definition;;
+
+		<=nrel_sc_text_translation:
+	
+		...
+
+		
+			(*
+->rrel_example:
+[Интеллектуальные спортивные игры - это обобщенное название для обозначения всех видов логических, настольных, компьютерных и азартных игр.]
+			(*
+<- lang_ru;;
+*);;
+*);;
+	*);;
+
+
+intelligence_sports_games => nrel_inclusion:chess; checkers;;
+
+

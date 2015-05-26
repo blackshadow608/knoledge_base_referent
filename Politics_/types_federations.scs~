@@ -1,0 +1,77 @@
+sc_node_not_relation -> national_territorial_federation;;
+national_territorial_federation => nrel_main_idtf:
+	[национально-территориальная федерация ]
+	(* <- lang_ru;; *);
+	[national territorial federation]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> national_federation;;
+national_federation => nrel_main_idtf:
+	[национальная федерация]
+	(* <- lang_ru;; *);
+	[national federation]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> territorial_federation;;
+territorial_federationn => nrel_main_idtf:
+	[территориальная федерация]
+	(* <- lang_ru;; *);
+	[territorial federation]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> constitutional_federation;;
+constitutional_federation => nrel_main_idtf:
+	[конституционная федерация ]
+	(* <- lang_ru;; *);
+	[constitutional federation]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> negotiated_federation;;
+negotiated_federation => nrel_main_idtf:
+	[договорная федерация]
+	(* <- lang_ru;; *);
+	[negotiated federation]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> mixed_federation;;
+mixed_federation => nrel_main_idtf:
+	[смешанная федерация]
+	(* <- lang_ru;; *);
+	[mixed federation]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> symmetrical_federation;;
+symmetrical_federation => nrel_main_idtf:
+	[симметричная федерация]
+	(* <- lang_ru;; *);
+	[symmetrical federation]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> symmetrical_federation;;
+symmetrical_federation => nrel_main_idtf:
+	[асимметричная федерация]
+	(* <- lang_ru;; *);
+	[symmetrical federation]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> symmetrical_federation_with_elements_of_asymmetry;;
+symmetrical_federation_with_elements_of_asymmetry => nrel_main_idtf:
+	[симметричная федерация с элементами асимметрии ]
+	(* <- lang_ru;; *);
+	[symmetrical federation with elements of asymmetry]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> centralized;;
+centralized => nrel_main_idtf:
+	[централизованная федерация]
+	(* <- lang_ru;; *);
+	[centralized]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> decentralized;;
+decentralized => nrel_main_idtf:
+	[децентрализованная федерация]
+	(* <- lang_ru;; *);
+	[decentralized]
+	(* <- lang_en;;	*);;
+

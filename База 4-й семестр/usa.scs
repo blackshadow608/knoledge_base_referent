@@ -1,0 +1,4 @@
+sc_node_not_relation -> usa ;;
+
+usa => nrel_main_idtf : [USA] (* <- lang_en ;; *);
+                                      [США] (* <- lang_ru ;; *) ;;

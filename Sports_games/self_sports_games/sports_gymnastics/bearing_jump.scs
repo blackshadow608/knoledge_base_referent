@@ -1,0 +1,40 @@
+sc_node_no_relation->bearing_jump;;
+
+
+bearing_jump => nrel_main_idtf:
+
+	[опорный прыжок]
+	(* <- lang_ru;; *);
+
+	[bearing_jump]
+	(* <- lang_en;;	*);;
+
+
+bearing_jump
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(опорный прыжок)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Опорный прыжок - это один из видов упражнений в спортивной гимнастике.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

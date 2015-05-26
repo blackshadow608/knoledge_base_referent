@@ -1,0 +1,29 @@
+sc_node_norole_relation -> nrel_function;;
+
+nrel_function => nrel_main_idtf:
+	[функция*]
+	(* <- lang_ru;; *);
+	[function*]
+	(* <- lang_en;; *);;
+
+nrel_function<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(функция*)]  (* <- lang_ru;; *);;
+	<-sc_explanation;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Функция — термин, который означает такое отношение между элементами, в котором изменение в одном влечёт изменение в другом.]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+nrel_function <- sc_relation;;
+
+nrel_function <- binary_relation;;
+
+nrel_function <- oriented_relation;;
+

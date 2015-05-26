@@ -1,0 +1,16 @@
+sc_node_norole_relation -> nrel_use ;;
+
+nrel_use => nrel_main_idtf : [use*] (* <- lang_en ;; *);
+                                      [использование*] (* <- lang_ru ;; *) ;;
+
+nrel_use <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Использование — активная реализация субъектами: гражданами, организациями, государственными органами тех возможностей, которые заключены в праве, то есть использование тех субъективных прав, которые закреплены в праве.](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;
+
+nrel_use => nrel_first_domain : human ;;
+nrel_use => nrel_second_domain : law ;;

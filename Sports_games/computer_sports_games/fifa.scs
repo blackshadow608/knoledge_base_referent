@@ -1,0 +1,39 @@
+sc_node_not_relation->fifa;;
+
+
+fifa => nrel_main_idtf:
+
+	[Фифа]
+	(* <- lang_ru;; *);
+
+	[Fifa]
+	(* <- lang_en;;	*);;
+
+
+fifa
+<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(Фифа)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Фифа - серия симуляторов футбола, которая разрабатывается студией EA Canada, входящей в состав корпорации Electronic Arts. Игры издаются под брендом EA Sports™, каждый год выходит новое издание, включающее в себя изменения, произошедшие в футбольном мире за год.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

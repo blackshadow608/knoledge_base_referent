@@ -1,0 +1,67 @@
+//синонимы
+sc_node_not_relation -> concept_IP;;
+concept_IP => nrel_main_idtf :[IP-адрес ] (* <- lang_ru;; *);;
+concept_IP => nrel_main_idtf :[Internet Protocol Address](* <- lang_en;; *);;
+
+//определение 
+
+concept_IP <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(IP-адрес )]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[IP-адрес (айпи-адрес, сокращение от англ. Internet Protocol Address) — уникальный сетевой адрес узла в компьютерной 				сети, построенной по протоколу IP.  ]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+// иерархия связи с другими понтиями   
+
+concept_data_communication_protocol => nrel_inclusion: concept_IP;;
+
+//утверждения
+
+concept_IP <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(доменное имя;IP‐адрес;сеть)] (* <- lang_ru;; *);;
+-> rrel_main_key_sc_element: stat_file_hosting;; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Одно доменное имя может преобразовываться поочерёдно в несколько IP‐адресов (для распределения нагрузки).]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(IP‐адрес;индентификация;веб-сайт)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Одновременно, один IP‐адрес может использоваться для тысяч доменных имён с разными сайтами (тогда при доступе они различаются по доменному имени), что вызывает проблемы при идентификации сайтов по IP‐адресу в целях цензуры ](* <- lang_ru;; *);;
+*);;
+*);;
+
+//комментарий
+concept_IP <- rrel_key_sc_element: 
+        ...
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_comment: 
+		...
+		(*
+		-> rrel_example: 
+			[Каждый раз, когда пользовательский компьютер запрашивает у сервера веб-страницу, сервер определяет и, как правило, протоколирует IP-адрес, с которого поступил запрос.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;

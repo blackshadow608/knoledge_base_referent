@@ -1,0 +1,51 @@
+//синонимы
+sc_node_not_relation -> concept_online_shop;;
+concept_online_shop => nrel_main_idtf :[интернет-магазин] (* <- lang_ru;; *);;
+concept_online_shop => nrel_main_idtf :[online shop](* <- lang_en;; *);;
+
+//определение 
+
+concept_online_shop <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(интернет-магазин)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Интернет-магазин (англ. online shop или e-shop) — сайт, торгующий товарами посредством сети Интернет.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+// иерархия связи с другими понтиями   
+concept_online_chat  -> concept_online_shop;;
+
+//утверждения
+
+concept_online_shop <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(интернет-магазин;поставщик)] (* <- lang_ru;; *);; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Отношения интернет-магазина и поставщика — одна из важнейших составляющих коммерческой деятельности в Интернете.]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(интернет-магазин;SEO;товар)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[При SEO оптимизации интернет-магазина необходимо понимать, что при всей Вашей привлекательности для глаз поисковой машины — она у Вас товар покупать не будет.](* <- lang_ru;; *);;
+*);;
+*);;

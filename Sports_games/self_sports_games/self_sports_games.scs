@@ -1,0 +1,39 @@
+sc_node_no_relation->self_sports_games;;
+self_sports_games => nrel_main_idtf:
+	
+	[индивидуальные спортивные игры]
+	(* <- lang_ru;; *);
+	
+	[self sports games]
+	(* <- lang_en;;	*);;
+
+
+self_sports_games
+	
+	<- rrel_key_sc_element:
+	...
+	
+		(*
+	
+			=> nrel_main_idtf: [Опр.(индивидуальные спортивные игры)]  (* <- lang_ru;; *);;
+	
+		<-sc_definition;;
+
+		<=nrel_sc_text_translation:
+	
+		...
+
+		
+			(*
+->rrel_example:
+[Индивидуальные спортивные игры - это спортивные игрые, в которых стороны соперничества представлены в виде одного единственного игрока.]
+			(*
+<- lang_ru;;
+*);;
+*);;
+	*);;
+
+
+self_sports_games => nrel_inclusion: gymnastics; badminton; biathlon; billiards; bodybilding; bowling; boxing; checkers; chess; cricket; darts; fight; golf; table_tennis; tennis; ski_race; snowboard; tobbogan;;
+
+

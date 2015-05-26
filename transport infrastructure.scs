@@ -1,0 +1,23 @@
+sc_node_not_relation ->transportinfrastructure;;
+
+		transportinfrastructure => nrel_main_idtf:
+	[транспортная инфраструктура]
+	(*
+		<- lang_ru;;
+	*);
+	[transport infrastructure]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	transportinfrastructure 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(транспортная инфраструктура)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [Транспортная инфраструктура - совокупность всех отраслей и предприятий транспорта, как выполняющих перевозки, так и обеспечивающих их выполнение и обслуживание.](*<- lang_ru;;*);;
+				*);;
+		*);;

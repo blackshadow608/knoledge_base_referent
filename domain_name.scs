@@ -1,0 +1,63 @@
+//синонимы
+sc_node_not_relation -> concept_domain_name;;
+concept_domain_name => nrel_main_idtf :[доменное имя] (* <- lang_ru;; *);;
+concept_domain_name => nrel_main_idtf :[domain name](* <- lang_en;; *);;
+
+//определение 
+
+concept_domain_name <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(доменное имя)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Доме́нное и́мя — символьное имя, служащее для идентификации областей — единиц административной автономии в сети 				Интернет — в составе вышестоящей по иерархии такой области. Каждая из таких областей называется доме́ном. ]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+// иерархия связи с другими понтиями 
+
+
+concept_domain_name <= nrel_subdividing :
+...
+(*
+	-> concept_level1 (* => nrel_main_idtf :[" ." 0-й (корневой) уровень] (* <- lang_ru;; *);; *);;
+	-> concept_level2 (* => nrel_main_idtf :[" com " 1-й (верхний) уровень] (* <- lang_ru;; *);; *);;
+	-> concept_level3 (* => nrel_main_idtf :[" example " 2-й уровень] (* <- lang_ru;; *);; *);;
+	-> concept_level4 (* => nrel_main_idtf :[" office4 " 3-й уровень] (* <- lang_ru;; *);; *);;
+	-> concept_level5 (* => nrel_main_idtf :[" gtw-02 " 4-й уровень] (* <- lang_ru;; *);; *);;
+	-> concept_level6 (* => nrel_main_idtf :["sample " 5-й уровень] (* <- lang_ru;; *);; *);;
+*);;
+
+
+
+//утверждения
+concept_domain_name <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(доменное имя;DNS;интернет-узел)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Общее пространство имён Интернета функционирует благодаря DNS — системе доменных имён. Доменные имена дают возможность адресации интернет-узлов и расположенных на них сетевых ресурсов (веб-сайтов, серверов электронной почты, других служб) в удобной для человека форме.]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(доменное имя;точка)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Полное доменное имя состоит из непосредственного имени домена и далее имён всех доменов, в которые он входит, разделённых точками.](* <- lang_ru;; *);;
+*);;
+*);;

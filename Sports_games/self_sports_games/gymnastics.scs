@@ -1,0 +1,40 @@
+sc_node_no_relation->gymnastics;;
+gymnastics => nrel_main_idtf:
+
+	[гимнастика]
+	(* <- lang_ru;; *);
+
+	[gymnastics]
+	(* <- lang_en;;	*);;
+
+
+gymnastics
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(гимнастика)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Гимнастика - это cовокупность упражнений для физического развития организма.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;
+
+gymnastics=>nrel_subdividing:art_gymnastics; sports_gymnastics;;

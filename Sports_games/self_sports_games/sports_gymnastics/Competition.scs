@@ -1,0 +1,42 @@
+/*sc_node_no_relation->competition;;
+
+
+competition => nrel_main_idtf:
+
+	[соревнование]
+	(* <- lang_ru;; *);
+
+	[competition]
+	(* <- lang_en;;	*);;
+
+
+competition
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(соревнование)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Соревнование - это та или иная деятельность (работа, игра и т. п.), в к-рой участвующие стремятся превзойти друг друга в мастерстве, в искусстве. ]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;
+
+competition<=nrel_inclusion:acrobatics_road; across_the_hourse; bearing_jump; climbing_rope; crossbar;  exercises_with_stuff; free_exercises; hourse; maces; parallel_bars; rings; team_bars; team_crossbar;;*/

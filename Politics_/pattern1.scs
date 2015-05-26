@@ -1,0 +1,75 @@
+pattern1law -> [* theory _-> _variable ;; *];;
+pattern2law -> [* law _=> nrel_attribute :: _variable ;; *] ;;
+pattern3law -> [* law _=> nrel_theory_of_the_origin :: _variable
+                                                    (* _<- theory ;;
+                                                     *) ;;
+             *] ;;
+pattern4law -> [* law _=> nrel_source :: _variable ;; *] ;;
+pattern5law -> [* system_of_law _=> nrel_inclusion :: _variable ;; *] ;;
+pattern6law -> [* the_legal_system _-> _variable ;; *];;
+pattern7law -> [* state _-> _variable ;; *];;
+pattern8law -> [* the_legal_system _-> _variable
+                                    (* _<= nrel_location :: _variable2
+                                                            (* _<- state ;;
+                                                             *) ;;
+                                     *) ;;
+             *] ;;
+pattern9law -> [* the_legal_system _=> nrel_inclusion :: _variable ;; *] ;;
+pattern10law -> [* law _=> nrel_inclusion :: _variable
+                                          (* _=> nrel_inclusion :: _variable1
+                                                                   (* _=> nrel_form_of_implementation :: _variable2 ;;
+                                                                    *) ;;
+                                           *) ;; 
+              *] ;;
+section_requests -> pattern1law; pattern2law;pattern3law;pattern4law;pattern5law;pattern6law;pattern7law;pattern8law;pattern9law;pattern10law;;
+
+pattern1law => nrel_main_idtf:
+	[Какие существуют теории?]
+	(*
+		<- lang_ru;;
+	*);;
+pattern2law => nrel_main_idtf:
+	[Какие существуют признаки права?]
+	(*
+		<- lang_ru;;
+	*);;
+pattern3law => nrel_main_idtf:
+	[Какие существуют теории происхождения права?]
+	(*
+		<- lang_ru;;
+	*);;
+pattern4law => nrel_main_idtf:
+	[Какие существуют источники права?]
+	(*
+		<- lang_ru;;
+	*);;
+pattern5law => nrel_main_idtf:
+	[Что является элементами системы права?]
+	(*
+		<- lang_ru;;
+	*);;
+pattern6law => nrel_main_idtf:
+	[Какие существуют правовые системы?]
+	(*
+		<- lang_ru;;
+	*);;
+pattern7law => nrel_main_idtf:
+	[Какие существуют государства?]
+	(*
+		<- lang_ru;;
+	*);;
+pattern8law => nrel_main_idtf:
+	[Где действуют правовые системы?]
+	(*
+		<- lang_ru;;
+	*);;
+pattern9law => nrel_main_idtf:
+	[Что является элементами правовой системы?]
+	(*
+		<- lang_ru;;
+	*);;
+pattern10law => nrel_main_idtf:
+	[Какие существуют формы реализации права?]
+	(*
+		<- lang_ru;;
+	*);;

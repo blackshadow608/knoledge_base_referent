@@ -1,0 +1,14 @@
+sc_node_not_relation -> national_law ;;
+
+national_law => nrel_main_idtf : [national law] (* <- lang_en ;; *);
+                                      [национальное право] (* <- lang_ru ;; *) ;;
+
+national_law <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Национальное право образует совокупный массив отраслей права, регулирующих отношения внутри одного государства и отличающихся своеобразием национальных, исторических и культурных особенностей конкретного народа.](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;
+

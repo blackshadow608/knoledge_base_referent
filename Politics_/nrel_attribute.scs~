@@ -1,0 +1,13 @@
+sc_node_norole_relation -> nrel_attribute;;
+
+nrel_attribute => nrel_main_idtf:
+	[признак*]
+	(* <- lang_ru;; *);
+	[attribute*]
+	(* <- lang_en;; *);;
+nrel_attribute <- sc_relation;;
+
+nrel_attribute <- binary_relation;;
+
+nrel_attribute <- oriented_relation;;
+

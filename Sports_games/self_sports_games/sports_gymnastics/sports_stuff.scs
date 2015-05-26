@@ -1,0 +1,12 @@
+sc_node_no_relation->sports_stuff;;
+
+
+sports_stuff => nrel_main_idtf:
+
+	[спортивный снаряд]
+	(* <- lang_ru;; *);
+
+	[sports stuff]
+	(* <- lang_en;;	*);;
+
+sports_stuff=>nrel_inclusion: acrobatics_road; climbing_rope; crossbar; hourse; maces; parallel_bars; rings;;

@@ -1,0 +1,20 @@
+//синонимы
+sc_node_not_relation -> concept_system_software;;
+concept_system_software => nrel_main_idtf :[прикладное программное обеспечение] (* <- lang_ru;; *);;
+concept_system_software => nrel_main_idtf :[system software](* <- lang_en;; *);;
+
+//определение 
+
+concept_system_software <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(прикладное программное обеспечениее)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Систе́мное програ́ммное обеспе́чение — комплекс программ, которые обеспечивают управление компонентами компьютерной системы, такими как процессор, оперативная память, устройства ввода-вывода, сетевое оборудование, выступая как «межслойный интерфейс», с одной стороны которого аппаратура, а с другой — приложения пользователя. ]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;

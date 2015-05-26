@@ -1,0 +1,26 @@
+//
+sc_node_norole_relation -> nrel_location;;
+nrel_location => nrel_main_idtf :[размещение*] (* <- lang_ru;; *);;
+nrel_location => nrel_main_idtf :[location*](* <- lang_en;; *);;
+
+//определение 
+
+nrel_location <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(размещение*)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Размещение — это отношение , связывающее объект и его месторазмещение.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+
+//домены
+
+nrel_location <= nrel_first_domain: concept_object;;
+nrel_location <= nrel_second_domain: concept_place_of_location;;

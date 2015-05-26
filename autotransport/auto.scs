@@ -1,0 +1,36 @@
+sc_node_not_relation -> auto;;
+auto => nrel_main_idtf:
+	[автомобиль]
+	(*
+		<- lang_ru;;
+	*);
+	[auto]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	auto 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(Автомобиль)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [Автомобиль - моторное безрельсовое дорожное транспортное средствоминимум с 3 колёсами.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	auto 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(транспортное средство, автомобиль)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Автомобиль является одним из самых массовых транспортных средств. ](*<- lang_ru;;*);;
+				*);;
+		*);;
+		auto <= nrel_transportation: passenger;;

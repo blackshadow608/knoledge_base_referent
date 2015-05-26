@@ -1,0 +1,53 @@
+//синонимы
+sc_node_not_relation -> concept_proxy;;
+concept_proxy => nrel_main_idtf :[прокси-сервер] (* <- lang_ru;; *);;
+concept_proxy => nrel_main_idtf :[proxy](* <- lang_en;; *);;
+
+//определение 
+
+concept_proxy <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(прокси-сервер)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Прокси-сервер (от англ. proxy — «представитель, уполномоченный») — служба (комплекс программ) в компьютерных сетях, 				позволяющая клиентам выполнять косвенные запросы к другим сетевым службам.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+// иерархия связи с другими понтиями   
+
+concept_proxy => nrel_typical_structure: concept_computer_network; concept_anonymizer; nrel_claim;;
+
+//утверждения
+
+concept_proxy <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(доступ;применение;сеть)] (* <- lang_ru;; *);; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Обеспечение доступа компьютеров локальной сети к сети Интернет.]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(кэш;копия;прокси-сервер;сеть)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Кэширование данных: если часто происходят обращения к одним и тем же внешним ресурсам, то можно держать их копию на прокси-сервере и выдавать по запросу, снижая тем самым нагрузку на канал во внешнюю сеть и ускоряя получение клиентом запрошенной информации.](* <- lang_ru;; *);;
+*);;
+*);;
+

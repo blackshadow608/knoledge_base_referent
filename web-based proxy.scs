@@ -1,0 +1,53 @@
+//синонимы
+sc_node_not_relation -> concept_web_based_proxy;;
+concept_web_based_proxy => nrel_main_idtf :[веб-прокси] (* <- lang_ru;; *);;
+concept_web_based_proxy => nrel_main_idtf :[web-based proxy](* <- lang_en;; *);;
+
+//определение 
+
+concept_web_based_proxy <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(веб-прокси)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Веб-прокси (англ. «web-based proxy») — это прокси-сервер и анонимайзер особого вида, представляющий собой 				веб-приложение (чаще всего PHP или Perl скрипт) установленное на веб-сервере, выступающее в роли посредника для 			загрузки контента различных веб-сайтов.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+// иерархия связи с другими понтиями   
+concept_web_based_proxy <= nrel_inclusion: concept_proxy;;
+
+
+//утверждения
+
+
+concept_system <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(доступ;веб-прокси;веб-сайт)] (* <- lang_ru;; *);; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Веб-прокси могут быть использованы для ускорения загрузки веб-сайтов.]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(веб-прокси;пользователь;веб-сервер;IP)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Веб-прокси устанавливается на веб-сервере и обеспечивает возможность его пользователям загружать произвольные веб-ресурсы от IP адреса этого сервера, что и обеспечивает анонимность веб-сёрфинга.](* <- lang_ru;; *);;
+*);;
+*);;

@@ -1,0 +1,29 @@
+sc_node_no_relation->kind_of_sport;;
+kind_of_sport => nrel_main_idtf:
+	[виды спорта]
+	(* <- lang_ru;; *);
+	[kinds of sport]
+	(* <- lang_en;;	*);;
+
+kind_of_sport
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(виды спорта)]  (* <- lang_ru;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+
+		(*
+		->rrel_example:
+			[Виды спорта - это отдельные, самостоятельные категории спорта.]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+
+
+kind_of_sport => nrel_inclusion: art_gymnastics; badminton; biathlon; billiards; bowling; bodybilding; boxing; darts; gymnastics; checkers; chess; cricket; fight; free_fight; golf; judo; sports_gymnastics; table_tennis; tennis; sumo; basketball; bobsled; football; hockey; lacross; handball; volleyball; ski_race; snowboard; tobbogan; curling;;
+
+kind_of_sport => nrel_subdividing:{intelligence_sports_games; computer_sports_games; summer_sports_games; winter_sports_games; self_sports_games; gaming_kinds_of_sport; olympics_kinds_of_sport; team_sports_games};;

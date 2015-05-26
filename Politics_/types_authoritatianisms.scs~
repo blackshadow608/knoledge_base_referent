@@ -1,0 +1,41 @@
+sc_node_not_relation -> militarybureaucratic_regime;;
+nmilitarybureaucratic_regime => nrel_main_idtf:
+	[военно-бюрократический режим ]
+	(* <- lang_ru;; *);
+	[militarybureaucratic regime]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> corporate_authoritarianism;;
+corporate_authoritarianism=> nrel_main_idtf:
+	[корпоративный авторитаризм]
+	(* <- lang_ru;; *);
+	[corporate authoritarianism]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> dtotalitarny_authoritarianism;;
+dtotalitarny_authoritarianism => nrel_main_idtf:
+	[дототалитарный авторитаризм]
+	(* <- lang_ru;; *);
+	[totalitarny authoritarianism]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> the_postcolonial_authoritarianism;;
+the_postcolonial_authoritarianism => nrel_main_idtf:
+	[постколониальный авторитаризм]
+	(* <- lang_ru;; *);
+	[the postcolonial authoritarianism]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> racial_quasidemocracy;;
+racial_quasidemocracy => nrel_main_idtf:
+	[расовая, или этническая, квазидемократия]
+	(* <- lang_ru;; *);
+	[racial quasidemocracy]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> sultanistic_mode;;
+sultanistic_mode => nrel_main_idtf:
+	[султанистский режим]
+	(* <- lang_ru;; *);
+	[sultanistic mode]
+	(* <- lang_en;;	*);;

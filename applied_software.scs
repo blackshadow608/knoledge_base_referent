@@ -1,0 +1,20 @@
+//синонимы
+sc_node_not_relation -> concept_applied_software;;
+concept_applied_software => nrel_main_idtf :[прикладное программное обеспечение] (* <- lang_ru;; *);;
+concept_applied_software => nrel_main_idtf :[applied software](* <- lang_en;; *);;
+
+//определение 
+
+concept_applied_software <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(прикладное программное обеспечениее)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Прикладная программа или приложение — программа, предназначенная для выполнения определенных задач и рассчитанная на непосредственное взаимодействие с пользователем. ]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;

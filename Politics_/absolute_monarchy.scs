@@ -1,0 +1,29 @@
+sc_node_not_relation -> absolute_monarchy;;
+
+absolute_monarchy => nrel_main_idtf:
+	[абсолютная монархия]
+	(* <- lang_ru;; *);
+	[absolute monarchy]
+	(* <- lang_en;;	*);;
+
+absolute_monarchy
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(абсолютная монархия)]  (* <- lang_ru;; *);;
+	<-sc_explanation;;
+	<=nrel_sc_text_translation:
+		...
+
+		(*
+		->rrel_example:
+			[Абсолютная монархия — разновидность монархической формы правления, близкой к диктатуре, при которой вся полнота государственной (законодательной, исполнительной, судебной, военной), а иногда и духовной (религиозной) власти находится в руках монарха.]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+
+
+
+

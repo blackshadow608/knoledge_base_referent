@@ -1,0 +1,21 @@
+//синонимы
+sc_node_not_relation -> concept_yahoo;;
+concept_yahoo => nrel_main_idtf :[Yahoo!] (* <- lang_ru;; *);;
+concept_yahoo => nrel_main_idtf :[Yahoo!](* <- lang_en;; *);;
+
+
+//определение 
+
+concept_yahoo <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(yahoo)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Yahoo! — американская компания, владеющая второй по популярности и предоставляющая ряд сервисов, объединённых интернет-порталом Yahoo! Directory.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;

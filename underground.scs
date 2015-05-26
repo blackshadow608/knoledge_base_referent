@@ -1,0 +1,47 @@
+sc_node_not_relation -> underground;;
+
+underground => nrel_main_idtf:
+	[метро]
+	(*
+		<- lang_ru;;
+	*);
+	[underground]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	underground 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(метро)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [Метро - вид подземного транспорта, предназначенный для перевозки пассажиров.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	underground 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(метро)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Линии метро обычно образуют каркас общественного транспорта города.](*<- lang_ru;;*);;
+				*);;
+		*);;
+	underground 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(метро)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Первая линия метро длиной 6 километров была построена в Лондрне и запущена 10 января 1863 года.](*<- lang_ru;;*);;
+				*);;
+		*);;

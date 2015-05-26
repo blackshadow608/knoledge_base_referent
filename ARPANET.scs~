@@ -1,0 +1,79 @@
+//
+sc_node_not_relation -> concept_arpanet;;
+concept_arpanet => nrel_main_idtf :[ARPANET] (* <- lang_ru;; *);;
+concept_arpanet => nrel_main_idtf : [Advanced Research Projects Agency Network](* <- lang_en;; *);;
+
+//определение 
+concept_arpanet <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(ARPANET)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ARPANET  — компьютерная сеть, созданная в 1969 году в США Агентством Министерства обороны США по перспективным исследованиям (DARPA) и явившаяся прототипом сети Интернет.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+
+// иерархия связи с другими понтиями 
+
+concept_internet => nrel_prototip : concept_arpanet;;
+
+
+
+concept_arpanet <- rrel_key_sc_element:
+...
+(*
+<- sc_explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+"file://image/apparnet.png";;
+*);;
+*);;
+//утверждения
+
+concept_arpanet <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(ARPANET;история;интернет)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[1 января 1983 года она стала первой в мире сетью, перешедшей на маршрутизацию пакетов данных. В качестве маршрутизируемого протокола использовался TCP/IP, который и по сей день является основным протоколом передачи данных в сети Интернет.]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(ARPA;компьютерная сеть)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[В 1969 году Министерство обороны США посчитало, что на случай войны Америке нужна надёжная система передачи информации. Агентство передовых исследовательских проектов (ARPA) предложило разработать для этого компьютерную сеть.](* <- lang_ru;; *);;
+*);;
+*);;
+
+//комментарий 
+concept_arpanet <- rrel_key_sc_element: 
+        ...
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_comment: 
+		...
+		(*
+		-> rrel_example: 
+			[Первый сервер ARPANET был установлен 2 сентября 1969 года в Калифорнийском университете (Лос-Анджелес). ]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;

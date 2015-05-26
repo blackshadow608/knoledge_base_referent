@@ -1,0 +1,44 @@
+nrel_means_of_transportation
+	<-sc_node_norole_relation;
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(средсво транспортировки*)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Средство транспортировки - транспортное средство, используемое для транспортировки груза.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+		nrel_means_of_transportation<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(средсво транспортировки*, груз)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Для одного вида груза могут быть разные средства транспортировки.](*<- lang_ru;;*);;
+				*);;
+		*);;
+	nrel_means_of_transportation => nrel_main_idtf:
+	[средсво транспортировки*]
+	(*
+		<- lang_ru;;
+	*);	
+	[means_of_transportation]
+	(*
+		<- lang_en;;
+	*);;
+
+	vehile <= nrel_first_domain: nrel_means_of_transportation;;
+	load <= nrel_second_domain: nrel_means_of_transportation;;
+
+	sc_node_not_relation ->container;;
+	load -> container;;
+	container => nrel_main_idtf:
+	[контейнер]
+	(*<- lang_ru;;*);;
+	transport_ship => nrel_means_of_transportation: container;;
+	trane => nrel_means_of_transportation: container;;

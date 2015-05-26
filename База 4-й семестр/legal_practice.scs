@@ -1,0 +1,14 @@
+sc_node_not_relation -> legal_practice ;;
+
+legal_practice => nrel_main_idtf : [legal practice] (* <- lang_en ;; *);
+                                      [правовая практика] (* <- lang_ru ;; *) ;;
+
+legal_practice <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Правовая практика — процесс осуществления правовых предписаний, воплощения этих предписаний в жизнь, в поведение людей и конечный результат данного процесса.](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;
+

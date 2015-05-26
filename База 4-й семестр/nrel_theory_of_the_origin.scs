@@ -1,0 +1,4 @@
+sc_node_norole_relation -> nrel_theory_of_the_origin ;;
+
+nrel_theory_of_the_origin => nrel_main_idtf : [theory of the origin*] (* <- lang_en ;; *);
+                                      [теория происхождения*] (* <- lang_ru ;; *) ;;

@@ -1,0 +1,12 @@
+logic3 => nrel_main_idtf :[Некоторые пассажиры перевозяться общественным транспортом.] (* <- lang_ru;; *);;
+logic3 -> ..node1_logic3;;
+logic3 -> ..node2_logic3;;
+..node1_logic3 _=> nrel_implication: ..node2_logic3;;
+..node1_logic3 ->  [* _x _<- public_vehile;;
+				_passenger1 _<- passenger;; *] (* <- concept_atomic_existence ;;*) ;;
+..node2_logic3 ->  [* _x _<= nrel_transportation: _passenger1;; *] (* <- concept_atomic_existence ;;*) ;;
+_passenger1   => nrel_main_idtf:
+	[пассажир_1]
+	(*
+		<- lang_ru;;
+	*);;	

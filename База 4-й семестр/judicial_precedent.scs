@@ -1,0 +1,21 @@
+sc_node_not_relation -> judicial_precedent ;;
+
+judicial_precedent => nrel_main_idtf : [judicial precedent] (* <- lang_en ;; *);
+                                      [судебный прецедент] (* <- lang_ru ;; *) ;;
+
+judicial_precedent <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Судебный прецедент — решение определённого суда по конкретному делу, устанавливающее, изменяющее или отменяющее правовые нормы.](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;
+
+judicial_precedent => nrel_main_results : ...
+                                 (* -> ...
+                                          (* <= nrel_sc_text_translation : ...
+								     (* -> [В качестве источника права прецедент доминирует в системах общего права.] (* <- lang_ru ;; *) ;; *) ;;
+                                           *) ;;
+                                 *);;
+

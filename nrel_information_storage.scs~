@@ -1,0 +1,56 @@
+//синонимы
+sc_node_norole_relation -> nrel_information_storage;;
+nrel_information_storage => nrel_main_idtf :[хранение данных*] (* <- lang_ru;; *);;
+nrel_information_storage => nrel_main_idtf :[information storage](* <- lang_en;; *);;
+
+//определение 
+
+nrel_information_storage <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(хранение данных*)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Сеть хранения данных — представляет собой архитектурное решение для подключения внешних устройств хранения данных, 				таких как дисковые массивы, ленточные библиотеки, оптические приводы к серверам таким образом, чтобы операционная 				система распознала подключённые ресурсы как локальные.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+
+//утверждения
+
+
+nrel_information_storage <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(хранимые данные;устройство;SAN)] (* <- lang_ru;; *);; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[SAN характеризуются предоставлением так называемых сетевых блочных устройств (обычно посредством протоколов Fibre Channel, iSCSI или AoE), в то время как сетевые хранилища данных (англ. Network Attached Storage, NAS) нацелены на предоставление доступа к хранящимся на их файловой системе данным при помощи сетевой файловой системы.]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(система хранение;администрирование*; кабель)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Совместное использование систем хранения, как правило, упрощает администрирование и добавляет изрядную гибкость, поскольку кабели и дисковые массивы не нужно физически транспортировать и перекоммутировать от одного сервера к другому.](* <- lang_ru;; *);;
+*);;
+*);;
+
+//домены
+
+nrel_information_storage <= nrel_first_domain: concept_data;;
+nrel_information_storage <= nrel_second_domain: concept_place_of_storage (*=> nrel_main_idtf: [место хранения] (* <- lang_ru;; *);;  *);;
+

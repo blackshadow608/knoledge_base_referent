@@ -1,0 +1,26 @@
+//
+sc_node_not_relation -> concept_commuted_internet_line;;
+concept_commuted_internet_line => nrel_main_idtf :[проводное модемное подключение] (* <- lang_ru;; *);;
+concept_commuted_internet_line => nrel_main_idtf :[commuted modem internet line](* <- lang_en;; *);;
+
+//иерархия
+concept_commuted_internet_line <= nrel_typical_structure: concept_modem; concept_computer ; concept_cable;;
+
+//определение 
+concept_commuted_internet_line <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(проводное модемное подключение)]  (* 		<- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Проводное модемное подключение - для этого соединения вам потребуется телефонная линия и модем.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+
+
+

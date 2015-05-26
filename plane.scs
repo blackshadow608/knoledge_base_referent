@@ -1,0 +1,36 @@
+sc_node_not_relation -> plane;;
+
+plane => nrel_main_idtf:
+	[самолёт]
+	(*
+		<- lang_ru;;
+	*);
+	[plane]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	plane 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(самолёт)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [ Самолёт  воздушное судно, предназначенное для полётов в атмосфере с помощью силовой установки, создающей тягу, и неподвижного относительно других частей аппарата крыла, создающегоподъёмную силу](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	plane 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(самолёт)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Самолёт изобрели братья Райт.](*<- lang_ru;;*);;
+				*);;
+		*);;

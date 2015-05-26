@@ -1,0 +1,72 @@
+
+sc_node_not_relation -> bourgeois;;
+bourgeois => nrel_main_idtf:
+	[буржуазная партия]
+	(* <- lang_ru;; *);
+	[bourgeois]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> reconciling;;
+reconciling=> nrel_main_idtf:
+	[примиряющая партия]
+	(* <- lang_ru;; *);
+	[reconciling]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> mass;;
+mass => nrel_main_idtf:
+	[массовая партия]
+	(* <- lang_ru;; *);
+	[mass]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> personnel;;
+personnel => nrel_main_idtf:
+	[кадровая партия]
+	(* <- lang_ru;; *);
+	[personnel]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> ruling;;
+ruling => nrel_main_idtf:
+	[правящая партия]
+	(* <- lang_ru;; *);
+	[ruling]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> opposition;;
+opposition => nrel_main_idtf:
+	[оппозиционная партия]
+	(* <- lang_ru;; *);
+	[opposition]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> right;;
+right => nrel_main_idtf:
+	[правая партия]
+	(* <- lang_ru;; *);
+	[right]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> centrist;;
+centrist => nrel_main_idtf:
+	[центристская партия]
+	(* <- lang_ru;; *);
+	[centrist]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> left;;
+left => nrel_main_idtf:
+	[левая партия]
+	(* <- lang_ru;; *);
+	[left]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> mixed;;
+mixed => nrel_main_idtf:
+	[смешанная партия]
+	(* <- lang_ru;; *);
+	[mixed]
+	(* <- lang_en;;	*);;
+
+

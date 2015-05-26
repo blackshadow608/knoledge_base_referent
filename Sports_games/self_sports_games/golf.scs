@@ -1,0 +1,38 @@
+sc_node_no_relation->golf;;
+golf => nrel_main_idtf:
+
+	[гольф]
+	(* <- lang_ru;; *);
+
+	[golf]
+	(* <- lang_en;;	*);;
+
+
+golf
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(гольф)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Гольф - это игра в мяч с клюшками, цель которой — прогнать мяч по дорожкам и лункам, попав в каждую из них меньшим числом ударов.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

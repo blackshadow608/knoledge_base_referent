@@ -1,0 +1,36 @@
+sc_node_not_relation -> load;;
+
+load => nrel_main_idtf:
+	[груз]
+	(*
+		<- lang_ru;;
+	*);
+	[load]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	load 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(груз)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [груз - перемещаемы в пространсве объект при помощи транспортных средств.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	load 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(груз, транспортное средство)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Перевозящие грузы транспортные средства часто называют грузовыми.](*<- lang_ru;;*);;
+				*);;
+		*);;

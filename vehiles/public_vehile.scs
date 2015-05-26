@@ -1,0 +1,36 @@
+sc_node_not_relation -> public_vehile;;
+
+public_vehile => nrel_main_idtf:
+	[общественное транспортное средство]
+	(*
+		<- lang_ru;;
+	*);
+	[public vehile]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	public_vehile 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(общественное транспортное средство)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [общественное транспортное средство -  техническое устройство для перевозки людей и/или грузов .](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	public_vehile 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(общественное транспортное средство, судно)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Транспортное средство, которое в качестве опоры при передвижении использует газообразную или жидкую среду, называют судном . ](*<- lang_ru;;*);;
+				*);;
+		*);;

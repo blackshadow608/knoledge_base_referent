@@ -1,0 +1,12 @@
+sc_node_norole_relation -> nrel_rules;;
+
+nrel_rules => nrel_main_idtf:
+	[правила*]
+	(* <- lang_ru;; *);
+	[rules*]
+	(* <- lang_en;; *);;
+nrel_rules <- sc_relation;;
+
+nrel_rules <- binary_relation;;
+
+nrel_rules <- oriented_relation;;

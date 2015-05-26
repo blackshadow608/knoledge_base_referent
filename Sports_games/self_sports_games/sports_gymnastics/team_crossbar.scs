@@ -1,0 +1,40 @@
+sc_node_no_relation->team_crossbar;;
+
+
+team_crossbar => nrel_main_idtf:
+
+	[командные перекладины]
+	(* <- lang_ru;; *);
+
+	[team_crossbar]
+	(* <- lang_en;;	*);;
+
+
+team_crossbar
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(командные перекладины)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Командные перекладины - это один из видов упражнений в спортивной гимнастике.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

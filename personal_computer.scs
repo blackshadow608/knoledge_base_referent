@@ -1,0 +1,32 @@
+//синонимы
+sc_node_not_relation -> concept_personal_computer;;
+concept_personal_computer => nrel_main_idtf :[персональный компьютер] (* <- lang_ru;; *);;
+concept_personal_computer => nrel_main_idtf :[personal computer](* <- lang_en;; *);;
+
+//определение 
+
+concept_personal_computer <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(персональный компьютер)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Персональный компьютер — настольная микро-ЭВМ, имеющая эксплуатационные характеристики бытового прибора и универсальные функциональные возможности.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+concept_personal_computer <- rrel_key_sc_element:
+...
+(*
+<- sc_explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+"file://image/computer.jpg";;
+*);;
+*);;

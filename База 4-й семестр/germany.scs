@@ -1,0 +1,4 @@
+sc_node_not_relation -> germany ;;
+
+germany => nrel_main_idtf : [Germany] (* <- lang_en ;; *);
+                                      [Германия] (* <- lang_ru ;; *) ;;

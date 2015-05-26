@@ -1,0 +1,26 @@
+//
+sc_node_norole_relation -> nrel_concealment;;
+nrel_concealment => nrel_main_idtf :[сокрытие*] (* <- lang_ru;; *);;
+nrel_concealment => nrel_main_idtf :[concealment*](* <- lang_en;; *);;
+
+//определение 
+
+nrel_concealment <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(сокрытие*)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Сокрытие — это отношение ограничивающее доступ или данные объекта с помощью средства сокрытия.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+
+//домены
+
+nrel_concealment <= nrel_first_domain: concept_object;;
+nrel_concealment <= nrel_second_domain: concept_means_for_hiding(*=> nrel_main_idtf :[средство для скрытия] (* <- lang_ru;; *);; *);;

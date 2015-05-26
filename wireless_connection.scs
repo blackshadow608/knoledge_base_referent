@@ -1,0 +1,40 @@
+//
+sc_node_not_relation -> concept_wireless_connection;;
+concept_wireless_connection => nrel_main_idtf :[беспроводное соединение] (* <- lang_ru;; *);;
+concept_wireless_connection => nrel_main_idtf :[wireless connection](* <- lang_en;; *);;
+
+//определение 
+
+concept_wireless_connection <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(беспроводное соединение)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Бесроводное соединение —  это технология, позволяющая создавать вычислительные соединения, полностью соответствующие 				стандартам для обычных проводных сетей, без использования кабельной проводки. ]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+//иерархия
+
+concept_wireless_connection <= nrel_subdividing: concept_satellite_connection; concept_wifi_connection; concept_mobile_connection;;
+
+//утверждения
+
+concept_wireless_connection <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(беспроводное соединение;скорость;трафик)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Недостатки этого способа выхода заключаются в маленькой скорости, дороговизне, так как приходиться платить не за трафик, а за время проведённое в сети, к тому же телефонная линия на время выхода оказывается занятой.]
+(* <- lang_ru;; *);;
+*);;
+*);;

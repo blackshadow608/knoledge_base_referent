@@ -1,0 +1,20 @@
+//синонимы
+sc_node_not_relation -> concept_workstation;;
+concept_workstation => nrel_main_idtf :[рабочая станция] (* <- lang_ru;; *);;
+concept_workstation => nrel_main_idtf :[workstation](* <- lang_en;; *);;
+
+//определение 
+
+concept_workstation <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(рабочая станция)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Рабо́чая ста́нция — комплекс аппаратных и программных средств, предназначенных для решения определённого круга задач.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;

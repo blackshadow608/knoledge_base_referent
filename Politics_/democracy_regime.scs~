@@ -1,0 +1,9 @@
+sc_node_not_relation -> democracy_regime;;
+
+political_system => nrel_main_idtf:
+	[демократический режим]
+	(* <- lang_ru;; *);
+	[democracy_regime]
+	(* <- lang_en;;	*);;
+
+democracy_regime <=> nrel_equal: democracy;;

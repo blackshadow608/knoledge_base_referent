@@ -1,0 +1,28 @@
+sc_node_not_relation -> dictatorship;;
+
+dictatorship => nrel_main_idtf:
+	[диктатура]
+	(* <- lang_ru;; *);
+	[dictatorship]
+	(* <- lang_en;;	*);;
+
+dictatorship
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(диктатура)]  (* <- lang_ru;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Диктатура  — форма осуществления государственной власти, при которой вся полнота государственной власти принадлежит одной политической позиции, принадлежащей либо одному человеку (диктатору), либо правящей группе лиц (партии, союзу, классу и т. д.).]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+dictatorship 
+	-> totalitarianism;
+	authoritarianism;;
+

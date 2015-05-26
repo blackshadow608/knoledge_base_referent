@@ -1,0 +1,54 @@
+//синонимы
+sc_node_not_relation -> concept_social_networks;;
+concept_social_networks => nrel_main_idtf :[социальная сеть] (* <- lang_ru;; *);;
+concept_social_networks => nrel_main_idtf :[social networks](* <- lang_en;; *);;
+
+//определение 
+
+concept_social_networks <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(социальная сеть)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Социальная сеть – это онлайн-сервис, сайт, позволяющий создавать социальные связи, строить взаимоотношения, 				распространять информацию и др.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+
+// иерархия связи с другими понтиями   
+concept_online_chat ->  concept_social_networks;;
+concept_service -> concept_online_chat;;
+
+//утверждения
+
+concept_social_networks <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(социальная сеть;Geocities)] (* <- lang_ru;; *);; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[В 1994 году была запущена сеть Geocities – прообраз современных соцсетей. Пользователи данной сети могли создавать собственный сайты по шести категориям-городам.]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(социальная сеть;профессиональные соцсети)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Профессиональные соцсети – объединения людей по профессиональному принципу для общения на специализированные темы, обмена опытом и предоставления профессиональной информации.](* <- lang_ru;; *);;
+*);;
+*);;
+

@@ -1,0 +1,39 @@
+sc_node_no_relation->tobbogan;;
+
+tobbogan => nrel_main_idtf:
+
+	[гонки на санях]
+	(* <- lang_ru;; *);
+
+	[tobbogan]
+	(* <- lang_en;;	*);;
+
+
+tobbogan
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(гонки на санях)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Гонки на санях - это командный неконтактный вид спорта, входящий в семейство игр, в которых используются бита и мяч.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

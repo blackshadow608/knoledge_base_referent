@@ -1,0 +1,4 @@
+sc_node_not_relation -> usa_legal_system ;;
+
+usa_legal_system => nrel_main_idtf : [US legal system] (* <- lang_en ;; *);
+                                      [правовая система США] (* <- lang_ru ;; *) ;;

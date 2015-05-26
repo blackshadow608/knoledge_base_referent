@@ -1,0 +1,54 @@
+//
+sc_node_not_relation -> concept_blog;;
+concept_blog => nrel_main_idtf :[блог] (* <- lang_ru;; *);;
+concept_blog => nrel_main_idtf : [blog](* <- lang_en;; *);;
+
+
+//определение 
+
+concept_blog <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(блог)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Блог — это публичный дневник с комментариями.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+// иерархия связи с другими понтиями   
+concept_online_chat -> concept_blog;;
+concept_service -> concept_blog;;
+
+//утверждения
+
+concept_blog <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(блог;запись)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Для блогов характерны недлинные записи вре́менной значимости, упорядоченные в обратном хронологическом порядке (последняя запись сверху).]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(блог;читатель)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Отличия блога от традиционного дневника обусловливаются средой: блоги обычно публичны и предполагают сторонних читателей, которые могут вступить в публичную полемику с автором (в комментарии к блогозаписи или своих блогах).](* <- lang_ru;; *);;
+*);;
+*);;
+

@@ -1,0 +1,36 @@
+sc_node_not_relation -> underground_vehile;;
+
+underground_vehile => nrel_main_idtf:
+	[подземное транспортное средство]
+	(*
+		<- lang_ru;;
+	*);
+	[underground vehile]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	underground_vehile 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(подземное транспортное средство)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [подземное транспортное средство -  техническое устройство для перевозки людей и/или грузов под землёй.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	underground_vehile 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(подземное транспортное средство, судно)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Транспортное средство, которое в качестве опоры при передвижении использует газообразную или жидкую среду, называют судном . ](*<- lang_ru;;*);;
+				*);;
+		*);;

@@ -1,0 +1,4 @@
+sc_node_not_relation -> ancient_rome ;;
+
+ancient_rome => nrel_main_idtf : [Ancient Rome] (* <- lang_en ;; *);
+                                      [Древний Рим] (* <- lang_ru ;; *) ;;

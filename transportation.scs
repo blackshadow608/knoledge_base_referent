@@ -1,0 +1,26 @@
+sc_node_not_relation -> nrel_transportation;;
+nrel_transportation => nrel_main_idtf:
+	[транспортировка]
+	(*
+		<- lang_ru;;
+	*);
+	[transportation]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	nrel_transportation 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(транспортировка)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [Транспортировка - процесс перемещения груза/объекта в место назначения, посредством тех или иных транспортных средств, обычно термин применяется по отношению к штучным доставкам крупногабаритных объектов](*<- lang_ru;;*);;
+				*);;
+		*);;
+load <= nrel_first_domain: nrel_transportation;;
+vehile <= nrel_second_domain: nrel_transportation;;
+		
+	

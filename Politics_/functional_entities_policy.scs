@@ -1,0 +1,16 @@
+sc_node_not_relation -> functional_entities_policy;;
+
+functional_entities_policy => nrel_main_idtf:
+	[функциональный субъект политики]
+	(* <- lang_ru;; *);
+	[functional entities policy]
+	(* <- lang_en;;	*);;
+
+functional_entities_policy <= nrel_example:
+	...
+	(*  
+		<=nrel_sc_text_translation:
+		...
+	(* -> rrel_example: [Функциональные субъекты политики: армия, церковь, оппозиция, лобби, средство массовой информации, транснациональные корпорации.]		(*<- lang_ru;;*);;
+	*);;
+*);;

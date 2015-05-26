@@ -1,0 +1,40 @@
+sc_node_no_relation->crossbar;;
+
+
+crossbar => nrel_main_idtf:
+
+	[перекладина]
+	(* <- lang_ru;; *);
+
+	[crossbar]
+	(* <- lang_en;;	*);;
+
+
+crossbar
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(перекладина)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Перекладина - это один из видов упражнений в спортивной гимнастике.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

@@ -1,0 +1,13 @@
+sc_node_not_relation -> branch_legal_institution ;;
+
+branch_legal_institution => nrel_main_idtf : [branch legal institution] (* <- lang_en ;; *);
+                                      [отраслевой правовой институт] (* <- lang_ru ;; *) ;;
+
+branch_legal_institution <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Отраслевой правовой институт — объединяет нормы внутри конкретной отрасли.](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;

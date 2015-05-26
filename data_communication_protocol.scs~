@@ -1,0 +1,48 @@
+//синонимы
+sc_node_not_relation -> concept_data_communication_protocol;;
+concept_data_communication_protocol => nrel_main_idtf :[протокол передачи данных] (* <- lang_ru;; *);;
+concept_data_communication_protocol => nrel_main_idtf :[data communication protocol](* <- lang_en;; *);;
+
+//определение 
+
+concept_data_communication_protocol <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(протокол передачи данных)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Протокол передачи данных  — набор соглашений интерфейса логического уровня, которые определяют обмен данными между 				различными программами.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+//утверждения
+
+concept_data_communication_protocol <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(протокол;ПО)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Разные протоколы зачастую описывают лишь разные стороны одного типа связи. Названия «протокол» и «стек протоколов» также указывают на программное обеспечение, которым реализуется протокол.]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(OSI;сетевой протокол)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Сетевые протоколы предписывают правила работы компьютерам, которые подключены к сети. Они строятся по многоуровневому принципу. Протокол некоторого уровня определяет одно из технических правил связи. В настоящее время для сетевых протоколов используется модель OSI (Open System Interconnection — взаимодействие открытых систем, ВОС). ](* <- lang_ru;; *);;
+*);;
+*);;

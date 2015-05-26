@@ -1,0 +1,14 @@
+sc_node_not_relation -> legal_awareness ;;
+
+legal_awareness => nrel_main_idtf : [legal awareness] (* <- lang_en ;; *);
+                                      [правосознание] (* <- lang_ru ;; *) ;;
+
+legal_awareness <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Правосознание — форма субъективного восприятия правовых явлений людьми.](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;
+

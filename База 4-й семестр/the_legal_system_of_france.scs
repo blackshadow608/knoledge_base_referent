@@ -1,0 +1,4 @@
+sc_node_not_relation -> the_legal_system_of_france ;;
+
+the_legal_system_of_france => nrel_main_idtf : [the legal system of France] (* <- lang_en ;; *);
+                                      [правовая система Франции] (* <- lang_ru ;; *) ;;

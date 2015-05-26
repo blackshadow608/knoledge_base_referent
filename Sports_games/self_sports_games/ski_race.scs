@@ -1,0 +1,39 @@
+sc_node_no_relation->ski_race;;
+
+ski_race => nrel_main_idtf:
+
+	[лыжные гонки]
+	(* <- lang_ru;; *);
+
+	[ski race]
+	(* <- lang_en;;	*);;
+
+
+ski_race
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(лыжные гонки)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Лыжные гонки - это командный неконтактный вид спорта, входящий в семейство игр, в которых используются бита и мяч.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

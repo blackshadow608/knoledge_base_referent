@@ -1,0 +1,20 @@
+//синонимы
+sc_node_not_relation -> concept_system_software;;
+concept_system_software => nrel_main_idtf :[системное программное обеспечение] (* <- lang_ru;; *);;
+concept_system_software => nrel_main_idtf :[system software](* <- lang_en;; *);;
+
+//определение 
+
+concept_system_software <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(системное программное обеспечениее)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Cистемное программное обеспечение– это набор команд, управляющих работой компьютера. Без программного обеспечения 				компьютер не сможет выполнять задачи, которые мы обычно связываем с компьютерами.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;

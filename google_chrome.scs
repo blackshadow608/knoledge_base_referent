@@ -1,0 +1,21 @@
+//синонимы
+sc_node_not_relation -> concept_google_chrome;;
+concept_google_chrome => nrel_main_idtf :[Google Chrome] (* <- lang_ru;; *);;
+concept_google_chrome => nrel_main_idtf :[Google Chrome](* <- lang_en;; *);;
+
+
+//определение 
+
+concept_google_chrome <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(google chrome)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Google Chrome — браузер, разрабатываемый компанией Google на основе свободного браузера Chromium и движка Blink.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;

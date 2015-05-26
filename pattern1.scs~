@@ -1,0 +1,34 @@
+pattern1 -> [* autotransport _<= nrel_decomposition_infra:: _v(*_->_a;;*) ;;*];;
+pattern1 => nrel_main_idtf:
+	[Что входит в понятие автомобильный транспорт?]
+	(*
+		<- lang_ru;;
+	*);;
+
+pattern6 -> [* transport _<= nrel_decomposition_type: type_decomp(*_->_a;;*);;*];;
+pattern6 => nrel_main_idtf:
+	[Какие бывают виды транспорта?]
+	(*
+		<- lang_ru;;
+	*);;
+pattern2 -> [* autotransport _<= nrel_decomposition_infra:: _var (* _-> _auto(*_<-_a(*_=> nrel_subdividing:: _a2(*_<-_add(*_=> nrel_subdividing::vehile;;*);;*);;*);;*);;*);;*];;
+pattern2 => nrel_main_idtf:
+	[Какие транспортные средства входят в автомобильный транспорт?]
+	(*
+		<- lang_ru;;
+	*);;
+
+pattern3 -> [* oil_station _<-_var(*_<=nrel_sc_text_translation:_a(*_->_asd;;*);;*);; *];;
+pattern3 => nrel_main_idtf:
+	[Что такое АЗС?]
+	(*
+		<- lang_ru;;
+	*);;
+pattern4 -> [* passenger _<= nrel_transportation:: _var(*_<-_aaa(*_=> nrel_decomposition_infra::_asd;;*);;*);; 	
+			*];;
+pattern4 => nrel_main_idtf:
+	[Какие виды транспорта перевозят пассажиров?]
+	(*
+		<- lang_ru;;
+	*);;
+

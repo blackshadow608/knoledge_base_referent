@@ -1,0 +1,42 @@
+sc_node_no_realtion->rule;;
+
+rule => nrel_main_idtf:
+
+	[Правило]
+	(* <- lang_ru;; *);
+
+	[rule]
+	(* <- lang_en;;	*);;
+
+
+rule
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(Правило)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Правило - это описание действий игроков в той или иной игровой ситуации. ]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;
+
+rule<=nrel_inclusion:{foot_rule_1; foot_rule_2; foot_rule_3; foot_rule_4; foot_rule_5; foot_rule_6; foot_rule_7; foot_rule_8; foot_rule_9; foot_rule_10; foot_rule_11; foot_rule_12; foot_rule_13; foot_rule_14; foot_rule_15; foot_rule_16; foot_rule_17};;
+

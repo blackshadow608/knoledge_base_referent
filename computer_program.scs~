@@ -1,0 +1,51 @@
+//
+sc_node_not_relation -> concept_computer_program;;
+concept_computer_program => nrel_main_idtf :[компьютерная программа] (* <- lang_ru;; *);;
+concept_computer_program => nrel_main_idtf :[computer program](* <- lang_en;; *);;
+
+concept_software <=> nrel_synonym : concept_computer_program;;
+
+//определение 
+
+concept_computer_program <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(компьютерная программа)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Компью́терная програ́мма — последовательность инструкций, предназначенных для исполнения устройством управления 				вычислительной машины.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+//утверждения
+
+concept_computer_program <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(программирование;программа)] (* <- lang_ru;; *);; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Процесс разработки программного обеспечения состоит из нескольких этапов, из которых в узком смысле лишь непосредственное создание программного кода носит название «программирование».]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(прикладное ПО;пользователь;программа)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Большинство пользователей компьютеров используют программы, предназначенные для выполнения конкретных прикладных задач, таких, как подготовка и оформление документов, математические вычисления, обработка изображений и т. п. Соответствующие программные средства называют прикладными программами или прикладным программным обеспечением.](* <- lang_ru;; *);;
+*);;
+*);;
+

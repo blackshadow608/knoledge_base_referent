@@ -1,0 +1,33 @@
+sc_node_not_relation -> subject_of_politics;;
+
+subject_of_politics => nrel_main_idtf:
+	[субъект политики]
+	(* <- lang_ru;; *);
+	[subject of politics]
+	(* <- lang_en;; *);
+	 => nrel_idtf:
+	[актор]
+	(* <- lang_ru;; *);
+	[actor]
+	(* <- lang_en;; *);;
+subject_of_politics <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(субъект политики)]  (* <- lang_ru;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+
+		(*
+		->rrel_example:
+			[Субъекты политики — это социальные и национальные об­щности, организации, учреждения, способные участвовать в 				по­литической жизни, принимать политические решения и доби­ваться их реализации, изменять общественные отношения в 				со­ответствии со своими интересами и целями.]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+
+subject_of_politics ->	 
+		social_level_subjects;
+		institutional_political_subject;
+		functional_entities_policy;;

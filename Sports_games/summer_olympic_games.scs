@@ -1,0 +1,33 @@
+sc_node_no_relation->summer_olympic_games;;
+summer_olympic_games => nrel_main_idtf:
+	
+	[летние Олимпийские виды спорта]
+	(* <- lang_ru;; *);
+	
+	[summer_olympic_games]
+	(* <- lang_en;;	*);;
+
+
+summer_olympic_games
+	
+	<- rrel_key_sc_element:
+	...
+		(*
+	
+		=> nrel_main_idtf: [Опр.(летние Олимпийские виды спорта)]  (* <- lang_ru;; *);;
+	
+		<-sc_definition;;
+
+		<=nrel_sc_text_translation:
+		...
+		(*
+	->rrel_example:
+	[летние Олимпийские виды спорта - это те летние виды спорта, которые входят в современную программу Олимпийских игр.]
+				(*<- lang_ru;;*);;
+	*);;
+*);;
+
+
+summer_olympic_games <= nrel_inclusion: badminton; basketball; boxing; fight; volleyball; handball; judo; table_tennis; tennis; football;;
+
+

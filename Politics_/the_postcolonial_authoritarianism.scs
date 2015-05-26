@@ -1,0 +1,25 @@
+sc_node_not_relation -> the_postcolonial_authoritarianism;;
+
+the_postcolonial_authoritarianism => nrel_main_idtf:
+	[постколониальный авторитаризм]
+	(* <- lang_ru;; *);
+	[the postcolonial authoritarianism]
+	(* <- lang_en;;	*);;
+
+the_postcolonial_authoritarianism
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(постколониальный авторитаризм)]  (* <- lang_ru;; *);;
+	<-sc_explanation;;
+	<=nrel_sc_text_translation:
+		...
+
+		(*
+		->rrel_example:
+			[Постколониальный авторитаризм в виде однопартийных мобилизационных режимов возникает после обретения бывшими колониями независимости, создается снизу в обществах с низким уровнем экономического развития. Как правило, постколониальная независимость является таковой лишь в формально-юридическом плане. ]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;

@@ -1,0 +1,19 @@
+sc_node_not_relation -> procedural_law ;;
+
+procedural_law => nrel_main_idtf : [procedural_law] (* <- lang_en ;; *);
+                                      [процессуальное право] (* <- lang_ru ;; *) ;;
+
+procedural_law <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Процессуальное право — совокупность норм правовой системы, регулирующих порядок реализации норм материального права.](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;
+procedural_law => nrel_main_results : ...
+                                 (* -> ...
+                                          (* <= nrel_sc_text_translation : ...
+								     (* -> [Процессуальное право неразрывно связано с материальным правом, так как закрепляет процессуальные формы, необходимые для его осуществления и защиты.] (* <- lang_ru ;; *) ;; *) ;;
+                                           *) ;;
+                                 *);;

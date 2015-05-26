@@ -1,0 +1,52 @@
+sc_node_norole_relation -> nrel_political_regime;;
+
+nrel_political_regime => nrel_main_idtf:
+	[политический режим*]
+	(* <- lang_ru;; *);
+	[political regime*]
+	(* <- lang_en;;	*);;
+
+nrel_political_regime<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(политический режим*)]  (* <- lang_ru;; *);;
+	<-sc_explanation;;
+	<=nrel_sc_text_translation:
+		...
+
+		(*
+		->rrel_example:
+			[Отношение "политический режим*" показывает какой пилитический режим установился в том или ином государстве]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+
+nrel_political_regime <- sc_relation;;
+
+nrel_political_regime <- binary_relation;;
+
+nrel_political_regime <- oriented_relation;;
+
+nrel_political_regime => nrel_first_domain: 
+	state;;
+
+nrel_political_regime => nrel_second_domain: 
+	 	democracy;
+		totalitarianism;
+		authoritarianism;
+		anarchy;;
+
+nrel_political_regime => nrel_definitional_domain:
+	... 
+	(*
+	<= nrel_combination: 
+		{	
+		state; 
+		democracy;
+		totalitarianism;
+		authoritarianism;
+		anarchy;;
+		};;
+	*);;

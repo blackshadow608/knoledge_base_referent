@@ -1,0 +1,40 @@
+sc_node_no_relation->judo;;
+
+
+judo => nrel_main_idtf:
+
+	[дзюдо]
+	(* <- lang_ru;; *);
+
+	[judo]
+	(* <- lang_en;;	*);;
+
+
+judo
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(дзюдо)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Дзюдо - это Спортивная борьба, возникшая в Японии в конце XIX в.; усовершенствованное джиу-джитсу.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

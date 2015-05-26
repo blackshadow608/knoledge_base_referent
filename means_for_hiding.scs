@@ -1,0 +1,21 @@
+//
+sc_node_not_relation -> concept_means_for_hiding;;
+concept_means_for_hiding => nrel_main_idtf :[средство для скрытия] (* <- lang_ru;; *);;
+concept_means_for_hiding => nrel_main_idtf :[means for hiding](* <- lang_en;; *);;
+
+//определение 
+
+concept_means_for_hiding <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(средство для скрытия)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Cредство для скрытия - объект, предназначенный для хранения и сокрытия дынных.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+concept_means_for_hiding -> concept_anonymizer;;

@@ -1,0 +1,36 @@
+sc_node_not_relation -> highway;;
+
+highway => nrel_main_idtf:
+	[автомагистраль]
+	(*
+		<- lang_ru;;
+	*);
+	[highway]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	highway 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(автомагистраль)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [автомагистраль -   дорога для скоростного движения автомобилей, не имеющая одноуровневых пересечений с другими дорогами, железнодорожными или трамвайными путями, пешеходными или велосипедными дорожками.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	highway 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(автомагистраль, гужевой транспорт)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[На автомагистралях запрещено движение гужевого транспорта.](*<- lang_ru;;*);;
+				*);;
+		*);;

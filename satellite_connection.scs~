@@ -1,0 +1,21 @@
+//синонимы
+sc_node_not_relation -> concept_satellite_connection;;
+concept_satellite_connection => nrel_main_idtf :[спутниковое соединение] (* <- lang_ru;; *);;
+concept_satellite_connection => nrel_main_idtf :[satellite connection](* <- lang_en;; *);;
+
+//определение 
+
+concept_satellite_connection <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(спутниковое соединение)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Спутниковый Интернет — способ обеспечения доступа к сети Интернет с использованием технологий спутниковой связи.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+

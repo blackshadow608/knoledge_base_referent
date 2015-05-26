@@ -1,0 +1,16 @@
+sc_node_norole_relation -> nrel_compliance ;;
+
+nrel_compliance => nrel_main_idtf : [compliance*] (* <- lang_en ;; *);
+                                      [соблюдение*] (* <- lang_ru ;; *) ;;
+
+nrel_compliance <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Соблюдение — реализация пассивной обязанности, заключающейся в воздержании от совершения каких-либо действий, которые были запрещены.](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;
+
+nrel_compliance => nrel_first_domain : human ;;
+nrel_compliance => nrel_second_domain : law ;;

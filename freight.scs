@@ -1,0 +1,37 @@
+sc_node_not_relation -> nrel_nrel_freight;;
+nrel_freight => nrel_main_idtf:
+	[перевозка]
+	(*
+		<- lang_ru;;
+	*);
+	[nrel_freight]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	nrel_freight 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(перевозка)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [Перевозка - транспортровка по регулярным маршрутам.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+	nrel_freight
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(перевозка, транспортное средство.)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Перевозка может осуществляться любым транспортым средством.](*<- lang_ru;;*);;
+				*);;
+		*);;
+load <= nrel_first_domain: nrel_freight;;
+vehile <= nrel_second_domain: nrel_freight;;
+		

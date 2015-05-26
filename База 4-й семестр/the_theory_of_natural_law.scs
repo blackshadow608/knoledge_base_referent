@@ -1,0 +1,11 @@
+sc_node_not_relation -> the_theory_of_natural_law ;;
+
+the_theory_of_natural_law => nrel_main_idtf : [the theory of natural law] (* <- lang_en ;; *);
+                                      [теория естественного права] (* <- lang_ru ;; *) ;;
+
+the_theory_of_natural_law => nrel_main_results : ...
+                                 (* -> ...
+                                          (* <= nrel_sc_text_translation : ...
+								     (* -> [Человек от рождения и природы обладает неотъемлемыми естественными правами (право на жизнь, свободу, равенство), которые нельзя отменить, изменить. Законы соответствуют нравственным установкам людей и не могут существовать без них.] (* <- lang_ru ;; *) ;; *) ;;
+                                           *) ;;
+                                 *);;

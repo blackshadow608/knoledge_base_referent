@@ -1,0 +1,56 @@
+//синонимы
+sc_node_not_relation -> concept_hosting;;
+concept_hosting => nrel_main_idtf :[хостинг] (* <- lang_ru;; *);;
+concept_hosting => nrel_main_idtf :[hosting](* <- lang_en;; *);;
+
+//определение 
+concept_hosting <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(хостинг)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Хо́стинг (англ. hosting) — услуга по предоставлению вычислительных мощностей для размещения информации на сервере, 				постоянно находящемся в сети (обычно Интернет).]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+
+// иерархия связи с другими понтиями   
+
+concept_service ->  concept_hosting;;
+
+//утверждения
+
+
+_hosting=> nrel_main_idtf :[_хостинг] (* <- lang_ru;; *);;
+concept_hosting <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(хостинг;файл)] (* <- lang_ru;; *);;
+-> rrel_main_key_sc_element: stat_file_hosting;; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Хостингы используется для размещения различных файлов.]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(хостинг;сайт;размещение*;веб-сервер)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Обычно хостинг входит в пакет по обслуживанию сайта и подразумевает как минимум услугу размещения файлов сайта на сервере, на котором запущено ПО, необходимое для обработки запросов к этим файлам (веб-сервер).](* <- lang_ru;; *);;
+*);;
+*);;
+

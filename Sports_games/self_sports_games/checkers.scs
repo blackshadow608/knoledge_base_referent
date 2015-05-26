@@ -1,0 +1,41 @@
+sc_node_no_relation->checkers;;
+
+checkers => nrel_main_idtf:
+
+	[шашки]
+	(* <- lang_ru;; *);
+
+	[checkers]
+	(* <- lang_en;;	*);;
+
+
+checkers
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(шашки)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Шашки - это  игра для двух игроков специальными фишками (шашками) на доске, подобной шахматной, при этом шашки делятся на простые и дамки. Цель игры — уничтожить все шашки противника или лишить их возможности хода («запереть»).]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;
+
+checkers=>nrel_rules:checkers_rule;;

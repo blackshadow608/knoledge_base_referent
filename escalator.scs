@@ -1,0 +1,36 @@
+sc_node_not_relation -> escalator;;
+
+escalator => nrel_main_idtf:
+	[эскалатор]
+	(*
+		<- lang_ru;;
+	*);
+	[escalator]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	escalator 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(эскалатор)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [Эскалатор - подъёмно-транспортная машина в виде наклонённой к горизонту лестницы с движущимися ступенями.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	escalator 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(эскалатор)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Эскалатор обладает большей пропускной способностью, чем лифт.](*<- lang_ru;;*);;
+				*);;
+		*);;

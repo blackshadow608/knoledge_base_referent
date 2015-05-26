@@ -1,0 +1,40 @@
+sc_node_no_relation->handball;;
+
+
+handball => nrel_main_idtf:
+
+	[гандбол]
+	(* <- lang_ru;; *);
+
+	[handball]
+	(* <- lang_en;;	*);;
+
+
+handball
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(гандбол)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Гандбол - это командная игра с мячом 7 на 7 игроков (по 6 полевых и вратарь в каждой команде). Играют мячом, руками. Цель игры — забросить как можно больше мячей в ворота (3 м × 2 м) противника.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

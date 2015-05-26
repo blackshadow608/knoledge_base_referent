@@ -1,0 +1,59 @@
+//синонимы
+sc_node_not_relation -> concept_connection;;
+concept_connection => nrel_main_idtf :[интернет-соединение] (* <- lang_ru;; *);;
+concept_connection => nrel_main_idtf :[Internet-connection](* <- lang_en;; *);;
+
+
+//определение 
+
+concept_connection <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(интернет-соединение)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Соединение - доступ к сети Интернет.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+// иерархия связи с другими понтиями   
+
+concept_connection <= nrel_subdividing :
+...
+(*	
+	-> concept_wired_connection;;
+	-> concept_wireless_connection;;
+*);;
+
+
+//утверждения
+
+concept_connection <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(адрес;сеть;IP-адрес)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Адреса есть у каждого компьютера работающего в сети – цифровой адрес (IP-адрес).]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(интернет-соединение;интернет;интернет-провайдер)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Подключение и доступ к сети Интернет осуществляется с помощью специальных организаций, называемых провайдерами.](* <- lang_ru;; *);;
+*);;
+*);;

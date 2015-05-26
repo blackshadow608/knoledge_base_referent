@@ -1,0 +1,31 @@
+c_node_not_relation -> russia;;
+
+russia => nrel_main_idtf:
+	[Россия]
+	(* <- lang_ru;; *);
+	[Russia]
+	(* <- lang_en;;	*);;
+
+russia
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(Россия)]  (* <- lang_ru;; *);;
+	<-sc_explanation;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[ Россия, официально также Российская Федерация, на практике используется и аббревиатура РФ — государство в Восточной Европе и Северной Азии.]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+
+russia <- state;
+	=> nrel_form_of_government: unitary_state;
+	=> nrel_government: presidential_republic;
+	=> nrel_form_of_state: polycratic;
+        => nrel_political_regime: democracy;
+	=> nrel_political_system: democracy;;

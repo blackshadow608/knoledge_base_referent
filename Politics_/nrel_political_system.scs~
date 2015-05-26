@@ -1,0 +1,35 @@
+sc_node_norole_relation -> nrel_political_system;;
+
+nrel_political_system => nrel_main_idtf:
+	[политическая система*]
+	(* <- lang_ru;; *);
+	[ political system*]
+	(* <- lang_en;;	*);;
+
+nrel_political_system <- sc_relation;;
+
+nrel_political_system <- binary_relation;;
+
+nrel_political_system <- oriented_relation;;
+
+nrel_political_system => nrel_first_domain: 
+	state;;
+
+nrel_political_system => nrel_second_domain: 
+	 	democracy;
+	theocracy;
+	totalitarianism;
+	authoritarianism
+
+nrel_political_system => nrel_definitional_domain:
+	... 
+	(*
+	<= nrel_combination: 
+		{	
+		state; 
+		democracy;
+		theocracy;
+		totalitarianism;
+		authoritarianism
+		};;
+	*);;

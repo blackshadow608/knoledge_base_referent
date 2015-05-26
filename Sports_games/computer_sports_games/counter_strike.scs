@@ -1,0 +1,39 @@
+sc_node_not_relation->counter_strike;;
+
+counter_strike => nrel_main_idtf:
+
+	[Контр страйк]
+	(* <- lang_ru;; *);
+
+	[Counter Strike]
+	(* <- lang_en;;	*);;
+
+
+counter_strike
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(Контр страйк)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Контр страйк - серия компьютерных игр в жанре командного шутера от первого лица, основанная на движке GoldSrc, изначально появившаяся как модификация игры Half-Life. ]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

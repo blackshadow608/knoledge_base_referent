@@ -1,0 +1,39 @@
+sc_node_no_relation->fight;;
+fight => nrel_main_idtf:
+
+	[борьба]
+	(* <- lang_ru;; *);
+
+	[fight]
+	(* <- lang_en;;	*);;
+
+
+fight
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(борьба)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Борьба - это единоборство, рукопашная схватка двоих людей в которой каждый старается осилить другого, свалив его с ног]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;
+fight=>nrel_inclusion:sumo; free_fight; judo;;

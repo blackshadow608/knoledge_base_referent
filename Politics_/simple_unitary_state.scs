@@ -1,0 +1,26 @@
+sc_node_not_relation -> simple_unitary_state;;
+
+simple_unitary_state => nrel_main_idtf:
+	[простое унитарное государство]
+	(* <- lang_ru;; *);
+	[simple unitary state]
+	(* <- lang_en;;	*);;
+
+simple_unitary_state
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(простое унитарное государство)]  (* <- lang_ru;; *);;
+	<-sc_explanation;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Простое унитарное государство — в составе нет автономных образований, территория такого государства либо вообще не имеет административно-территориального деления, либо состоит только из административно-территориальных единиц]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+
+

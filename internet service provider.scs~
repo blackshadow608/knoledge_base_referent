@@ -1,0 +1,31 @@
+//синонимы
+sc_node_norole_relation -> nrel_internet_service_provider;;
+nrel_internet_service_provider => nrel_main_idtf :[Интернет-провайдер*] (* <- lang_ru;; *);;
+
+concept_computer_network => nrel_synonyms: ...
+
+	(* 
+	-> [Интернет-провайдер*]
+	(* <- lang_ru;; *);;
+     	->[Internet Service Provider]
+	(* <- lang_en;; *);;
+	*);;
+//определение 
+
+nrel_internet_service_provider => nrel_definition : defin_internet_service_provider;;
+defin_internet_service_provider  => nrel_main_idtf :[Опр(интернет-провайдер)] (* <- lang_ru;; *);;
+defin_internet_service_provider <= nrel_translation :
+...
+(* -> rrel_translation : [Интернет-прова́йдер  — организация, предоставляющая услуги доступа к сети Интернет и иные связанные с Интернетом услуги.] (*<-concept_text;; <- lang_ru;;*);;
+*);;
+
+
+
+//утверждения
+assertions1_internet_service_provider => nrel_main_idtf :[утв(глобальная компьютерная сеть*,применение,связь*)] (* <- lang_ru;; *);;
+assertions2_internet_service_provider => nrel_main_idtf :[утв(компьютерная сеть*,история)] (* <- lang_ru;; *);;
+
+nrel_internet_service_provider => nrel_basic_assertions : ...
+(* -> assertions1_internet_service_provider (* <= nrel_translation : ... (* -> [В глобальных сетях намного более важно не качество связи, а сам факт ее существования.] (* <- lang_ru; concept_text;; *) ;;*) ;;*);;
+-> assertions2_internet_service_provider (* <= nrel_translation : ... (* -> [Впервые в мире вычислительная сеть была применена в советском комплексе ПРО «Система А» (генеральный конструктор Г. В. Кисунько), возведённом в 1956—1960 годах в Казахстане.]  (* <- lang_ru; concept_text;; *) ;;*) ;; *);;
+*);;

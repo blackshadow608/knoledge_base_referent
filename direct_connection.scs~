@@ -1,0 +1,21 @@
+//
+sc_node_not_relation -> concept_direct_connection;;
+concept_direct_connection => nrel_main_idtf :[прямое подключение] (* <- lang_ru;; *);;
+concept_direct_connection => nrel_main_idtf :[direct connection](* <- lang_en;; *);;
+
+//определение 
+
+concept_wired_connection <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(прямое подключение)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Прямое соединение — от провайдера к пользователю идет обычный сетевой компьютерный кабель.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+

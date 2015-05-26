@@ -1,0 +1,52 @@
+//синонимы
+sc_node_not_relation -> concept_user;;
+concept_user => nrel_main_idtf :[пользователь] (* <- lang_ru;; *);;
+concept_user => nrel_main_idtf :[user](* <- lang_en;; *);;
+
+//определение 
+
+concept_user <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(пользователь)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Пользователь — лицо или организация, которое использует действующую систему для выполнения конкретной функции.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+// иерархия связи с другими понтиями   
+
+//concept_user => nrel_authentication : concept_account;;
+
+//утверждения
+
+concept_user <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(пользователь;абонемент;ресурс)] (* <- lang_ru;; *);;; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Самого пользователя, либо систему, с которой он работает, также называют абонентом информационной сети. Учётная запись, разрешающая абоненту получать доступ к ресурсам, называется абонементом.]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(пользователь;запрос*;интерфейс)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Для удобной и эффективной работы создаются языки запросов и интерфейсы пользователя.](* <- lang_ru;; *);;
+*);;
+*);;

@@ -1,0 +1,31 @@
+c_node_not_relation -> oae;;
+
+oae => nrel_main_idtf:
+	[ОАЭ]
+	(* <- lang_ru;; *);
+	[OAE]
+	(* <- lang_en;;	*);;
+
+oae
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(ОАЭ)]  (* <- lang_ru;; *);;
+	<-sc_explanation;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Объединённые Арабские Эмираты (сокр. — ОАЭ) — федеративное государство, состоящее из семи эмиратов, каждый из которых представляет собой государство — абсолютную монархию: ]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+
+oae <- state;
+	=> nrel_form_of_government: federation;
+	=> nrel_government: absolute_monarchy;
+	=> nrel_form_of_state: segmental;
+        => nrel_political_regime:democracy;
+	=> nrel_political_system: democracy;;

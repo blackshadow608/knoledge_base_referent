@@ -1,0 +1,12 @@
+sc_node_not_relation -> human_rights ;;
+
+human_rights => nrel_main_idtf : [human rights] (* <- lang_en ;; *);
+                                      [права человека] (* <- lang_ru ;; *) ;;
+
+human_rights <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Права человека — права, составляющие основу статуса личности в правовом государстве, считаемые прирождёнными и неотъемлемыми для каждого человека независимо от его гражданства, пола, возраста, расы, этнической или религиозной принадлежности.](*<-lang_ru;;*);;
+	                                                              *) ;;

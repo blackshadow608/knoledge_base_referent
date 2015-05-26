@@ -1,0 +1,36 @@
+nrel_stop
+	<-sc_node_norole_relation;
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(остановка*)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Остановка - специально отведённое место для посадки/высадки пассажиров и/или разгрузки/погрузки грузов.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+		nrel_stop<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(остановка*,продукт,результат)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Для каждого вида транспорта остановки разные.](*<- lang_ru;;*);;
+				*);;
+		*);;
+	nrel_stop => nrel_main_idtf:
+	[остановка*]
+	(*
+		<- lang_ru;;
+	*);	
+	[stop]
+	(*
+		<- lang_en;;
+	*);;
+
+	transportinfrastructure <= nrel_first_domain: nrel_stop;;
+	vehile <= nrel_second_domain: nrel_stop;;

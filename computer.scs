@@ -1,0 +1,70 @@
+//
+sc_node_not_relation -> concept_computer;;
+concept_computer => nrel_main_idtf :[компьютер] (* <- lang_ru;; *);;
+concept_computer => nrel_main_idtf :[computer](* <- lang_en;; *);;
+//определение 
+
+
+concept_computer <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(компьютер)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Компью́тер  — устройство или система, способное выполнять заданную, чётко определённую изменяемую последовательность 				операций. ]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+
+// иерархия связи с другими понтиями   
+
+concept_computer <= nrel_subdividing :
+...
+(*
+	-> concept_supercomputer;;
+	-> concept_personal_computer;;
+	-> concept_handheld_computer;;
+	-> concept_workstation ;;
+	-> concept_console_computer;;
+*);;
+
+concept_computer => nrel_typical_structure : ..name12
+(*
+	-> concept_software;;
+	-> concept_hardware;;
+	-> concept_data;;
+*);;
+
+
+//утверждения
+
+concept_computer <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(компьютер;применение;искусственный интеллект)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Наиболее сложным и слаборазвитым применением компьютеров является искусственный интеллект — применение компьютеров для решения таких задач, где нет чётко определённого более или менее простого алгоритма.]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(компьютер;история;вычисления)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Первые компьютеры создавались исключительно для вычислений (что отражено в названиях «компьютер» и «ЭВМ»). ](* <- lang_ru;; *);;
+*);;
+*);;
+

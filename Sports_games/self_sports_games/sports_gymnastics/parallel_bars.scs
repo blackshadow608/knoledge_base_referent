@@ -1,0 +1,40 @@
+sc_node_no_relation->parallel_bars;;
+
+
+parallel_bars => nrel_main_idtf:
+
+	[параллельные брусья]
+	(* <- lang_ru;; *);
+
+	[parallel_bars]
+	(* <- lang_en;;	*);;
+
+
+parallel_bars
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(параллельные брусья)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Параллельные брусья - это один из видов упражнений в спортивной гимнастике.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

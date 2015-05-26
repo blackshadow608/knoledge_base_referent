@@ -1,0 +1,35 @@
+sc_node_not_relation -> belarus;;
+
+belarus => nrel_main_idtf:
+	[Беларусь]
+	(* <- lang_ru;; *);
+	[Belarus]
+	(* <- lang_en;;	*);;
+
+belarus
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(Беларусь)]  (* <- lang_ru;; *);;
+	<-sc_exponation;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[ Беларусь — государство в Восточной Европе. Граничит с Россией на востоке, Украиной на юге, Польшей на западе, Литвой и Латвией на северо-западе.]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+
+belarus <- state;
+	=> nrel_form_of_government: unitary_state;
+	=> nrel_government: presidential_republic;
+	=> nrel_form_of_state: polycratic;
+        => nrel_political_regime: democracy;
+	=> nrel_political_system: democracy;;
+ 
+
+
+

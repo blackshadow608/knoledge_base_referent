@@ -1,0 +1,7 @@
+logic1 => nrel_main_idtf :[Существуют транспортные средства способные транспорировать другие транспортные средства.] (* <- lang_ru;; *);;
+logic1 -> ..node1_logic1;;
+logic1 -> ..node2_logic1;;
+..node1_logic1 _=> nrel_implication: ..node2_logic1;;
+..node1_logic1 ->  [* _x _<- vehile;;
+				_y _<- vehile;; *] (* <- concept_atomic_existence ;;*) ;;
+..node2_logic1 ->  [* _x _<= nrel_transportation: _y;; *] (* <- concept_atomic_existence ;;*) ;;

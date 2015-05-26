@@ -1,0 +1,40 @@
+sc_node_no_relation->bowling;;
+
+
+bowling => nrel_main_idtf:
+
+	[боулинг]
+	(* <- lang_ru;; *);
+
+	[bowling]
+	(* <- lang_en;;	*);;
+
+
+bowling
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(боулинг)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Боулинг - это спортивная разновидность кеглей, в которой тяжёлые шары бросаются по специальной дорожке руками.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

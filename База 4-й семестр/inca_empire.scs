@@ -1,0 +1,4 @@
+sc_node_not_relation -> inca_empire ;;
+
+inca_empire => nrel_main_idtf : [Inca Empire] (* <- lang_en ;; *);
+                                      [Империя Инков] (* <- lang_ru ;; *) ;;

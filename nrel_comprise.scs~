@@ -1,0 +1,26 @@
+//
+sc_node_norole_relation -> nrel_data_area;;
+nrel_data_area => nrel_main_idtf :[область данных*] (* <- lang_ru;; *);;
+nrel_data_area => nrel_main_idtf :[data area*](* <- lang_en;; *);;
+
+//определение 
+
+nrel_data_area <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(область данных*)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Область данных — это элементы отчета, которые отображают строки данных из наборов данных отчета. ]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+
+//домены
+
+nrel_data_area <= nrel_first_domain: concept_data;;
+nrel_data_area <= nrel_second_domain: concept_medium(*=> nrel_main_idtf :[носитель] (* <- lang_ru;; *);; *);;;;

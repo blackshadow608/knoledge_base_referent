@@ -1,0 +1,35 @@
+sc_node_not_relation -> packtransport;;
+packtransport => nrel_main_idtf:
+	[гужевой транспорт]
+	(*
+		<- lang_ru;;
+	*);
+	[pack transport]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	packtransport 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(гужевой транспорт)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [гужевой транспорт - вид наземного транспорта, как грузового, так и пассажирского, в котором транспортные средства (повозки) приводятся в движение животными.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	packtransport 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(дорога,гужевой транспорт,качество*)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Гужевой транспорт не требует хорошего качества дорог.](*<- lang_ru;;*);;
+				*);;
+		*);;

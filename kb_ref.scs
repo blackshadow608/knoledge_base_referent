@@ -1,0 +1,70 @@
+transport_razd
+=> nrel_main_idtf:
+	[Раздел.Транспорт]
+	(* <- lang_ru;; *);
+
+<= nrel_section_decomposition:
+{
+	transport
+};;
+
+internet_razd
+=> nrel_main_idtf:
+	[Раздел.Интернет]
+	(* <- lang_ru;; *);
+
+<= nrel_section_decomposition:
+{
+	concept_internet
+};;
+
+politics_razd
+=> nrel_main_idtf:
+	[Раздел.Политика]
+	(* <- lang_ru;; *);
+
+<= nrel_section_decomposition:
+{
+	politics
+};;
+
+kind_of_sport_razd
+=> nrel_main_idtf:
+	[Раздел.Виды спорта]
+	(* <- lang_ru;; *);
+
+<= nrel_section_decomposition:
+{
+	kind_of_sport
+};;
+
+law_razd
+=> nrel_main_idtf:
+	[Раздел.Право]
+	(* <- lang_ru;; *);
+
+<= nrel_section_decomposition:
+{
+	law
+};;
+
+knowledge_base
+=> nrel_main_idtf:
+	[База знаний]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Knowledge base]
+	(* <- lang_en;; *);
+
+<= nrel_section_decomposition:
+	{
+       	transport_razd;
+		internet_razd;
+		politics_razd;
+		kind_of_sport_razd;
+		law_razd;
+		section_requests;
+		documentation_of_ref
+	};
+
+<- ui_start_sc_element;;

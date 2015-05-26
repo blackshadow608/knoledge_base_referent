@@ -1,0 +1,40 @@
+sc_node_no_relation->acrobatics_road;;
+
+
+acrobatics_road => nrel_main_idtf:
+
+	[акробатическая дорожка]
+	(* <- lang_ru;; *);
+
+	[acrobatics_road]
+	(* <- lang_en;;	*);;
+
+
+acrobatics_road
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(Акробатическая дорожка)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Акробатическая дорожка - это один из видов упражнений в спортивной гимнастике.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

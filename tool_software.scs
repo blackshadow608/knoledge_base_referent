@@ -1,0 +1,20 @@
+//синонимы
+sc_node_not_relation -> concept_tool_software;;
+concept_tool_software => nrel_main_idtf :[инструментальное программное обеспечение] (* <- lang_ru;; *);;
+concept_tool_software => nrel_main_idtf :[tool software](* <- lang_en;; *);;
+
+//определение 
+
+concept_tool_software <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(инструментальное программное обеспечениее)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Инструмента́льное програ́ммное обеспе́чение — программное обеспечение, предназначенное для использования в ходе проектирования, разработки и сопровождения программ, в отличие от прикладного и системного программного обеспечения.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;

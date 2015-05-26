@@ -1,0 +1,13 @@
+sc_node_not_relation -> interbranch_legal_institution ;;
+
+interbranch_legal_institution => nrel_main_idtf : [interbranch legal institution] (* <- lang_en ;; *);
+                                      [межотраслевой правовой институт] (* <- lang_ru ;; *) ;;
+
+interbranch_legal_institution <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Межотраслевой правовой институт — к нему принадлежат институты, которые регулируют общественные отношения, относящиеся к двум или более отраслям права.](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;

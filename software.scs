@@ -1,0 +1,56 @@
+//синонимы
+sc_node_not_relation -> concept_software;;
+concept_software => nrel_main_idtf :[программное обеспечение] (* <- lang_ru;; *);;
+concept_software => nrel_main_idtf :[software](* <- lang_en;; *);;
+
+//определение 
+
+concept_software <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(программное обеспечение)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Программное обеспечение (software) – это набор команд, управляющих работой компьютера. Без программного обеспечения 				компьютер не сможет выполнять задачи, которые мы обычно связываем с компьютерами.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+// иерархия связи с другими понятими 
+concept_software <= nrel_subdividing: ...
+(*
+	-> concept_system_software;;
+	-> concept_applied_software;;
+	-> concept_tool_software;; 
+*);;
+
+//утверждения
+
+concept_software <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(ПО;история)] (* <- lang_ru;; *);; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Выбор соответствующего потребностям организации программного обеспечения – одна из ключевых задач управляющего персонала.]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(прикладное ПО;пользователь)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Прикладное программное обеспечение — программа, предназначенная для выполнения определенных пользовательских задач и рассчитанная на непосредственное взаимодействие с пользователем.](* <- lang_ru;; *);;
+*);;
+*);;

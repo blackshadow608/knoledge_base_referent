@@ -1,0 +1,17 @@
+//отношение понятий
+
+sc_node_norole_relation -> nrel_protototip;;
+nrel_protototip => nrel_main_idtf :[прототип*] (* <- lang_ru;; *);;
+
+
+sc_node_norole_relation -> nrel_typical_structure;;
+nrel_typical_structure => nrel_main_idtf :[типовая структура*] (* <- lang_ru;; *);;
+
+
+
+sc_node_not_relation -> atomic_existense;;
+atomic_existense => nrel_main_idtf :[атомарное существование] (* <- lang_ru;; *);;
+
+sc_node_norole_relation -> nrel_inclusion;;
+nrel_inclusion => nrel_main_idtf :[включение*] (* <- lang_ru;; *);;
+

@@ -1,0 +1,22 @@
+//синонимы
+sc_node_not_relation -> concept_ISDN;;
+concept_ISDN => nrel_main_idtf :[Integrated Services Digital Network] (* <- lang_ru;; *);;
+concept_ISDN => nrel_main_idtf :[Integrated Services Digital Network](* <- lang_en;; *);;
+
+//определение 
+
+concept_ISDN <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(ISDN)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ISDN (англ. Integrated Services Digital Network) — цифровая сеть с интеграцией служб. Позволяет совместить услуги 				телефонной связи и обмена данными.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+

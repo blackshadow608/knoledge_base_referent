@@ -1,0 +1,79 @@
+//
+sc_node_not_relation -> concept_computer_network;;
+concept_computer_network => nrel_main_idtf :[компьютерная сеть] (* <- lang_ru;; *);;
+concept_computer_network => nrel_main_idtf :[computer network](* <- lang_en;; *);;
+
+//определение 
+
+concept_computer_network <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(компьютерная сеть)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Компьютерная сеть (вычислительная сеть, сеть передачи данных) — система связи компьютеров или вычислительного 				оборудования (серверы, маршрутизаторы и другое оборудование).]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+
+
+// иерархия связи с другими понтиями   
+
+concept_computer_network => nrel_typical_structure :
+...
+(* -> concept_connection ;;
+   -> concept_data_communication_protocol ;;
+   -> concept_computer;;
+*);;
+
+concept_computer_network => nrel_inclusion: concept_internet;;
+
+
+
+//утверждения
+_computer_network => nrel_main_idtf :[_компьютерная сеть] (* <- lang_ru;; *);;
+
+concept_computer_network <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(компьютерная сеть;передача данных*; хранение данных*)] (* <- lang_ru;; *);;
+-> rrel_main_key_sc_element: stat_computer_network;; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Компьютерная сеть используется для передачи и хранения данных.]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(компьютерная сеть;история)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Впервые в мире вычислительная сеть была применена в советском комплексе ПРО «Система А» (генеральный конструктор Г. В. Кисунько), возведённом в 1956—1960 годах в Казахстане.](* <- lang_ru;; *);;
+*);;
+*);;
+
+//комментарий 
+concept_computer_network <- rrel_key_sc_element: 
+        ...
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_comment: 
+		...
+		(*
+		-> rrel_example: 
+			[Глобальная компьютерная сеть  — компьютерная сеть, охватывающая большие территории и включающая в себя большое число компьютеров.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;

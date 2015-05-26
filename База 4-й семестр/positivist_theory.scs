@@ -1,0 +1,11 @@
+sc_node_not_relation -> positivist_theory ;;
+
+positivist_theory => nrel_main_idtf : [positivist theory] (* <- lang_en ;; *);
+                                      [позитивистская теория] (* <- lang_ru ;; *) ;;
+
+positivist_theory => nrel_main_results : ...
+                                 (* -> ...
+                                          (* <= nrel_sc_text_translation : ...
+								     (* -> [Право порождено противоречиями жизни, конфликтами, в результате которых победу одерживает сильнейший. Он диктует свои правила «игры» и устанавливает свой порядок. Ему подчиняются побеждённые.] (* <- lang_ru ;; *) ;; *) ;;
+                                           *) ;;
+                                 *);;

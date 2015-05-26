@@ -1,0 +1,45 @@
+sc_node_norole_relation -> nrel_policy_objects;;
+
+nrel_policy_objects => nrel_main_idtf:
+	[объект политики*]
+	(* <- lang_ru;; *);
+	[policy objects*]
+	(* <- lang_en;; *);;
+
+
+nrel_policy_objects <- sc_relation;;
+
+nrel_policy_objects <- binary_relation;;
+
+nrel_policy_objects <- oriented_relation;;
+
+
+nrel_policy_objects <=> nrel_equal:
+	nrel_subject_of_politics;;
+	
+nrel_policy_objects => nrel_definitional_domain:
+	... 
+	(*
+	<= nrel_combination: 
+		{	
+		politics; 
+		social_level_subjects;
+		institutional_political_subjects;
+		functional_entities_policy;;
+		};;
+	*);;
+	
+
+nrel_policy_objects => nrel_first_domain: 
+	politics;;
+
+nrel_policy_objects => nrel_second_domain: 
+	... 
+	(*
+	<= nrel_combination: 
+		{	 
+		social_level_subjects;
+		institutional_political_subjects;
+		functional_entities_policy;;
+		};;
+	*);;

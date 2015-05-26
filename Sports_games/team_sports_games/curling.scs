@@ -1,0 +1,39 @@
+sc_node_no_relation->curling;;
+
+curling => nrel_main_idtf:
+
+	[кёрлинг]
+	(* <- lang_ru;; *);
+
+	[curling]
+	(* <- lang_en;;	*);;
+
+
+curling
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(кйрлинг)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Крикет - это командный неконтактный вид спорта, входящий в семейство игр, в которых используются бита и мяч.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

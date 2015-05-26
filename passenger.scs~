@@ -1,0 +1,49 @@
+sc_node_not_relation -> passenger;;
+passenger => nrel_main_idtf:
+	[пассажир]
+	(*
+		<- lang_ru;;
+	*);
+	[passenger]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	passenger 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(пассажир)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [ Пассажир - человек, нуждающийся в транспортировке одним из видов транспорта. ](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	passenger 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(пассажир, билет)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Заключение договора перевозки пассажира обычно кдостоверяется билетом.](*<- lang_ru;;*);;
+				*);;
+		
+		*);;
+
+	passenger 
+		<- rrel_key_sc_element:...
+		(*
+			
+			=>nrel_main_idtf:[Утв.(пассажир, контейнер)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[За неоплату проезда пассажиру выписывается штраф.](*<- lang_ru;;*);;
+				*);;
+		*);;

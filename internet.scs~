@@ -1,0 +1,77 @@
+//синонимы
+sc_node_not_relation -> concept_internet;;
+concept_internet => nrel_main_idtf :[Интернет] (* <- lang_ru;; *);;
+concept_internet => nrel_main_idtf :[Internet](* <- lang_en;; *);;
+
+//определение 
+
+concept_internet <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(интернет)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Интерне́т  — всемирная система объединённых компьютерных сетей для хранения и передачи информации.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+
+// иерархия связи с другими понтиями   
+
+concept_internet <- rrel_key_sc_element:
+...
+(*
+<- sc_explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+"file://image/map.jpg";;
+*);;
+*);;
+
+//утверждения
+
+concept_internet <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(интернет;пользователь;дата)] (* <- lang_ru;; *);; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[К 30 июня 2012 года число пользователей, регулярно использующих интернет, составило более чем 2,4 млрд человек, более трети населения Земли пользовалось услугами интернета.]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(интернет;история;передача инфомации*)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[В 1957 году Министерство обороны США посчитало, что на случай войны Америке нужна надёжная система передачи информации.](* <- lang_ru;; *);;
+*);;
+*);;
+
+//комментарий 
+concept_internet <- rrel_key_sc_element: 
+        ...
+	(*
+	<- sc_explanation;; 
+	<= nrel_sc_comment: 
+		...
+		(*
+		-> rrel_example: 
+			[В России День Интернета празднуется 30 сентября.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;

@@ -1,0 +1,26 @@
+//
+sc_node_norole_relation -> nrel_mapping;;
+nrel_mapping => nrel_main_idtf :[отображение*] (* <- lang_ru;; *);;
+nrel_mapping => nrel_main_idtf :[mapping*](* <- lang_en;; *);;
+
+//определение 
+
+nrel_mapping <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(отображение*)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Отображение — это отношение по предаствления объекта в некотором виде.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+
+//домены
+
+nrel_mapping <= nrel_first_domain: concept_object;;
+nrel_mapping <= nrel_second_domain: concept_variant_mapping;;

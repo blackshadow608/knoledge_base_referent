@@ -1,0 +1,57 @@
+//синонимы
+sc_node_not_relation -> concept_system_search;;
+concept_system_search => nrel_main_idtf :[поисковая система] (* <- lang_ru;; *);;
+concept_system_search => nrel_main_idtf :[system search](* <- lang_en;; *);;
+
+
+//определение 
+
+concept_system_search <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(поисковая система)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Поисковая система — программно-аппаратный комплекс с веб-интерфейсом, предоставляющий возможность поиска информации в 				интернете.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+// иерархия связи с другими понтиями 
+
+concept_system_search -> concept_google;
+			 concept_yahoo;
+			 concept_yandex;;
+
+
+
+//утверждения
+
+concept_system_search <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(поисковая система;PageRank)] (* <- lang_ru;; *);; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Поисковая система Google занимает видное положение с начала 2000-х Компания добилась высокого положения благодаря хорошим результатам поиска с помощью алгоритма PageRank.]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(русскоязычная поисковая система;история)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[В 1996 году был реализован поиск с учётом русской морфологии на поисковой машине Altavista и запущены оригинальные российские поисковые машины Рамблер и Апорт.](* <- lang_ru;; *);;
+*);;
+*);;

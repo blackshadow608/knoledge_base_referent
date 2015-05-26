@@ -1,0 +1,25 @@
+sc_node_not_relation -> racial_quasidemocracy;;
+
+racial_quasidemocracy => nrel_main_idtf:
+	[расовая квазидемократия]
+	(* <- lang_ru;; *);
+	[racial quasidemocracy]
+	(* <- lang_en;;	*);;
+
+racial_quasidemocracy
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(рассовая квазидемократия)]  (* <- lang_ru;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+
+		(*
+		->rrel_example:
+			[Это тип авторитаризма, где политический процесс можно было бы назвать демократическим, поскольку к участию в нём допущено определенное расовое или этническое меньшинство, но другие подобные группы исключены из политики юридически или фактически, причем с использованием насилия. ]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;

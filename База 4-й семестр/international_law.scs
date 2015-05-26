@@ -1,0 +1,14 @@
+sc_node_not_relation -> international_law ;;
+
+international_law => nrel_main_idtf : [international_law] (* <- lang_en ;; *);
+                                      [международное право] (* <- lang_ru ;; *) ;;
+
+international_law <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Международное право концентрирует совокупный опыт человеческой цивилизации и является результатом согласования воли субъектов международного общения, главным образом — государств.](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;
+

@@ -1,0 +1,27 @@
+sc_node_no_relation->gaming_kinds_of_sport;;
+gaming_kinds_of_sport => nrel_main_idtf:
+	[игровые виды спорта]
+	(* <- lang_ru;; *);
+	[gaming kinds of sport]
+	(* <- lang_en;;	*);;
+
+gaming_kinds_of_sport
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(игровые виды спорта)]  (* <- lang_ru;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+
+		(*
+		->rrel_example:
+			[Игровые виды спорта - это активные состязания, имеющие главной целью победу над противником. Как правило, игровые виды спорта это командные соревнования. Основная цель игры это набор максимального количества очков (баллов, голов, мячей) за отведенный промежуток времени или до первого попадания.]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+
+
+gaming_kinds_of_sport => nrel_subdividing:football; basketball; tennis; hockey; billiards; badminton;;

@@ -1,0 +1,26 @@
+//
+sc_node_norole_relation -> nrel_wat_of_presenting;;
+nrel_wat_of_presenting => nrel_main_idtf :[способ представления*] (* <- lang_ru;; *);;
+nrel_wat_of_presenting => nrel_main_idtf :[wat of presenting*](* <- lang_en;; *);;
+
+//определение 
+
+nrel_wat_of_presenting <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(способ представления*)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Способ представления — это  отношение связывающее файл, предназначенный для представления данных.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+
+//домены
+
+nrel_wat_of_presenting <= nrel_first_domain: concept_data;;
+nrel_wat_of_presenting <= nrel_second_domain: concept_file;;

@@ -1,0 +1,36 @@
+sc_node_not_relation -> locomotive;;
+
+locomotive => nrel_main_idtf:
+	[локомотив]
+	(*
+		<- lang_ru;;
+	*);
+	[locomotive]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	locomotive 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(локомотив)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [Локомотив - самоходный рельсовый экипаж, предназначенный для тяги несамоходны вагонов.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	locomotive 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(локомотив, перевозка)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Локомотив не предназначен ддля перевозки пассажиров.](*<- lang_ru;;*);;
+				*);;
+		*);;

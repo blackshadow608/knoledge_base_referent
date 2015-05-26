@@ -1,0 +1,54 @@
+//синонимы
+sc_node_not_relation -> concept_text_message;;
+concept_text_message => nrel_main_idtf :[текстовое сообщение] (* <- lang_ru;; *);;
+concept_text_message => nrel_main_idtf :[text message](* <- lang_en;; *);;
+
+//определение 
+
+concept_text_message <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(текстовое сообщение)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Текстовое сообщение – это услуга, которая позволяет Вам отправлять и принимать сообщения.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+
+// иерархия связи с другими понтиями 
+
+concept_service -> concept_text_message ;;
+
+//утверждения
+
+concept_text_message <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(электронная почта;текстовое сообщение;кодирование)] (* <- lang_ru;; *);; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Кодирование сообщений электронной почты - это специальный прием, при котором текст сообщения преобразуется так, чтобы он состоял только из латинских символов (7-битовые символы).]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(электронная почта;кодирование;MIME)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Стандарт MIME определяет 2 метода кодирования - Quoted Printable и Base64. Однако, часто программы поддерживают только один тип кодирования, обычно метод Quoted Printable, поэтому Вы можете быть вынуждены использовать именно его.](* <- lang_ru;; *);;
+*);;
+*);;
+

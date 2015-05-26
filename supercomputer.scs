@@ -1,0 +1,20 @@
+//синонимы
+sc_node_not_relation -> concept_supercomputer;;
+concept_supercomputer => nrel_main_idtf :[суперкомпьютер] (* <- lang_ru;; *);;
+concept_supercomputer => nrel_main_idtf :[supercomputer](* <- lang_en;; *);;
+
+//определение 
+
+concept_supercomputer <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(суперкомпьютер)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Суперкомпью́тер — специализированная вычислительная машина, значительно превосходящая по своим техническим параметрам и скоростью вычислений большинство существующих в мире компьютеров.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;

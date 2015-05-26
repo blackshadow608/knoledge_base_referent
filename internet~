@@ -1,0 +1,46 @@
+//синонимы
+sc_node_not_relation -> concept_internet;;
+concept_informatics => nrel_main_idtf :[Интернет] (* <- lang_ru;; *);;
+
+concept_internet => nrel_idtf: ...
+
+	(* 
+	-> [Интернет]
+	(* <- lang_ru;; *);;
+     	->[Internet]
+	(* <- lang_en;; *);;
+	*);;
+//определение 
+
+concept_internet => nrel_definition : defin_internet;;
+defin_internet  => nrel_main_idtf :[Опр(интернет)] (* <- lang_ru;; *);;
+defin_internet <= nrel_translation :
+...
+(* -> rrel_translation' : [Интерне́т  — всемирная система объединённых компьютерных сетей для хранения и передачи информации.] (*<-concept_text;; <- lang_ru;;*);;
+*);;
+
+// иерархия связи с другими понтиями   
+ 
+sc_node_norole_relation -> nrel_inclusion;;
+sc_node_role_relation -> rrel_image;;
+
+rrel_image => nrel_main_idtf :[изображение'] (* <- lang_ru;; *);;
+nrel_inclusion => nrel_main_idtf :[включение*] (* <- lang_ru;; *);;
+
+concept_internet => nrel_inclusion: ...
+	(*
+	-> concept_computer_network;; 
+	-> concept_information_transfer;;
+	-> concept_information_storage;;
+	*);;
+
+concept_internet -> rrel_image : [*/home/ivan/map.jpg*];;
+
+//утверждения
+assertions1_internet => nrel_main_idtf :[утв(интернет*,пользователь,дата)] (* <- lang_ru;; *);;
+assertions2_internet => nrel_main_idtf :[утв(интернет*,история,передача инфомации*)] (* <- lang_ru;; *);;
+
+concept_internet => nrel_basic_assertions : ...
+(* -> assertions1_internet (* <= nrel_translation : ... (* -> [К 30 июня 2012 года число пользователей, регулярно использующих интернет, составило более чем 2,4 млрд человек, более трети населения Земли пользовалось услугами интернета.] (* <- lang_ru; concept_text;; *) ;;*) ;;*);;
+-> assertions2_internet (* <= nrel_translation : ... (* -> [В 1957 году Министерство обороны США посчитало, что на случай войны Америке нужна надёжная система передачи информации.]  (* <- lang_ru; concept_text;; *) ;;*) ;; *);;
+*);;

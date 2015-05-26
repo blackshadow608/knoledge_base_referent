@@ -1,0 +1,71 @@
+sc_node_not_relation -> political_system;;
+
+political_system => nrel_main_idtf:
+	[политическая система общества]
+	(* <- lang_ru;; *);
+	[political system of society]
+	(* <- lang_en;;	*);;
+
+political_system => nrel_idtf:
+	[political organization of society]
+	(* <- lang_en;; *);;
+
+political_system
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(политическая система)]  (* <- lang_ru;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+
+		(*
+		->rrel_example:
+			[Политическая система общества или политическая организация общества — организованная на единой нормативно-ценностной 				основе совокупность взаимодействий (отношений) политических субъектов, связанных с осуществлением власти 				(правительством) и управлением обществом.]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+
+political_system<= nrel_function:
+	...
+	(*  
+        	
+		<=nrel_sc_text_translation:
+		...
+	(* -> rrel_example: [Обеспечение политической власти для определённой социальной группы или для большинства членов данного 					общества.](*<- lang_ru;;*);;*);
+		...
+	(* -> rrel_example: [Управление различными сферами жизнедеятельности людей в интересах отдельных социальных групп или большинства 					населения.](*<- lang_ru;;*);;*);
+		...
+	(* -> rrel_example: [Мобилизация средств и ресурсов, необходимых для достижения этих целей и задач.](*<- lang_ru;;*);;*);
+		...
+	(* -> rrel_example: [Выявление и представительство интересов различных субъектов политических отношений.](*<- lang_ru;;*);;*);
+		...
+	(* -> rrel_example: [Удовлетворение интересов различных субъектов политических отношений посредством распределения материальных и 					духовных ценностей в соответствии с теми или иными идеалами конкретного общества.](*<- lang_ru;;*);;*);
+		...
+	(* -> rrel_example: [Интеграция общества, создание необходимых условий для взаимодействия различных элементов его 					структуры](*<- lang_ru;;*);;*);;
+
+	*);;
+political_system <= nrel_subdividing:
+	...
+	(*  
+         => nrel_main_idtf: [По степени демократичности власти] (* <- lang_ru;; *);;
+	-> democracy;
+	theocracy;
+	totalitarianism;
+	authoritarianism;;
+	*);;
+
+political_system<= nrel_structure:
+		...
+	(*  
+		->organizational_component;
+		cultural_component;
+		normative_component;
+		communicative_component;
+		functional_component;;
+	*);;
+
+political_system ->political_institution;;
+

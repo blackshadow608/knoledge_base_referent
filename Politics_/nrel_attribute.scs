@@ -1,0 +1,31 @@
+sc_node_norole_relation -> nrel_attribute;;
+
+nrel_attribute => nrel_main_idtf:
+	[признак*]
+	(* <- lang_ru;; *);
+	[attribute*]
+	(* <- lang_en;; *);;
+
+nrel_attribute<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(признак*)]  (* <- lang_ru;; *);;
+	<-sc_explanation;;
+	<=nrel_sc_text_translation:
+		...
+
+		(*
+		->rrel_example:
+			[Отношение показывающее характерные черты для данного понятия]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+
+nrel_attribute <- sc_relation;;
+
+nrel_attribute <- binary_relation;;
+
+nrel_attribute <- oriented_relation;;
+

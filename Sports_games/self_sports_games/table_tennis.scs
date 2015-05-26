@@ -1,0 +1,38 @@
+sc_node_no_relation->table_tennis;;
+table_tennis => nrel_main_idtf:
+
+	[настольный теннис]
+	(* <- lang_ru;; *);
+
+	[table tennis]
+	(* <- lang_en;;	*);;
+
+
+table_tennis
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(настольный теннис)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Настольный теннис - это спортивная игра, основанная на перекидывании специального мяча ракетками на игровом столе с сеткой по определённым правилам. ]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

@@ -1,0 +1,35 @@
+sc_node_not_relation -> airtransport;;
+airtransport => nrel_main_idtf:
+	[воздушный транспорт]
+	(*
+		<- lang_ru;;
+	*);
+	[air transport]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	airtransport 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(воздушный транспорт)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [воздушный транспорт - понятие, включающее как собственно воздушные суда, так и необходимую для их эксплуатации инфраструктуру: аэропорты, диспетчерские и технические службы.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	airtransport 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(воздушный транспорт, вид транспорта)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Воздушный транспорт — самый быстрый вид транспорта. ](*<- lang_ru;;*);;
+				*);;
+		*);;

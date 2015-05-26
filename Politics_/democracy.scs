@@ -1,0 +1,53 @@
+sc_node_not_relation -> democracy;;
+
+democracy => nrel_main_idtf:
+	[демократия]
+	(* <- lang_ru;; *);
+	[democracy]
+	(* <- lang_en;;	*);
+	=> nrel_idtf:
+	[демократический режим]
+	(* <- lang_ru;; *);
+	[democracy regime]
+	(* <- lang_en;;	*);;
+
+democracy
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(демократия)]  (* <- lang_ru;; *);;
+	<-sc_explanation;;
+	<=nrel_sc_text_translation:
+		...
+
+		(*
+		->rrel_example:
+			[Демократия — политический режим, в основе которого лежит метод коллективного принятия решений с равным воздействием 				участников на исход процесса или на его существенные стадии.]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+
+democracy<= nrel_attribute:
+	...
+	(*  
+
+		<=nrel_sc_text_translation:
+		...
+	(* -> rrel_example: [Назначение лидеров управляемыми ими людьми происходит путём честных и состязательных 					выборов.](*<- lang_ru;;*);;*);
+		...
+	(* -> rrel_example: [Народ является единственно легитимным источником власти.](*<- lang_ru;;*);;*);
+		...
+	(* -> rrel_example: [Общество осуществляет самоуправление ради общего блага и удовлетворения общих интересов.](*<- lang_ru;;*);;*);;
+
+	*);;
+
+democracy<= nrel_subdividing:
+	...
+	(* 
+	-> straight_democracy;
+	representative_democracy;;
+	*);;
+
+

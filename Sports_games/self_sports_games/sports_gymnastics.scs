@@ -1,0 +1,41 @@
+sc_node_no_relation->sport_gymnastics;;
+
+sports_gymnastics => nrel_main_idtf:
+
+	[спортивная гимнастика]
+	(* <- lang_ru;; *);
+
+	[sports gymnastics]
+	(* <- lang_en;;	*);;
+
+
+sports_gymnastics
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(спортивная гимнастика)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Спортивная гимнастика - это вид спорта, включающий соревнования на гимнастических снарядах, в вольных упражнениях и в опорных прыжках.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;
+
+sports_gymnastics=>nrel_inclusion:acrobatics_road; bearing_jump; climbing_rope; crossbar;  exercises_with_stuff; free_exercises; hourse; maces; parallel_bars; rings; team_bars; team_crossbar ;;

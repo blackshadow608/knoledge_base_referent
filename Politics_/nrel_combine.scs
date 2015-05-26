@@ -1,0 +1,29 @@
+sc_node_norole_relation -> nrel_combine;;
+
+nrel_combine => nrel_main_idtf:
+	[сочетаться*]
+	(* <- lang_ru;; *);
+	[combine*]
+	(* <- lang_en;; *);;
+
+nrel_combine<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(сочетаться*)]  (* <- lang_ru;; *);;
+	<-sc_explanation;;
+	<=nrel_sc_text_translation:
+		...
+
+		(*
+		->rrel_example:
+			[Отношение показывающее с какими политическими может сочетаться в государстве данный режим.]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+nrel_combine <- sc_relation;;
+
+nrel_combine <- binary_relation;;
+
+nrel_combine <- oriented_relation;;

@@ -1,0 +1,21 @@
+//
+sc_node_not_relation -> concept_variant_mapping;;
+concept_variant_mapping => nrel_main_idtf :[вариант отображения] (* <- lang_ru;; *);;
+concept_variant_mapping => nrel_main_idtf :[variant_mapping](* <- lang_en;; *);;
+
+//определение 
+
+concept_variant_mapping <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(вариант отображения)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Вариант отображения - некоторое средство, используемое для предствления некоторых объектов.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+concept_variant_mapping -> concept_browser;;

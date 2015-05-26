@@ -1,0 +1,21 @@
+//синонимы
+sc_node_not_relation -> concept_google;;
+concept_google => nrel_main_idtf :[Google] (* <- lang_ru;; *);;
+concept_google => nrel_main_idtf :[Google](* <- lang_en;; *);;
+
+
+//определение 
+
+concept_google <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(google)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Google — крупнейшая поисковая система интернета, принадлежащая корпорации Google Inc.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;

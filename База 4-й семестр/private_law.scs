@@ -1,0 +1,19 @@
+sc_node_not_relation -> private_law ;;
+
+private_law => nrel_main_idtf : [private law] (* <- lang_en ;; *);
+                                      [частное право] (* <- lang_ru ;; *) ;;
+
+private_law <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Частное право — регулирует отношения, возникающие на началах автономии и равенства сторон между какими-либо частными субъектами (индивидуумами, коллективами, организациями и др.).](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;
+private_law => nrel_main_results : ...
+                                 (* -> ...
+                                          (* <= nrel_sc_text_translation : ...
+								     (* -> [Частное право — это совокупность норм права, защищающих интересы лица в его взаимоотношениях с другими лицами.] (* <- lang_ru ;; *) ;; *) ;;
+                                           *) ;;
+                                 *);;

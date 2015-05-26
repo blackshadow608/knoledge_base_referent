@@ -1,0 +1,40 @@
+sc_node_no_relation->basketball;;
+
+
+basketball => nrel_main_idtf:
+
+	[баскетбол]
+	(* <- lang_ru;; *);
+
+	[basketball]
+	(* <- lang_en;;	*);;
+
+
+basketball
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(баскетбол)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Баскетбол - это игра, в которой мяч забрасывают руками в подвешенную сетку (называемую корзиной) противной партии.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

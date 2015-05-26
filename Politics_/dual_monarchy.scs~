@@ -1,0 +1,24 @@
+sc_node_not_relation -> dual_monarchy;;
+
+dual_monarchy => nrel_main_idtf:
+	[дуалистическая монархия]
+	(* <- lang_ru;; *);
+	[dual monarchy]
+	(* <- lang_en;;	*);;
+
+dual_monarchy
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(дуалистическая монархия)]  (* <- lang_ru;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Дуалистическая монархия — конституционная монархия, в которой власть монарха ограничена конституцией, но монарх формально и фактически сохраняет обширные властные полномочия. ]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;

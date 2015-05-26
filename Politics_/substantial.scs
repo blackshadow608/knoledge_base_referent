@@ -1,0 +1,25 @@
+sc_node_not_relation -> substantial;;
+
+substantial => nrel_main_idtf:
+	[субстанциональный подход]
+	(* <- lang_ru;; *);
+	[substantial]
+	(* <- lang_en;;	*);;
+
+substantial <- rrel_key_sc_element:
+	...
+	(*
+=> nrel_main_idtf: [Опр.(субстанциональный подход)]  (* <- lang_ru;; *);;
+	<-sc_explanation;;
+	<=nrel_sc_text_translation:
+		...
+
+		(*
+		->rrel_example:
+			[Такие трактовки политики непосредственным образом увязывают её с понятием власти, определяя политику либо как 					управление при помощи власти, либо как стремление к обретению и сохранению таковой.]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+

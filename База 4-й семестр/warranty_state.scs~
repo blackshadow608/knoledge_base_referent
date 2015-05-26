@@ -1,0 +1,13 @@
+sc_node_not_relation -> warranty_state ;;
+
+warranty_state => nrel_main_idtf : [warranty state] (* <- lang_en ;; *);
+                                      [гарантированность государством] (* <- lang_ru ;; *) ;;
+
+warranty_state <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Гарантированность государством - поддержка и охрана от нарушений права государством.](*<-lang_ru;;*);;
+	                                                              *) ;;
+

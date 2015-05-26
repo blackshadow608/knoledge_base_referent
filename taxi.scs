@@ -1,0 +1,36 @@
+sc_node_not_relation -> taxi;;
+taxi => nrel_main_idtf:
+	[такси]
+	(*
+		<- lang_ru;;
+	*);
+	[taxi]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	taxi 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(такси)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [Такси — общественное транспортное средство, обычно автомобиль, используемый для перевозки пассажиров в любую указанную точку с оплатой проезда машины по счётчику.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	taxi 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(такси)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[ В развитых странах таксисты координируют свои действия с диспетчером таксопарка, который может передавать водителям сведения о заказах по радиосвязи, либо при помощи телефона](*<- lang_ru;;*);;
+				*);;
+		*);;
+		taxi <= nrel_transportation:passenger;;

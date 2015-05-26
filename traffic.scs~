@@ -1,0 +1,54 @@
+//синонимы
+sc_node_not_relation -> concept_traffic;;
+concept_traffic => nrel_main_idtf :[сетевой трафик] (* <- lang_ru;; *);;
+concept_traffic => nrel_main_idtf :[traffic](* <- lang_en;; *);;
+
+//определение 
+
+concept_traffic <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(сетевой трафик)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Сетевой трафик или интернет-трафик — объём информации, передаваемой через компьютерную сеть за определенный период 				времени.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+
+// иерархия связи с другими понтиями 
+
+concept_traffic <= nrel_typical_structure: concept_computer_network; nrel_information_transfer; concept_data;;
+
+//утверждения
+
+concept_traffic <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(трафик; количество*)] (* <- lang_ru;; *);; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Количество трафика измеряется как в пакетах, так и в битах, байтах и их производных: килобайт (Кб), мегабайт (Мб) и т. д.]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(сетевой трафик)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Программы, осуществляющие подсчёт сетевого трафика: TMeter, BWMeter, NetWorx, DU Meter, NetTraffic, NetBalancer.](* <- lang_ru;; *);;
+*);;
+*);;
+

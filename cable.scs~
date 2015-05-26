@@ -1,0 +1,63 @@
+//
+sc_node_not_relation -> concept_cable;;
+concept_cable => nrel_main_idtf :[кабель] (* <- lang_ru;; *);;
+concept_cable => nrel_main_idtf :[cable](* <- lang_en;; *);;
+
+//определение 
+
+concept_cable <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(кабель)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Кабель — конструкция из одного или нескольких изолированных друг от друга проводников (жил), или оптических волокон, 				заключённых в оболочку.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+// иерархия связи с другими понтиями   
+
+concept_cable <- rrel_key_sc_element:
+...
+(*
+<- sc_explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+"file://image/cable.jpg";;
+*);;
+*);;
+//утверждения
+
+
+concept_cable <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(излучающий кабель;греющий кабель)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Существуют также кабели, совмещающие в себе функции передачи и излучения радиосигналов (излучающий кабель), либо преобразования электрической энергии в тепло на большой протяжённости (греющий кабель).]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(кабель;производство)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[25 октября 1879 года Вернеру фон Сименсу (фирма «Сименс и Гальске») было выдано свидетельство на производство работ в построенном им заводе по изготовлению изолированной проволоки и телеграфных проводов в Васильевской части Санкт-Петербурга](* <- lang_ru;; *);;
+*);;
+*);;
+

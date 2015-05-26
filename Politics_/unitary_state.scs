@@ -1,0 +1,47 @@
+sc_node_not_relation -> unitary_state;;
+
+unitary_state => nrel_main_idtf:
+	[унитарное государство]
+	(* <- lang_ru;; *);
+	[unitary state]
+	(* <- lang_en;;	*);;
+
+unitary_state
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(унитарное государство)]  (* <- lang_ru;; *);;
+	<-sc_explanation;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Унитарное государство — простое, единое государство, которое характеризуется отсутствием у административно-территориальных единиц признаков суверенитета.]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+unitary_state <= nrel_subdividing:
+	...
+ (* => nrel_main_idtf: [В зависимости от степени подчинения административно-территориальных единиц унитарного государства центральным органам власти] (* <- lang_ru;; *);;
+ 	->centralized_unitary_state;
+	decentralized_unitary_state;;
+ *);;
+
+unitary_state ->simple_unitary_state;
+		complex_unitary_state;;
+
+unitary_state<= nrel_attribute:
+	...
+	(*  
+		<=nrel_sc_text_translation:
+		...
+	(* -> rrel_example: [Вся полнота государственной власти сосредоточена на уровне государства в целом, территориальные части не имеют самостоятельностию](*<- lang_ru;;*);;*);
+		...
+	(* -> rrel_example: [Органы государственной власти строятся в виде единой иерархичной системы с подчинением одному центру.](*<- lang_ru;;*);;*);
+		...
+	(* -> rrel_example: [Наличие единого гражданства.](*<- lang_ru;;*);;*);;
+	*);;
+
+

@@ -1,0 +1,14 @@
+sc_node_not_relation -> sub_sector_law ;;
+
+sub_sector_law => nrel_main_idtf : [sub-sector law] (* <- lang_en ;; *);
+                                      [подотрасль права] (* <- lang_ru ;; *) ;;
+
+sub_sector_law <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Подотрасль (суботрасль) права — совокупность нескольких близких по характеру правовых институтов.](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;
+

@@ -1,0 +1,66 @@
+sc_node_norole_relation -> nrel_decomposition_type;;
+decomposition_relation -> nrel_decomposition_type;;
+quasybinary_relation -> nrel_decomposition_type;;
+nrel_decomposition_type => nrel_main_idtf:
+  	[декомпозиция по типу*]
+	(*
+		<- lang_ru;;
+	*);
+	[decomposition with type*]
+	(*
+		<- lang_en;;
+	*);;
+
+sc_node_norole_relation -> nrel_decomposition_infra;;
+decomposition_relation -> nrel_decomposition_infra;;
+quasybinary_relation -> nrel_decomposition_infra;;
+nrel_decomposition_infra => nrel_main_idtf:
+  	[базовая декомпозиция*]
+	(*
+		<- lang_ru;;
+	*);
+	[base decomposition*]
+	(*
+		<- lang_en;;
+	*);;
+
+transport <= nrel_decomposition_type: ..type_decomp;;
+
+..type_decomp -> groundtransport;;
+..type_decomp -> undergroundtransport;;
+..type_decomp -> watertransport;;
+..type_decomp -> airtransport; spacetransport; publictransport;;
+
+groundtransport <= nrel_subdividing: ..grsub;;
+..grsub -> autotransport; railwaytransport; packtransport;;
+trane -> locomotive; wagon;;
+ship -> transport_ship;;
+undergroundtransport <= nrel_subdividing: ..udt;;
+..udt -> underground;;
+
+
+transport <= nrel_decomposition_infra: ..dec_infr;;
+..dec_infr -> vehile; transportinfrastructure;;
+transportinfrastructure <= nrel_subdividing: ..infra_sub;;
+..infra_sub -> airport; port; road; railroad; overpass;; 
+vehile <= nrel_subdividing: ..vehile_sub;;
+..vehile_sub -> ground_vehile; air_vehile; underground_vehile; space_vehile; water_vehile; public_vehile;;
+ground_vehile <= nrel_subdividing: ..gr_veh;;
+..gr_veh -> auto; trane;;
+air_vehile <= nrel_subdividing: ..air_veh;;
+..air_veh -> plane; cargo_helicopter;;
+water_vehile <= nrel_subdividing: ..water_veh;;
+..water_veh -> ship;;
+
+autotransport <= nrel_decomposition_infra: ..dec_auto;;
+..dec_auto -> auto; bus; road; overpass; oil_station;;
+railwaytransport <= nrel_decomposition_infra: ..dec_rw;;
+..dec_rw -> rwstation; railroad; trane;;
+packtransport <= nrel_decomposition_infra: ..dec_pack;;
+..dec_pac -> road; overpass;;
+watertransport <= nrel_decomposition_infra: ..dec_water;;
+..dec_water -> ship; port;;
+airtransport <= nrel_decomposition_infra: ..dec_air;;
+..dec_air -> plane; airport;;
+publictransport <= nrel_decomposition_infra: ..dec_public;;
+..dec_public -> bus; road; overpass; oil_station; station;;

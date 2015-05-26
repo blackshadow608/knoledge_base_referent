@@ -1,0 +1,22 @@
+//
+sc_node_not_relation -> concept_place_of_location;;
+concept_place_of_location => nrel_main_idtf :[место размещения] (* <- lang_ru;; *);;
+concept_place_of_location => nrel_main_idtf :[place_of_location](* <- lang_en;; *);;
+
+//определение 
+
+concept_place_of_location <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(место размещения)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Место размещения - некоторая сущность, используемая для предствления или хранения объектов.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+concept_place_of_location  => nrel_inclusion: concept_file; concept_hosting; concept_proxy;;

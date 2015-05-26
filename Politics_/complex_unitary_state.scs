@@ -1,0 +1,25 @@
+sc_node_not_relation -> complex_unitary_state;;
+
+complex_unitary_state => nrel_main_idtf:
+	[сложное унитарное государство]
+	(* <- lang_ru;; *);
+	[simple unitary state]
+	(* <- lang_en;;	*);;
+
+complex_unitary_state
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(сложное унитарное государство)]  (* <- lang_ru;; *);;
+	<-sc_explanation;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Сложное унитарное государство — имеет в составе одно или несколько автономных образований]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+

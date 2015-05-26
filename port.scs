@@ -1,0 +1,36 @@
+sc_node_not_relation -> port;;
+
+port => nrel_main_idtf:
+	[порт]
+	(*
+		<- lang_ru;;
+	*);
+	[port]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	port 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(порт)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [порт - комплекс сооружений для посадки/высадки пассажиров и/или разгрузки/погрузки грузов, первозимых водным транспортом, а также для стоянки воднго транспорта.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	port 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(порт)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Порты обычно устраивают в бухьах и гаванях.](*<- lang_ru;;*);;
+				*);;
+		*);;

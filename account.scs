@@ -1,0 +1,60 @@
+// 
+sc_node_not_relation -> concept_account;;
+concept_account => nrel_main_idtf :[учетная запись] (* <- lang_ru;; *);;
+concept_account => nrel_main_idtf :[account] (* <- lang_en;; *);; 
+
+concept_account <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(учетная запись)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Учётная запись — хранимая в компьютерной системе совокупность данных о пользователе, необходимая для его опознавания 				(аутентификации) и предоставления доступа к его личным данным и настройкам.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+
+// иерархия связи с другими понтиями 
+
+
+//concept_account <= nrel_typical_structure: concept_login (* => nrel_main_idtf :[логин] (* <- lang_ru;; *);; *);
+				     //concept_password (* => nrel_main_idtf :[пароль] (* <- lang_ru;; *);; *);;
+
+
+
+
+//утверждения
+
+_account => nrel_main_idtf :[_учетная запись] (* <- lang_ru;; *);;
+_user => nrel_main_idtf :[_пользователь] (* <- lang_ru;; *);;
+
+concept_account <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(пользователь; идентификация*; учетная запись)] (* <- lang_ru;; *);;
+-> rrel_main_key_sc_element: stat_account_user;; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Каждый пользователь использует для идентификации учетную запись]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(учетная запись; пользователь; фотография)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Учётная запись может также содержать одну или несколько фотографий или аватар пользователя.](* <- lang_ru;; *);;
+*);;
+*);;

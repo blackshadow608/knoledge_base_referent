@@ -1,0 +1,11 @@
+documentation -> "file://Dokumentatsia.pdf";;
+documentation => nrel_main_idtf:
+	[Документация]
+	(*
+	<- lang_ru;;
+	*);	
+	[Documentation]
+	(*
+	<- lang_en;;
+	*);;
+

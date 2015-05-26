@@ -1,0 +1,64 @@
+//синонимы
+sc_node_not_relation -> concept_IP_telephony;;
+concept_IP_telephony => nrel_main_idtf :[IP-телефония] (* <- lang_ru;; *);;
+concept_IP_telephony => nrel_main_idtf :[IP-telephony](* <- lang_en;; *);;
+
+//определение 
+
+concept_IP_telephony <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(IP-телефония)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[IP-телефони́я (произносится «айпи́-телефони́я») — телефонная связь по протоколу IP. Под IP-телефонией подразумевается 				набор коммуникационных протоколов, технологий и методов, обеспечивающих традиционные для телефонии набор номера, 				дозвон и двустороннее голосовое общение, а также видеообщение по сети Интернет или любым другим IP-сетям.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+// иерархия связи с другими понтиями   
+
+concept_video_communication => nrel_inclusion: concept_IP_telephony;;
+
+concept_IP_telephony <- rrel_key_sc_element:
+...
+(*
+<- sc_explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+"file://image/skype.jpg";;
+*);;
+*);;
+//утверждения
+
+concept_IP_telephony <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(Skype;IP-телефония)] (* <- lang_ru;; *);;
+-> rrel_main_key_sc_element: stat_file_hosting;; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Программа Skype не использует SRTP, но там используется система шифрования, которая прозрачна для Skype-провайдера.]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(IP‐звонок;трафик;шифрование)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[В результате, при помощи анализатора трафика относительно несложно установить прослушивание IP-звонков, а при некоторых ухищрениях даже изменить их содержание.](* <- lang_ru;; *);;
+*);;
+*);;

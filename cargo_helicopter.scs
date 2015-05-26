@@ -1,0 +1,36 @@
+sc_node_not_relation -> cargo_helicopter;;
+
+cargo_helicopter => nrel_main_idtf:
+	[транспортный вертолёт]
+	(*
+		<- lang_ru;;
+	*);
+	[cargo_helicopter]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	cargo_helicopter 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(транспортный вертолёт)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [Транспортный вертолёт - винтокрылый летательный аппарат, предназначеный для перевозки грузов.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	cargo_helicopter 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(транспортный вертолёт)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Транспортнный вертолёт Ми-26 является самым большим в мире.](*<- lang_ru;;*);;
+				*);;
+		*);;

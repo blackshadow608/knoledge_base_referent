@@ -1,0 +1,35 @@
+sc_node_not_relation -> cartage;;
+cartage => nrel_main_idtf:
+	[вьючный транспорт]
+	(*
+		<- lang_ru;;
+	*);
+	[cartage]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	cartage 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(вьючный транспорт)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [вьючный транспорт - транспорт, использующий работу животных либо человека.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	cartage 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(вьючный транспорт,вид транспорта)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Вьючный транспорт является древнейшим известным человеку видом транспорта](*<- lang_ru;;*);;
+				*);;
+		*);;

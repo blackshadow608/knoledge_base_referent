@@ -1,0 +1,39 @@
+sc_node_not_relation->quake;;
+
+
+quake => nrel_main_idtf:
+
+	[Квэйк]
+	(* <- lang_ru;; *);
+
+	[Quake]
+	(* <- lang_en;;	*);;
+
+
+quake
+<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(Квэйк)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Quake — серия компьютерных игр в жанре шутера от первого лица, разработанная id Software.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

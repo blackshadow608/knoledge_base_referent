@@ -1,0 +1,36 @@
+sc_node_not_relation -> spacetransport;;
+
+spacetransport => nrel_main_idtf:
+	[космический транспорт]
+	(*
+		<- lang_ru;;
+	*);
+	[space transport]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	spacetransport 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(космический транспорт)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [космическийтранспорт - вид транспорта, используемый в космосе.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	spacetransport 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(космическийтранспорт, вид транспорта)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Космический транспорт — самый молодой вид транспорта. ](*<- lang_ru;;*);;
+				*);;
+		*);;

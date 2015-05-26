@@ -1,0 +1,9 @@
+sc_node_not_relation -> theocratic_republic;;
+
+theocratic_republic => nrel_main_idtf:
+	[теократическая республика]
+	(* <- lang_ru;; *);
+	[theocratic republic]
+	(* <- lang_en;;	*);;
+
+

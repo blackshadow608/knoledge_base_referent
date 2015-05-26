@@ -1,0 +1,49 @@
+//синонимы
+sc_node_not_relation -> concept_video_communication;;
+concept_video_communication => nrel_main_idtf :[видеосвязь] (* <- lang_ru;; *);;
+concept_video_communication => nrel_main_idtf :[video communication](* <- lang_en;; *);;
+
+//определение 
+
+concept_video_communication <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(видеосвязь)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Видеотелефония (англ. Videotelephony) — услуга телефонии с одновременной передачей видеосигнала между участниками 				сеанса (сессии) связи.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+
+//утверждения
+
+concept_video_communication <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(видеосвязь;смартфон)] (* <- lang_ru;; *);; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Для использования видеотелефонии в сетях сотовой связи необходимо иметь два сотовых телефона или смартфона/коммуникатора с фронтальными камерами (сеть сотовой подвижной связи при этом должна работать в стандартах третьего поколения (3G) или более поздних: 4G, 5G, …).]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(компьютер;видеосвязь)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Для общения по видеосвязи необходим компьютер с программой-софтфоном или видеотерминал (видеотелефон, групповая система видеоконференцсвязи и т. п.).](* <- lang_ru;; *);;
+*);;
+*);;

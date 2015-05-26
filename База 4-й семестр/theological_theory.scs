@@ -1,0 +1,12 @@
+sc_node_not_relation -> theological_theory ;;
+
+theological_theory => nrel_main_idtf : [theological theory] (* <- lang_en ;; *);
+                                      [теологическая теория] (* <- lang_ru ;; *) ;;
+
+theological_theory => nrel_main_results : ...
+                                 (* -> ...
+                                          (* <= nrel_sc_text_translation : ...
+								     (* -> [Законы существуют вечно, ибо являются Божественным даром. Они определяют порядок жизни в соответствии с идеалами добра и справедливости, дарованной свыше.] (* <- lang_ru ;; *) ;; *) ;;
+                                           *) ;;
+                                 *);;
+

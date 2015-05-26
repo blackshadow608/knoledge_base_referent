@@ -1,0 +1,41 @@
+sc_node_no_relation->team_sports_games;;
+
+
+team_sports_games => nrel_main_idtf:
+	
+	[командные виды спорта]
+	(* <- lang_ru;; *);
+	
+	[team sports games]
+	(* <- lang_en;;	*);;
+
+
+team_sports_games
+	
+	<- rrel_key_sc_element:
+	...
+	
+		(*
+	
+			=> nrel_main_idtf: [Опр.(командные виды спорта)]  (* <- lang_ru;; *);;
+	
+		<-sc_definition;;
+
+		<=nrel_sc_text_translation:
+	
+		...
+
+		
+			(*
+->rrel_example:
+[Командные виды спорта - это виды спорта, в которых соперничество в определенной игре ведется между командами(2 и более человека).]
+			(*
+<- lang_ru;;
+*);;
+*);;
+	*);;
+
+
+team_sports_games <= nrel_inclusion: basketball; bobsled; football; handball; hockey; lacross; volleyball; curling;;
+
+

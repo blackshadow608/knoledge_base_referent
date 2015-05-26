@@ -1,0 +1,35 @@
+sc_node_not_relation -> airport;;
+airport => nrel_main_idtf:
+	[аэропорт]
+	(*
+		<- lang_ru;;
+	*);
+	[airport]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	airport 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(аэропорт)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [аэропорт - комплекс сооружений для посадки/высадки пассажиров и/или разгрузки/погрузки грузов, первозимых воздушным транспортном, а также для стоянки воздушного транспорта.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	airport 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(аэропорт)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Первым аэропортом стал Девау в Кёнингсберге.](*<- lang_ru;;*);;
+				*);;
+		*);;

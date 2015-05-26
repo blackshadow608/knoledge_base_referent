@@ -1,0 +1,41 @@
+sc_node_no_relation->sumo;;
+
+sumo => nrel_main_idtf:
+
+	[сумо]
+	(* <- lang_ru;; *);
+
+	[sumo]
+	(* <- lang_en;;	*);;
+
+
+sumo
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(сумо)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Сумо - это японская борьба спортсменов-тяжеловесов, победителем в которой считается тот, кто заставит противника коснуться ковра любой частью тела.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;
+
+sumo=>nrel_rules:sumo_rule;;

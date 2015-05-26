@@ -1,0 +1,26 @@
+//
+sc_node_norole_relation -> nrel_processing;;
+nrel_processing => nrel_main_idtf :[обработка*] (* <- lang_ru;; *);;
+nrel_processing => nrel_main_idtf :[processing*](* <- lang_en;; *);;
+
+//определение 
+
+nrel_processing <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(обработка*)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Обработка  - отношение связывающее объект с дейстивем другого объекта над первым объектом.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+
+//домены
+
+nrel_processing <= nrel_first_domain: concept_object;;
+nrel_processing <= nrel_second_domain: concept_object_action;;

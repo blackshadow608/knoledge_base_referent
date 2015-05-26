@@ -1,0 +1,40 @@
+sc_node_no_relation->billiards;;
+
+
+billiards => nrel_main_idtf:
+
+	[бильярд]
+	(* <- lang_ru;; *);
+
+	[billiards]
+	(* <- lang_en;;	*);;
+
+
+billiards
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(бильярд)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Бильярд - это  разновидность лузного бильярда. Другие названия: американский бильярд, американский пул. Часто американскую разновидность бильярда ошибочно называют термином «американка».]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

@@ -1,0 +1,22 @@
+//
+sc_node_not_relation -> concept_channel_of_transfer;;
+concept_channel_of_transfer => nrel_main_idtf :[канал передачи] (* <- lang_ru;; *);;
+concept_channel_of_transfer => nrel_main_idtf :[channel of transfer](* <- lang_en;; *);;
+
+//определение 
+
+concept_channel_of_transfer <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(канал передачи)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Канал передачи -  сущность, используемая для передачи объекта.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+concept_channel_of_transfer => nrel_inclusion: concept_computer_network;;

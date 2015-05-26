@@ -1,0 +1,16 @@
+sc_node_not_relation -> authoritarianism_regime;;
+
+authoritarianism_regime => nrel_main_idtf:
+	[авторитарный режим]
+	(* <- lang_ru;; *);
+	[authoritarianism regime]
+	(* <- lang_en;;	*);;
+
+authoritarianism_regime <=> nrel_equal: authoritarianism;;
+
+authoritarianism_regime -> Militarybureaucratic_regime;
+corporate_authoritarianism;
+totalitarny_authoritarianism;
+the_postcolonial_authoritarianism;
+racial_quasidemocracy;
+sultanistic_mode;;

@@ -1,0 +1,50 @@
+sc_node_not_relation -> transport_ship;;
+
+transport_ship => nrel_main_idtf:
+	[контейнеровоз]
+	(*
+		<- lang_ru;;
+	*);
+	[transport_ship]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	transport_ship 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(контейнеровоз)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [ Контейнеровоз - специализированное морское судно, предназначенное для перевозки контейнеров. ](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	transport_ship 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(контейнеровоз, экипаж)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Экипаж контейнервоза состоит из 10-30 человек, так как такие суда предельно автоматизированы.](*<- lang_ru;;*);;
+				*);;
+			
+		*);;
+		transport_ship 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(контейнеровоз, контейнер)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Современные контейнеровозы способны вмещать в себя свыше 18000 контейнеров.](*<- lang_ru;;*);;
+				*);;
+			
+		*);;
+		

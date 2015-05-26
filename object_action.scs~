@@ -1,0 +1,23 @@
+//
+sc_node_not_relation -> concept_object_action;;
+concept_object_action => nrel_main_idtf :[объект действия] (* <- lang_ru;; *);;
+concept_object_action => nrel_main_idtf :[object action](* <- lang_en;; *);;
+
+//определение 
+
+concept_object_action <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(объект действия)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Объект действия - объект, совершающий действие над каким-либо другим объектом.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+concept_object_action -> concept_user; concept_browser; concept_computer; concept_system;; 
+concept_object => nrel_inclusion: concept_object_action ;;

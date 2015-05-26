@@ -1,0 +1,19 @@
+sc_node_not_relation -> public_law ;;
+
+public_law => nrel_main_idtf : [public law] (* <- lang_en ;; *);
+                                      [публичное право] (* <- lang_ru ;; *) ;;
+
+public_law <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Публичное право — регулирует властные отношения на началах подчинения, которые затрагивают интересы общества в целом.](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;
+public_law => nrel_main_results : ...
+                                 (* -> ...
+                                          (* <= nrel_sc_text_translation : ...
+								     (* -> [Как правило одним из субъектов властных отношения является государство, поэтому стороны здесь изначально находятся не в равном положении.] (* <- lang_ru ;; *) ;; *) ;;
+                                           *) ;;
+                                 *);;

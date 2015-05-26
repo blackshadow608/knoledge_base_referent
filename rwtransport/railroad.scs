@@ -1,0 +1,35 @@
+sc_node_not_relation -> railroad;;
+railroad => nrel_main_idtf:
+	[рельсовый путь]
+	(*
+		<- lang_ru;;
+	*);
+	[railroad]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	railroad 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(рельсовый путь)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [рельсовый путь -  сложный комплекс линейных и сосредоточенных инженерных сооружений и обустройств, расположенных в полосе отвода, образующих дорогу с направляющей рельсовой колеёй.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	railroad 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(рельсовый путь, автомагистраль)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Автомагистраль не пересекается с рельсовыми путями на.](*<- lang_ru;;*);;
+				*);;
+		*);;

@@ -1,0 +1,49 @@
+//синонимы
+sc_node_norole_relation -> concept_internet_service_provider;;
+concept_internet_service_provider => nrel_main_idtf :[интернет-провайдер*] (* <- lang_ru;; *);;
+concept_internet_service_provider => nrel_main_idtf :[internet Service Provider](* <- lang_en;; *);;
+
+//определение 
+
+concept_internet_service_provider <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(интернет-провайдер*)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Интернет-прова́йдер  — организация, предоставляющая услуги доступа к сети Интернет и иные связанные с Интернетом 				услуги.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+//утверждения
+
+concept_internet_service_provider <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(интернет-провайдер; пользователь; интернет-соединение)] (* <- lang_ru;; *);; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Интернет-провайдер обеспечивает интернет-соединение пользователю.]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(интернет-провайдер;услуги)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[К основным услугам интернет-провайдеров относят широкополосный доступ в Интернет, коммутируемый доступ в Интернет, беспроводной доступ в Интернет.](* <- lang_ru;; *);;
+*);;
+*);;
+

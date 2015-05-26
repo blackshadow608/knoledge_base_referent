@@ -1,0 +1,21 @@
+//
+sc_node_not_relation -> concept_area_use;;
+concept_area_use => nrel_main_idtf :[сфера применения] (* <- lang_ru;; *);;
+concept_area_use => nrel_main_idtf :[area use](* <- lang_en;; *);;
+
+//определение 
+
+concept_area_use <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(сфера применения)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Сфера применения - некоторая область, в которой используется данный объект.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+concept_area_use -> nrel_information_storage; nrel_information_transfer;;

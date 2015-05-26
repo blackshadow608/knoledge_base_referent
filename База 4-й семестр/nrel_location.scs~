@@ -1,0 +1,13 @@
+sc_node_norole_relation -> nrel_location ;;
+
+nrel_location => nrel_main_idtf : [location*] (* <- lang_en ;; *);
+                                      [местоположение*] (* <- lang_ru ;; *) ;;
+
+nrel_location <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Местоположение - географическое положение.](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;

@@ -1,0 +1,49 @@
+//синонимы
+sc_node_not_relation -> concept_data;;
+concept_data => nrel_main_idtf :[данные] (* <- lang_ru;; *);;
+concept_data => nrel_main_idtf :[data](* <- lang_en;; *);;
+
+//определение 
+
+concept_data <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(данные)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Да́нные — представление фактов, понятий или инструкций в форме, приемлемой для общения, интерпретации, или обработки 				человеком или с помощью автоматических средств (ISO/IEC/IEEE 24765-2010).]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+//утверждения
+
+concept_data <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(пользователь; обработка*;данные)] (* <- lang_ru;; *);;
+-> rrel_main_key_sc_element: stat_data_user;; 
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Каждый пользователь может обработать данные.]
+(* <- lang_ru;; *);;
+*);;
+*);
+
+... 
+(*
+=> nrel_main_idtf: [Утв.(информация;данные)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Хотя информация должна обрести некоторую форму представления (то есть превратиться в данные), чтобы ей можно было обмениваться, информация есть в первую очередь интерпретация (смысл) такого представления (ISO/IEC/IEEE 24765:2010).](* <- lang_ru;; *);;
+*);;
+*);;

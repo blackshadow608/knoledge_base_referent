@@ -1,0 +1,25 @@
+sc_node_not_relation -> corporate_authoritarianism;;
+
+corporate_authoritarianism => nrel_main_idtf:
+	[корпоративный авторитаризм]
+	(* <- lang_ru;; *);
+	[corporate authoritarianism]
+	(* <- lang_en;;	*);;
+
+corporate_authoritarianism
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(корпоративный авторитаризм)]  (* <- lang_ru;; *);;
+	<-sc_explanation;;
+	<=nrel_sc_text_translation:
+		...
+
+		(*
+		->rrel_example:
+			[Корпоративный авторитаризм устанавливается в обществах с вполне развитым экономическим и социальным плюрализмом, где корпоративное представительство интересов становится альтернативой слишком идеологизированной массовой партии и дополнением к однопартийному правлению.  ]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;

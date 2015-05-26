@@ -1,0 +1,40 @@
+sc_node_no_relation->exercises_with_stuff;;
+
+
+exercises_with_stuff => nrel_main_idtf:
+
+	[упражнения с предметами]
+	(* <- lang_ru;; *);
+
+	[exercises_with_stuff]
+	(* <- lang_en;;	*);;
+
+
+exercises_with_stuff
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(упражнения с предметами)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Упражнения с предметами - это один из видов упражнений в спортивной гимнастике.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

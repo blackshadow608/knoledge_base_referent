@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<GWF version="2.0">
+    <staticSector>
+        <node type="node/var/general_node" idtf="" shapeColor="0" id="57129040" parent="56558464" x="464" y="242.187" haveBus="false">
+            <content type="0" mime_type="" file_name=""/>
+        </node>
+        <node type="node/var/general_node" idtf="" shapeColor="0" id="57130336" parent="56558464" x="466" y="310.22" haveBus="false">
+            <content type="0" mime_type="" file_name=""/>
+        </node>
+        <node type="node/const/relation" idtf="nrel_combine" shapeColor="0" id="57129328" parent="56558464" left="0" top="0" right="106" bottom="29" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="522" y="189.187" haveBus="false">
+            <content type="0" mime_type="" file_name=""/>
+        </node>
+        <node type="node/const/general_node" idtf="authoritarianism" shapeColor="0" id="57130912" parent="56558464" left="0" top="0" right="129" bottom="29" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="465" y="135.093" haveBus="false">
+            <content type="0" mime_type="" file_name=""/>
+        </node>
+        <pair type="pair/var/orient" idtf="" shapeColor="0" id="57313264" parent="56558464" id_b="57130912" id_e="57129040" b_x="465" b_y="135.093" e_x="464" e_y="242.187" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <arc type="arc/var/pos" idtf="" shapeColor="0" id="57311248" parent="56558464" id_b="57129328" id_e="57313264" b_x="522" b_y="189.187" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.529487">
+            <points/>
+        </arc>
+        <arc type="arc/var/pos" idtf="" shapeColor="0" id="57314104" parent="56558464" id_b="57129040" id_e="57130336" b_x="464" b_y="242.187" e_x="466" e_y="310.22" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <contour type="" idtf="С какими политическими режимами может сочетаться авторитаризм?" shapeColor="0" id="56558464" parent="0" left="0" top="0" right="580" bottom="29" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10">
+            <points>
+                <point x="435.5" y="102.593"/>
+                <point x="685.5" y="99.5933"/>
+                <point x="681.5" y="352.593"/>
+                <point x="436.5" y="357.593"/>
+            </points>
+        </contour>
+        <node type="node/const/group" idtf="section_requests" shapeColor="0" id="57129616" parent="0" left="0" top="0" right="126" bottom="29" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="807.5" y="201.5" haveBus="false">
+            <content type="0" mime_type="" file_name=""/>
+        </node>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="57313096" parent="0" id_b="57129616" id_e="56558464" b_x="807.5" b_y="201.5" e_x="560.5" e_y="228.593" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+    </staticSector>
+</GWF>

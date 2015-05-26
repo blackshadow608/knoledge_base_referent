@@ -1,0 +1,4 @@
+sc_node_not_relation -> the_legal_system_of_the_russian_federation ;;
+
+the_legal_system_of_the_russian_federation => nrel_main_idtf : [the legal system of the Russian Federation] (* <- lang_en ;; *);
+                                      [правовая система Российской Федерации] (* <- lang_ru ;; *) ;;

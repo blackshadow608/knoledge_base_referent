@@ -1,0 +1,4 @@
+sc_node_not_relation -> russian_federation ;;
+
+russian_federation => nrel_main_idtf : [Russian Federation] (* <- lang_en ;; *);
+                                      [Российская Федерация] (* <- lang_ru ;; *) ;;

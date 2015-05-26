@@ -1,0 +1,21 @@
+//синонимы
+sc_node_not_relation -> concept_yandex;;
+concept_yandex => nrel_main_idtf :[Яндекс] (* <- lang_ru;; *);;
+concept_yandex => nrel_main_idtf :[Yandex](* <- lang_en;; *);;
+
+
+//определение 
+
+concept_yandex <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(yandex)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Яндекс — европейская ИТ-компания, владеющая одноимённой системой поиска в Сети и интернет-порталом.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;

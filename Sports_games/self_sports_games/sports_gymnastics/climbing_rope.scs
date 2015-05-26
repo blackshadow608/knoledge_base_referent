@@ -1,0 +1,40 @@
+sc_node_no_relation->climbing_rope;;
+
+
+climbing_rope => nrel_main_idtf:
+
+	[лазание по канату]
+	(* <- lang_ru;; *);
+
+	[climbing_rope]
+	(* <- lang_en;;	*);;
+
+
+climbing_rope
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(лазание по канату)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Лазание по канату - это один из видов упражнений в спортивной гимнастике.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

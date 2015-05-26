@@ -1,0 +1,40 @@
+pattern1_transport -> [* autotransport _<= nrel_decomposition_infra:: _v(*_->_a;;*) ;;*];;
+pattern1_transport => nrel_main_idtf:
+	[Что входит в понятие автомобильный транспорт?]
+	(*
+		<- lang_ru;;
+	*);;
+
+pattern5_transport -> [* transport _<= nrel_decomposition_type:: type_decomp(*_->_a;;*);;*];;
+pattern5_transport => nrel_main_idtf:
+	[Какие бывают виды транспорта?]
+	(*
+		<- lang_ru;;
+	*);;
+pattern2_transport -> [* autotransport _<= nrel_decomposition_infra:: _var (* _-> _auto(*_<-_a(*_=> nrel_subdividing:: _a2(*_<-_add(*_=> nrel_subdividing::vehile;;*);;*);;*);;*);;*);;*];;
+pattern2_transport => nrel_main_idtf:
+	[Какие транспортные средства входят в автомобильный транспорт?]
+	(*
+		<- lang_ru;;
+	*);;
+
+pattern3_transport -> [* oil_station _<-_var(*_<=nrel_sc_text_translation:_a(*_->_asd;;*);;*);; *];;
+pattern3_transport => nrel_main_idtf:
+	[Что такое АЗС?]
+	(*
+		<- lang_ru;;
+	*);;
+pattern4_transport -> [* passenger _=> nrel_transportation:: _var(*_<-_aaa(*_=> nrel_decomposition_infra::_asd;;*);;*);; 	
+			*];;
+pattern4_transport => nrel_main_idtf:
+	[Какие виды транспорта перевозят пассажиров?]
+	(*
+		<- lang_ru;;
+	*);;
+sc_node_not_relation -> questions;;
+questions => nrel_main_idtf:[Запросы к разделу транспорт]
+    (*
+		<- lang_ru;;
+	*);;
+	questions -> pattern1_transport; pattern2_transport; pattern3_transport; pattern4_transport; pattern5_transport;;
+	section_requests -> pattern1_transport; pattern2_transport; pattern3_transport; pattern4_transport; pattern5_transport;;

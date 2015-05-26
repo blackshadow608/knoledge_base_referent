@@ -1,0 +1,25 @@
+sc_node_not_relation -> sultanistic_mode;;
+
+sultanistic_mode => nrel_main_idtf:
+	[султанистский режим]
+	(* <- lang_ru;; *);
+	[sultanistic mode]
+	(* <- lang_en;;	*);;
+
+sultanistic_mode
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(султанистский режим)]  (* <- lang_ru;; *);;
+	<-sc_explanation;;
+	<=nrel_sc_text_translation:
+		...
+
+		(*
+		->rrel_example:
+			[Султанистский режим можно рассматривать как предельную форму автократии. Признаками персонифицированных этих режимов является отсутствие идеологии, политической мобилизации, каких-либо ограничителей власти султана, плюрализма. ]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;

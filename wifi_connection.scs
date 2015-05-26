@@ -1,0 +1,36 @@
+//
+sc_node_not_relation -> concept_wifi_connection;;
+concept_wifi_connection => nrel_main_idtf :[Wi-Fi соединение] (* <- lang_ru;; *);;
+concept_wifi_connection => nrel_main_idtf :[wifi connection](* <- lang_en;; *);;
+
+//определение 
+
+concept_wifi_connection <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(Wi-Fi соединение)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Wi-Fi соединение —  подключение производится к «точкам доступа» с радиусом действия до 100 метров.  ]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+//утверждения
+
+concept_wifi_connection <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(Wi-Fi;интернет-провайдер)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Провайдеров для этой технологии очень мало, т.к. чаще всего эту технологии используют для частной раздачи Интернета в публичных местах, кафе, аэропортах как дополнительную бесплатную услугу. ]
+(* <- lang_ru;; *);;
+*);;
+*);;

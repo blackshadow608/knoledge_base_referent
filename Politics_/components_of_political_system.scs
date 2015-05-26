@@ -1,0 +1,36 @@
+sc_node_not_relation -> organizational_component;;
+organizational_component => nrel_main_idtf:
+	[организационный компонент ]
+	(* <- lang_ru;; *);
+	[organizational component]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> cultural_component;;
+cultural_component => nrel_main_idtf:
+	[культурный компонент]
+	(* <- lang_ru;; *);
+	[cultural component]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> normative_component;;
+normative_component => nrel_main_idtf:
+	[нормативный компонент]
+	(* <- lang_ru;; *);
+	[normative component]
+	(* <- lang_en;;	*);;
+
+
+sc_node_not_relation -> communicative_component;;
+communicative_component => nrel_main_idtf:
+	[коммуникативный компонент ]
+	(* <- lang_ru;; *);
+	[communicative component]
+	(* <- lang_en;;	*);;
+
+sc_node_not_relation -> functional_component;;
+functional_component => nrel_main_idtf:
+	[функциональный компонент]
+	(* <- lang_ru;; *);
+	[functional component]
+	(* <- lang_en;;	*);;
+

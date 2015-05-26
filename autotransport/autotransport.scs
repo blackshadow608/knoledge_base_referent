@@ -1,0 +1,35 @@
+sc_node_not_relation -> autotransport;;
+autotransport => nrel_main_idtf:
+	[автомобильный транспорт]
+	(*
+		<- lang_ru;;
+	*);
+	[autotransport]
+	(*
+		<- lang_en;;
+	*);;
+	
+
+	autotransport 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Опр.(автомобильный транспорт)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> [автомобильный транспорт - вид транспорта, в котром используются автомобили в качестве средсв перемещения груза или пассажиров.](*<- lang_ru;;*);;
+				*);;
+		*);;
+
+		
+	autotransport 
+		<- rrel_key_sc_element:...
+		(*
+			=>nrel_main_idtf:[Утв.(дорога,автомобильный транспорт,качество*)](*<- lang_ru;;*);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Автомобильный транспорт требует хорошего качества дорог.](*<- lang_ru;;*);;
+				*);;
+		*);;

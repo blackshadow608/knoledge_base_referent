@@ -1,0 +1,40 @@
+//
+sc_node_not_relation -> concept_wired_connection;;
+concept_wired_connection => nrel_main_idtf :[проводное соединение] (* <- lang_ru;; *);;
+concept_wired_connection => nrel_main_idtf :[wired connection](* <- lang_en;; *);;
+
+//определение 
+
+concept_wired_connection <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(проводное соединение)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Проводное соединение — доступ в Интернет по выделенной линии]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+
+//иерархия
+
+concept_wired_connection <= nrel_subdividing: concept_commuted_internet_line; concept_direct_connection;;
+
+//утверждения
+
+concept_wired_connection <- rrel_key_sc_element: 
+...
+(*
+=> nrel_main_idtf: [Утв.(проводное соединение;скорость;трафик)] (* <- lang_ru;; *);;
+<- sc_statement;;
+<= nrel_sc_text_translation: 
+...
+(*
+-> rrel_example: 
+[Недостатки этого способа выхода заключаются в маленькой скорости, дороговизне, так как приходиться платить не за трафик, а за время проведённое в сети, к тому же телефонная линия на время выхода оказывается занятой.]
+(* <- lang_ru;; *);;
+*);;
+*);;

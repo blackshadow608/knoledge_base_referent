@@ -1,0 +1,32 @@
+sc_node_not_relation -> semipresidentialism;;
+
+semipresidentialism => nrel_main_idtf:
+	[смешанная республика]
+	(* <- lang_ru;; *);
+	[semi-presidentialism]
+	(* <- lang_en;;	*);;
+
+semipresidentialism
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(смешанная республика)]  (* <- lang_ru;; *);;
+	<-sc_explanation;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Смешанная республика (также может называться президентско-парламентской, парламентско-президентской республикой) — форма государственного правления, находящаяся между президентской и парламентской республиками.]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+
+semipresidentialism<= nrel_attribute:
+	...
+	(*  
+		<=nrel_sc_text_translation:
+		...
+	(* -> rrel_example: [в смешанной республике избранный народом президент вправе фактически формировать своё правительство, невзирая на существующее парламентское большинство, вступать в конфликт с парламентом и добиваться его роспуска.](*<- lang_ru;;*);;*);;
+	*);;

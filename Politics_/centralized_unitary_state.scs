@@ -1,0 +1,26 @@
+sc_node_not_relation -> centralized_unitary_state;;
+
+centralized_unitary_state => nrel_main_idtf:
+	[централизованное унитарное государство]
+	(* <- lang_ru;; *);
+	[centralized unitary state]
+	(* <- lang_en;;	*);;
+
+centralized_unitary_state
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(централизованное унитарное государство)]  (* <- lang_ru;; *);;
+	<-sc_explanation;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Централизованное унитарное государство — строгая субординация органов местного самоуправления, которые формируются из центра, их самостоятельность незначительна.]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+
+

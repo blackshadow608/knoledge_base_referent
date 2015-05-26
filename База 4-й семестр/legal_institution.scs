@@ -1,0 +1,19 @@
+sc_node_not_relation -> legal_institution ;;
+
+legal_institution => nrel_main_idtf : [legal institution] (* <- lang_en ;; *);
+                                      [правовой институт] (* <- lang_ru ;; *) ;;
+
+legal_institution <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Правовой институт — представляет собой группу норм права, регулирующих типичные общественные отношения и в силу этого приобретающих относительную самостоятельность и устойчивость функционирования.](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;
+legal_institution => nrel_main_results : ...
+                                 (* -> ...
+                                          (* <= nrel_sc_text_translation : ...
+								     (* -> [Правовой институт чаще всего регулирует определенный вид общественных отношений, причем это регулирование имеет достаточно законченный характер.] (* <- lang_ru ;; *) ;; *) ;;
+                                           *) ;;
+                                 *);;

@@ -1,0 +1,4 @@
+sc_node_not_relation -> the_legal_system_of_germany ;;
+
+the_legal_system_of_germany => nrel_main_idtf : [the legal system of Germany] (* <- lang_en ;; *);
+                                      [правовая система Германии] (* <- lang_ru ;; *) ;;

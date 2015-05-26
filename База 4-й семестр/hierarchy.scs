@@ -1,0 +1,50 @@
+law => nrel_attribute : normativity; universal_validity; warranty_state; intellectual_and_strong_willed_character; formal_certainty; systematic ;;
+
+
+theory -> theological_theory; the_theory_of_natural_law; psychological_theory; historical_school; normativist_theory; positivist_theory; conciliation_theory; marxist_theory; regulatory_theory ;;
+
+law => nrel_theory_of_the_origin : theological_theory; the_theory_of_natural_law; psychological_theory; historical_school; normativist_theory; positivist_theory; conciliation_theory; marxist_theory; regulatory_theory ;;
+
+law => nrel_source : legal_custom; regulatory_agreement; judicial_precedent; legal_doctrine; normative_legal_act ;;
+
+
+
+law => nrel_inclusion : the_legal_system ;;
+
+the_legal_system => nrel_inclusion : system_of_law ;;
+
+the_legal_system => nrel_inclusion : legal_culture; legal_awareness; legal_practice ;;
+
+legal_practice => nrel_form_of_implementation : use; performance; compliance ;;
+
+system_of_law => nrel_inclusion : branc_of_law; sub_sector_law; legal_institution; rule_of_law ;;
+
+legal_institution -> interbranch_legal_institution; branch_legal_institution ;;
+
+interbranch_legal_institution => nrel_inclusion : human_rights; separation_of_powers; justice; civil_society ;;
+
+rule_of_law => nrel_inclusion : private_law; public_law ;;
+
+branc_of_law => nrel_inclusion : substantive_law; procedural_law; national_law; international_law ;; 
+
+
+
+
+the_legal_system -> roman_law; inca_law; the_legal_system_of_the_russian_federation; usa_legal_system; the_legal_system_of_the_united_kingdom; the_legal_system_of_germany; the_legal_system_of_france ;;
+
+state -> ancient_rome; inca_empire; russian_federation; usa; united_kingdom; germany; france ;;
+
+ancient_rome <= nrel_location : roman_law ;;
+
+inca_empire <= nrel_location : inca_law ;;
+
+russian_federation <= nrel_location : the_legal_system_of_the_russian_federation ;;
+
+usa <= nrel_location : usa_legal_system ;;
+
+united_kingdom <= nrel_location : the_legal_system_of_the_united_kingdom ;;
+
+germany <= nrel_location : the_legal_system_of_germany ;;
+
+france <= nrel_location : the_legal_system_of_france ;;
+

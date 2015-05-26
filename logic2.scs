@@ -1,0 +1,12 @@
+logic2 => nrel_main_idtf :[В качестве средств транспортировки одного груза могут выступать различные транспортные средства.] (* <- lang_ru;; *);;
+logic2 -> ..node1_logic2;;
+logic2 -> ..node2_logic2;;
+..node1_logic2 _=> nrel_implication: ..node2_logic2;;
+..node1_logic2 ->  [* _x _<- vehile;;
+				_load1 _<- load;; *] (* <- concept_atomic_existence ;;*) ;;
+..node2_logic2 ->  [* _load1 _<= nrel_means_of_transportation: _x;; *] (* <- concept_atomic_existence ;;*) ;;
+_load1  => nrel_main_idtf:
+	[груз_1]
+	(*
+		<- lang_ru;;
+	*);;	

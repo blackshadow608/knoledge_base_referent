@@ -1,0 +1,33 @@
+sc_node_not_relation -> limited_monarchy;;
+
+limited_monarchy => nrel_main_idtf:
+	[конституционная монархия]
+	(* <- lang_ru;; *);
+	[limited monarchy]
+	(* <- lang_en;;	*);;
+
+limited_monarchy
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(конституционная монархия)]  (* <- lang_ru;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+
+		(*
+		->rrel_example:
+			[Конституционная монархия — монархия, при которой власть монарха ограничена так, что в сфере государственной власти он не обладает верховными полномочиями. Правовые ограничения на власть монарха могут быть закреплены в высших законах, таких, как конституция или статуты, либо в прецедентных решениях, вынесенных верховными судебными инстанциями. ]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);;
+
+limited_monarchy 
+		->dual_monarchy;
+		parliamentary_monarchy;;		
+
+
+
+

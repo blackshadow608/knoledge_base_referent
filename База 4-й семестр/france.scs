@@ -1,0 +1,4 @@
+sc_node_not_relation -> france ;;
+
+france => nrel_main_idtf : [France] (* <- lang_en ;; *);
+                                      [Франция] (* <- lang_ru ;; *) ;;

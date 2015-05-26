@@ -1,0 +1,39 @@
+sc_node_no_relation->cricket;;
+
+cricket => nrel_main_idtf:
+
+	[крикет]
+	(* <- lang_ru;; *);
+
+	[cricket]
+	(* <- lang_en;;	*);;
+
+
+cricket
+	
+	<- rrel_key_sc_element:
+	
+	...
+
+		(*
+	=> nrel_main_idtf: [Опр.(крикет)] 
+		 (* <- lang_ru;; *);;
+	
+		<-sc_explanation;;
+	
+		<=nrel_sc_text_translation:
+	
+			...
+
+		
+			(*
+->rrel_example:
+ 
+			[Крикет - это командный неконтактный вид спорта, входящий в семейство игр, в которых используются бита и мяч.]
+	(*
+<- lang_ru;;
+*);;
+		
+*);;
+	
+*);;

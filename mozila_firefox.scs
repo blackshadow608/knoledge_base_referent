@@ -1,0 +1,21 @@
+//синонимы
+sc_node_not_relation -> concept_mozila_firefox;;
+concept_mozila_firefox => nrel_main_idtf :[Mozila Firefox] (* <- lang_ru;; *);;
+concept_mozila_firefox => nrel_main_idtf :[Mozila Firefox](* <- lang_en;; *);;
+
+
+//определение 
+
+concept_mozila_firefox <- rrel_key_sc_element: 
+        ...
+	(*
+	=> nrel_main_idtf: [Опр.(mozila firefox)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Mozilla Firefox — свободный браузер на движке Gecko, разработкой и распространением которого занимается Mozilla Corporation.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;

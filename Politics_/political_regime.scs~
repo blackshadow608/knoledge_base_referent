@@ -1,0 +1,35 @@
+sc_node_not_relation -> political_regime;;
+
+political_regime => nrel_main_idtf:
+	[политический режим]
+	(* <- lang_ru;; *);
+	[political regime]
+	(* <- lang_en;;	*);;
+
+political_regime
+	<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(политический режим)]  (* <- lang_ru;; *);;
+	<-sc_definition;;
+	<=nrel_sc_text_translation:
+		...
+
+		(*
+		->rrel_example:
+			[Политический режим — политическое управление, то есть совокупность методов, приёмов и форм осуществления политических отношений в обществе (государстве), или способ функционирования его политической системы.]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+		
+	*);;
+political_regime -> democracy;
+		totalitarianism;
+		authoritarianism;
+		anarchy;;
+
+
+
+
+

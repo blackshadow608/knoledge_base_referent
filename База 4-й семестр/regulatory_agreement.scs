@@ -1,0 +1,21 @@
+sc_node_not_relation -> regulatory_agreement ;;
+
+regulatory_agreement => nrel_main_idtf : [regulatory agreement] (* <- lang_en ;; *);
+                                      [нормативный договор] (* <- lang_ru ;; *) ;;
+
+regulatory_agreement <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Нормативный договор — представляет собой соглашение (как правило, хотя бы одной из сторон в котором выступает государство или его часть), из которого вытекают общеобязательные правила поведения (нормы права).](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;
+
+regulatory_agreement => nrel_main_results : ...
+                                 (* -> ...
+                                          (* <= nrel_sc_text_translation : ...
+								     (* -> [Нормативный договор может быть международным, либо же это может быть договор в рамках одного государства, например, между федерацией и её субъектами.] (* <- lang_ru ;; *) ;; *) ;;
+                                           *) ;;
+                                 *);;
+

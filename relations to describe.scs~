@@ -1,0 +1,60 @@
+//отношение понятий
+
+sc_node_norole_relation -> nrel_protototip;;
+nrel_protototip => nrel_main_idtf :[прототип*] (* <- lang_ru;; *);;
+
+
+sc_node_norole_relation -> nrel_comment;;
+nrel_comment => nrel_main_idtf :[комментарий*] (* <- lang_ru;; *);;
+
+sc_node_norole_relation -> nrel_typical_structure;;
+nrel_typical_structure => nrel_main_idtf :[типовая структура*] (* <- lang_ru;; *);;
+
+sc_node_norole_relation -> nrel_use;;
+nrel_use => nrel_main_idtf :[назначение*] (* <- lang_ru;; *);;
+
+sc_node_norole_relation -> nrel_typical_elements;;
+nrel_typical_elements => nrel_main_idtf :[типовой элемент*] (* <- lang_ru;; *);;
+
+
+sc_node_norole_relation -> nrel_typical_component;;
+nrel_typical_component => nrel_main_idtf :[типовой компонент*] (* <- lang_ru;; *);;
+
+
+sc_node_norole_relation -> nrel_medium;;
+nrel_medium => nrel_main_idtf :[носитель*] (* <- lang_ru;; *);;
+
+sc_node_norole_relation -> nrel_location;;
+nrel_location => nrel_main_idtf :[размещение*] (* <- lang_ru;; *);;
+
+sc_node_norole_relation -> nrel_buy;;
+nrel_buy => nrel_main_idtf :[приобретение*] (* <- lang_ru;; *);;
+
+sc_node_not_relation -> concept_service;;
+concept_service => nrel_main_idtf :[услуга] (* <- lang_ru;; *);;
+
+sc_node_norole_relation -> nrel_presentation;;
+nrel_presentation => nrel_main_idtf :[форма представления*] (* <- lang_ru;; *);;
+
+sc_node_norole_relation -> nrel_inclusion;;
+nrel_inclusion => nrel_main_idtf :[включение*] (* <- lang_ru;; *);;
+
+sc_node_norole_relation -> nrel_partition;;
+nrel_partition => nrel_main_idtf :[классификация*] (* <- lang_ru;; *);;
+
+sc_node_norole_relation -> nrel_comprise;;
+nrel_comprise => nrel_main_idtf :[содержать*] (* <- lang_ru;; *);;
+
+sc_node_norole_relation -> nrel_access;;
+nrel_access => nrel_main_idtf :[подключение*] (* <- lang_ru;; *);;
+
+sc_node_norole_relation -> nrel_mapping;;
+nrel_mapping => nrel_main_idtf :[отображение*] (* <- lang_ru;; *);;
+
+sc_node_norole_relation -> nrel_synonym;;
+nrel_mapping => nrel_main_idtf :[синоним*] (* <- lang_ru;; *);;
+
+sc_node_norole_relation -> nrel_concealment;;
+nrel_concealment => nrel_main_idtf :[сокрытие*] (* <- lang_ru;; *);;
+
+

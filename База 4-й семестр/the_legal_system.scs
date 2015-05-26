@@ -1,0 +1,19 @@
+sc_node_not_relation -> the_legal_system ;;
+
+the_legal_system => nrel_main_idtf : [the legal system] (* <- lang_en ;; *);
+                                      [правовая система] (* <- lang_ru ;; *) ;;
+
+the_legal_system <- rrel_key_sc_element : ...
+	                           (*
+			            <- sc_definition ;;
+				    <= nrel_sc_text_translation : ...
+	                                                             (*
+		                                                      -> rrel_example :[Правова́я систе́ма — совокупная связь системы права (в том числе системы законодательства), правовой культуры и правореализации.](*<-lang_ru;;*);;
+	                                                              *) ;;
+                                    *) ;;
+the_legal_system => nrel_main_results : ...
+                                 (* -> ...
+                                          (* <= nrel_sc_text_translation : ...
+								     (* -> [Понятие правовой системы часто используется для того, чтобы охарактеризовать историко-правовые и этнокультурные отличия права разных государств и народов.] (* <- lang_ru ;; *) ;; *) ;;
+                                           *) ;;
+                                 *);;
